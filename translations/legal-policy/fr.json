@@ -1,0 +1,66 @@
+{
+  "legal": {
+    "page": {
+      "title": "Mentions Légales",
+      "pillText": "LÉGAL"
+    },
+    "sections": {
+      "websitePublisher": {
+        "title": "Éditeur du Site",
+        "companyName": "DATA CHAMP'",
+        "companyType": "Société à Responsabilité Limitée Unipersonnelle",
+        "siret": "SIRET : [Insérer SIRET]",
+        "address": "Adresse : 98 rue de l'Égalité 69150 Décines-Charpieu, France",
+        "email": "Email :",
+        "emailLink": "contact@datachamp.fr"
+      },
+      "hosting": {
+        "title": "Hébergement",
+        "intro": "Ce site web est hébergé par :",
+        "provider": "Hetzner",
+        "address": "Adresse : Industriestr. 25, 40477 Düsseldorf, Allemagne",
+        "contact": "Contact : info@hetzner.com"
+      },
+      "intellectualProperty": {
+        "title": "Propriété Intellectuelle",
+        "content": "Tous les contenus de ce site web (textes, images, vidéos, etc.) sont protégés par le droit d'auteur. Toute reproduction, même partielle, nécessite une autorisation préalable de DATA CHAMP'."
+      },
+      "personalDataProtection": {
+        "title": "Protection des Données Personnelles",
+        "intro": "Conformément au Règlement Général sur la Protection des Données (RGPD), vous avez le droit d'accéder, de rectifier et de supprimer vos données personnelles. Pour exercer ce droit, veuillez nous contacter à :",
+        "emailLink": "contact@datachamp.fr",
+        "usageIntro": "Les données personnelles collectées sur ce site web sont uniquement utilisées pour :",
+        "usageItems": [
+          "Répondre à vos demandes de contact",
+          "Gérer les rendez-vous",
+          "Envoyer des communications concernant nos services"
+        ]
+      },
+      "cookies": {
+        "title": "Cookies",
+        "intro": "Ce site web utilise Matomo pour l'analyse d'audience, configuré pour respecter votre vie privée. Les données collectées sont anonymisées et ne sont pas partagées avec des tiers.",
+        "optOutIntro": "Vous pouvez choisir de vous désinscrire du suivi Matomo :",
+        "optOutText": "Vous n'êtes pas désinscrit. Décochez cette case pour vous désinscrire."
+      },
+      "credits": {
+        "title": "Crédits",
+        "design": "Design : Atelier Qui Fait Mouche",
+        "designLink": "https://quifaitmouche.com",
+        "development": "Développement : DATA CHAMP' en collaboration avec Mahii Conception",
+        "developmentLink": "https://mahii.pro/",
+        "illustrations": "Illustrations : Alice Dessine"
+      },
+      "modification": {
+        "title": "Modification des Mentions Légales",
+        "content": "DATA CHAMP' se réserve le droit de modifier ces mentions légales à tout moment. Nous vous invitons à les consulter régulièrement.",
+        "lastUpdated": "Dernière mise à jour : 14 novembre 2024"
+      }
+    }
+  },
+  "privacy": {
+    "page": {
+      "title": "Politique de Confidentialité",
+      "pillText": "CONFIDENTIALITÉ"
+    }
+  }
+}

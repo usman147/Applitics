@@ -1,0 +1,156 @@
+{
+  "caption": "TÉMOIGNAGES DE CLIENTS",
+  "title": {
+    "parts": [
+      {
+        "text": "Approuvé par les grandes entreprises pharmaceutiques",
+        "breakAfter": true
+      },
+      { "text": " et les institutions mondiales" }
+    ]
+  },
+  "detail": {
+    "sections": {
+      "impact": {
+        "title": "Impact et Résultats"
+      },
+      "conclusion": {
+        "title": "Conclusion"
+      }
+    }
+  },
+  "testimonials": {
+    "1": {
+      "title": "Planification de la Capacité – Client Big Pharma Confidentiel",
+      "name": "Gabriele Bano",
+      "role": "Responsable de la Modélisation des Processus chez Big Pharma",
+      "description": "Un outil R Shiny de planification de la capacité clinique remplaçant Excel, permettant la simulation de scénarios des planificateurs aux vice-présidents.",
+      "content": {
+        "introTitle": "Introduction",
+        "introText": [
+          "De plus, la grammaire spécialisée a généralement développé manuellement un outil de Business Intelligence 2.0. Le résultat est conçu pour fournir aux entreprises leaders de l'industrie une analyse approfondie de leurs performances, les aidant à identifier de nouvelles opportunités de croissance et d'optimisation.",
+          "Cette initiative reflète l'engagement de l'entreprise à fournir non seulement un soutien financier, mais aussi des ressources stratégiques et opérationnelles pour aider ses partenaires à exceller dans leur niche.",
+          "Nous avons voulu construire un outil commercial pour une croissance hyper rapide, mais aussi développer une activité publicitaire solide qui pourrait engager les utilisateurs et les encourager à partager leur expérience. De plus, il était crucial de créer un tableau de bord qui s'alignait parfaitement avec l'identité visuelle de l'entreprise."
+        ],
+        "impactText": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        ],
+        "conclusionText": [
+          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+          "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+        ]
+      }
+    },
+    "2": {
+      "title": "Tableau de bord AGRA – Mathematica",
+      "name": "Kim Siegal",
+      "role": "Chercheur Senior chez Mathematica",
+      "description": "Un tableau de bord R Shiny avec interface utilisateur auto-générative contrôlée via Excel, permettant une personnalisation quasi sans code pour AGRA.",
+      "content": {
+        "introTitle": "Introduction",
+        "introText": [
+          "De plus, la grammaire spécialisée a généralement développé manuellement un outil de Business Intelligence 2.0. Le résultat est conçu pour fournir aux entreprises leaders de l'industrie une analyse approfondie de leurs performances, les aidant à identifier de nouvelles opportunités de croissance et d'optimisation.",
+          "Cette initiative reflète l'engagement de l'entreprise à fournir non seulement un soutien financier, mais aussi des ressources stratégiques et opérationnelles pour aider ses partenaires à exceller dans leur niche.",
+          "Nous avons voulu construire un outil commercial pour une croissance hyper rapide, mais aussi développer une activité publicitaire solide qui pourrait engager les utilisateurs et les encourager à partager leur expérience. De plus, il était crucial de créer un tableau de bord qui s'alignait parfaitement avec l'identité visuelle de l'entreprise."
+        ],
+        "impactText": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        ],
+        "conclusionText": [
+          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+          "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+        ]
+      }
+    },
+    "3": {
+      "title": "Sales Pulse – Digital Fuel Capital",
+      "name": "Jeffrey Coughlin",
+      "role": "Directeur de l'Analyse chez Digital Fuel Capital",
+      "description": "Application R Shiny prête pour l'entreprise avec UI/UX améliorée, authentification et gestion des données utilisateur favorisant l'adoption.",
+      "content": {
+        "introTitle": "Introduction",
+        "introText": [
+          "De plus, la grammaire spécialisée a généralement développé manuellement un outil de Business Intelligence 2.0. Le résultat est conçu pour fournir aux entreprises leaders de l'industrie une analyse approfondie de leurs performances, les aidant à identifier de nouvelles opportunités de croissance et d'optimisation.",
+          "Cette initiative reflète l'engagement de l'entreprise à fournir non seulement un soutien financier, mais aussi des ressources stratégiques et opérationnelles pour aider ses partenaires à exceller dans leur niche.",
+          "Nous avons voulu construire un outil commercial pour une croissance hyper rapide, mais aussi développer une activité publicitaire solide qui pourrait engager les utilisateurs et les encourager à partager leur expérience. De plus, il était crucial de créer un tableau de bord qui s'alignait parfaitement avec l'identité visuelle de l'entreprise."
+        ],
+        "impactText": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        ],
+        "conclusionText": [
+          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+          "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+        ]
+      }
+    },
+    "4": {
+      "title": "iCLEANED – CGIAR",
+      "name": "E. Mwema et A. Notenbaert",
+      "role": "Chercheurs Senior chez CGIAR",
+      "description": "Outil R Shiny simulant des scénarios d'élevage et les impacts environnementaux (GES, eau, terre) pour CGIAR.",
+      "content": {
+        "introTitle": "Introduction",
+        "introText": [
+          "De plus, la grammaire spécialisée a généralement développé manuellement un outil de Business Intelligence 2.0. Le résultat est conçu pour fournir aux entreprises leaders de l'industrie une analyse approfondie de leurs performances, les aidant à identifier de nouvelles opportunités de croissance et d'optimisation.",
+          "Cette initiative reflète l'engagement de l'entreprise à fournir non seulement un soutien financier, mais aussi des ressources stratégiques et opérationnelles pour aider ses partenaires à exceller dans leur niche.",
+          "Nous avons voulu construire un outil commercial pour une croissance hyper rapide, mais aussi développer une activité publicitaire solide qui pourrait engager les utilisateurs et les encourager à partager leur expérience. De plus, il était crucial de créer un tableau de bord qui s'alignait parfaitement avec l'identité visuelle de l'entreprise."
+        ],
+        "impactText": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        ],
+        "conclusionText": [
+          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+          "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+        ]
+      }
+    },
+    "5": {
+      "title": "Maturité des Preuves – Mathematica",
+      "name": "G. Anapolle et J. Shieh",
+      "role": "Analystes de Recherche chez Mathematica",
+      "description": "Application R Shiny prête pour l'entreprise avec UI/UX améliorée, authentification et gestion des données utilisateur favorisant l'adoption.",
+      "content": {
+        "introTitle": "Introduction",
+        "introText": [
+          "De plus, la grammaire spécialisée a généralement développé manuellement un outil de Business Intelligence 2.0. Le résultat est conçu pour fournir aux entreprises leaders de l'industrie une analyse approfondie de leurs performances, les aidant à identifier de nouvelles opportunités de croissance et d'optimisation.",
+          "Cette initiative reflète l'engagement de l'entreprise à fournir non seulement un soutien financier, mais aussi des ressources stratégiques et opérationnelles pour aider ses partenaires à exceller dans leur niche.",
+          "Nous avons voulu construire un outil commercial pour une croissance hyper rapide, mais aussi développer une activité publicitaire solide qui pourrait engager les utilisateurs et les encourager à partager leur expérience. De plus, il était crucial de créer un tableau de bord qui s'alignait parfaitement avec l'identité visuelle de l'entreprise."
+        ],
+        "impactText": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        ],
+        "conclusionText": [
+          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+          "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+        ]
+      }
+    },
+    "6": {
+      "title": "Navigateur de Transition Verte – Université d'Oxford",
+      "name": "P. Andres",
+      "role": "Économiste à la London Research School of Economics",
+      "description": "Plateforme web R Shiny rendant les métriques de compétitivité verte et de verrouillage brun accessibles aux décideurs politiques et aux chercheurs.",
+      "content": {
+        "introTitle": "Introduction",
+        "introText": [
+          "De plus, la grammaire spécialisée a généralement développé manuellement un outil de Business Intelligence 2.0. Le résultat est conçu pour fournir aux entreprises leaders de l'industrie une analyse approfondie de leurs performances, les aidant à identifier de nouvelles opportunités de croissance et d'optimisation.",
+          "Cette initiative reflète l'engagement de l'entreprise à fournir non seulement un soutien financier, mais aussi des ressources stratégiques et opérationnelles pour aider ses partenaires à exceller dans leur niche.",
+          "Nous avons voulu construire un outil commercial pour une croissance hyper rapide, mais aussi développer une activité publicitaire solide qui pourrait engager les utilisateurs et les encourager à partager leur expérience. De plus, il était crucial de créer un tableau de bord qui s'alignait parfaitement avec l'identité visuelle de l'entreprise."
+        ],
+        "impactText": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        ],
+        "conclusionText": [
+          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+          "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+        ]
+      }
+    }
+  }
+}

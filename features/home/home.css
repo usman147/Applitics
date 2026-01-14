@@ -1,0 +1,135 @@
+/* Home Feature Styles */
+
+/* DNA Animation */
+@keyframes dna-rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  50% {
+    transform: rotateY(30deg);
+  }
+
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+.dna-animation {
+  animation: dna-rotate 12s ease-in-out infinite;
+}
+
+/* Partners Section */
+.partners-container {
+  position: relative;
+  overflow: visible;
+  width: 100%;
+}
+
+.partners-fade {
+  --partners-fade-size: 150px;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black var(--partners-fade-size),
+    black calc(100% - var(--partners-fade-size)),
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black var(--partners-fade-size),
+    black calc(100% - var(--partners-fade-size)),
+    transparent 100%
+  );
+}
+
+@media (max-width: 640px) {
+  .partners-fade {
+    width: 100%;
+  }
+}
+
+/* BreakingPoint reveal animation */
+.breaking-point .reveal-on-scroll,
+.now-what .reveal-on-scroll,
+.deep-down .reveal-on-scroll,
+.shiny-section .reveal-on-scroll,
+.our-role-section .reveal-on-scroll,
+.real-world-examples-section .reveal-on-scroll,
+.our-clients-section .reveal-on-scroll,
+.our-team-section .reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(32px);
+  transition:
+    opacity 600ms ease,
+    transform 600ms ease;
+}
+
+.breaking-point .reveal-visible,
+.now-what .reveal-visible,
+.deep-down .reveal-visible,
+.shiny-section .reveal-visible,
+.our-role-section .reveal-visible,
+.real-world-examples-section .reveal-visible,
+.our-clients-section .reveal-visible,
+.our-team-section .reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .breaking-point .reveal-on-scroll,
+  .now-what .reveal-on-scroll,
+  .deep-down .reveal-on-scroll,
+  .shiny-section .reveal-on-scroll,
+  .our-role-section .reveal-on-scroll,
+  .real-world-examples-section .reveal-on-scroll,
+  .our-clients-section .reveal-on-scroll,
+  .our-team-section .reveal-on-scroll {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Fade in animation for OurRole content */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 400ms ease-out;
+}
+
+/* Ellipse Separator */
+.ellipse-separator {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.ellipse-separator::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 200%;
+  height: 671px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #cbe4ff 0%, #f6f9ff 100%);
+}

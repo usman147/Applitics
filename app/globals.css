@@ -1,0 +1,112 @@
+@import 'tailwindcss';
+
+:root {
+  /* Design System Colors */
+  --color-primary: #0352a3;
+  --color-primary-light: #0070e5;
+  --color-primary-lighter: #3eaaff;
+  --color-white: #ffffff;
+  --color-grey-text: #55779a;
+  --color-grey-light: #d9dfeb;
+  --color-light-blue-extra: #dfeaff;
+  --color-grey-light: #f6f9ff;
+
+  /* Fonts */
+  --font-inter: var(--font-inter);
+  --font-instrument-serif: var(--font-instrument-serif);
+  --font-instrument-sans: var(--font-instrument-sans);
+}
+
+@theme inline {
+  /* Colors - accessible as bg-primary, text-primary, etc. */
+  --color-primary: #0352a3;
+  --color-primary-light: #0070e5;
+  --color-primary-lighter: #3eaaff;
+  --color-white: #ffffff;
+  --color-grey-text: #55779a;
+  --color-grey-light: #d9dfeb;
+  --color-light-blue-extra: #dfeaff;
+  --color-grey-light: #f6f9ff;
+
+  /* Fonts */
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-instrument-serif);
+  --font-instrument-sans: var(--font-instrument-sans);
+  --font-ibm-plex-sans-condensed: var(--font-ibm-plex-sans-condensed);
+
+  /* Custom Overrides */
+  --text-6-5xl: 3.65rem;
+}
+
+body {
+  font-family: var(--font-inter);
+  color: var(--color-grey-text);
+}
+
+.font-ibm-plex-sans-condensed {
+  font-family: var(--font-ibm-plex-sans-condensed);
+}
+
+.mobile-nav-link {
+  position: relative;
+}
+
+.mobile-nav-link::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  right: 6px;
+  bottom: -8px;
+  border-bottom: 1px solid #D9DFEB;
+}
+
+/* Custom Scrollbar Styles */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(62, 170, 255, 0.1); /* primary-lighter with opacity */
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(62, 170, 255, 0.5); /* primary-lighter with opacity */
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(
+    62,
+    170,
+    255,
+    0.8
+  ); /* primary-lighter more opaque on hover */
+}
+
+/* Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(62, 170, 255, 0.5) rgba(62, 170, 255, 0.1);
+}
+
+/* Animated mouse indicator for sliders */
+@keyframes slideMouse {
+  0%, 100% {
+    transform: translateX(-8px);
+  }
+  50% {
+    transform: translateX(8px);
+  }
+}
+
+.animate-slide-mouse {
+  animation: slideMouse 1.8s ease-in-out infinite;
+}
+
+/* Pause animation when slider is being interacted with */
+.cursor-grab:hover .animate-slide-mouse,
+.cursor-grab:active .animate-slide-mouse,
+.cursor-grabbing .animate-slide-mouse {
+  animation-play-state: paused;
+}

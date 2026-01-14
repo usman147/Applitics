@@ -1,0 +1,500 @@
+{
+  "hero": {
+    "title": {
+      "parts": [
+        { "text": "Team of R Shiny", "breakAfter": true },
+        { "text": "experts at your side." }
+      ]
+    },
+    "subtitle": {
+      "parts": [
+        "Turn your homemade Shiny app into a real data product:",
+        "Fast, elegant, and built for impact.",
+        "Work with our R Shiny experts to unlock its full potential."
+      ]
+    },
+    "cta": {
+      "primary": "Let's talk",
+      "secondary": "See Our Projects"
+    },
+    "trustBadge": "Trusted by major pharmaceutical and GLOBAL institutions.",
+    "partnering": {
+      "parts": ["Partnering with", "Global Leaders"]
+    }
+  },
+  "breakingPoint": {
+    "caption": "THE BREAKING POINT",
+    "title": {
+      "parts": [
+        {
+          "beforeQuote": "What started as",
+          "quote": "just a prototype"
+        },
+        {
+          "beforeControl": "is now",
+          "outOf": "out of",
+          "control": "control"
+        }
+      ]
+    },
+    "firstBlock": {
+      "title": "At first, everything worked fine.",
+      "items": [
+        "A simple R script, a basic Shiny app, a few filters and sliders.",
+        "It was quick, practical — and got the job done."
+      ]
+    },
+    "secondBlock": {
+      "title": "But as the project grew...",
+      "items": [
+        "Button X? Works... sometimes.",
+        "Loading takes more than 5 seconds.",
+        "Each new feature breaks two more.",
+        "Documentation? Lost in an email thread from February."
+      ]
+    }
+  },
+  "nowWhat": {
+    "caption": "NOW WHAT?",
+    "title": {
+      "parts": [
+        "You're ",
+        "way past the early script.",
+        "Now it's a business-critical tool."
+      ]
+    },
+    "card": {
+      "title": {
+        "parts": [
+          {
+            "beforeItalic": "Today, your team is",
+            "italic": "keeping it alive.."
+          },
+          "with fragile code, shaky structure, and no real technical control."
+        ]
+      },
+      "description": "You ship small fixes, avoid the fragile parts, and tell yourself it's \"good enough.\""
+    }
+  },
+  "deepDown": {
+    "caption": "AND DEEP DOWN, YOU KNOW:",
+    "title": {
+      "parts": [
+        "\"It still runs... but every click",
+        {
+          "beforeGamble": "is a",
+          "gamble": "gamble."
+        }
+      ]
+    },
+    "card": {
+      "title": "The real issue?",
+      "items": [
+        "Shiny is powerful — but getting the most out of it takes real technical expertise.",
+        {
+          "question": "No architecture, no workflow, no UX ?",
+          "answers": [
+            "The code gets bloated",
+            "The users struggle and lose patience",
+            "and the project slows to a craw"
+          ]
+        }
+      ]
+    }
+  },
+  "shiny": {
+    "caption": "THAT'S EXACTLY WHEN MOST TEAMS REACH OUT",
+    "title": {
+      "parts": [
+        "Shiny isn't the problem — the",
+        {
+          "beforeFoundation": "lack of",
+          "foundation": "solid foundation",
+          "afterFoundation": "is."
+        }
+      ]
+    },
+    "points": {
+      "x": {
+        "parts": [
+          "Not enough time, limited resources, or lack of",
+          "knowledge to lay the right foundations."
+        ]
+      },
+      "check": "That's where we step in and bring expertise."
+    },
+    "stats": {
+      "prototypes": {
+        "value": "20+",
+        "label": {
+          "parts": ["Prototypes turned", "enterprise-level"]
+        }
+      },
+      "satisfaction": {
+        "value": "5/5",
+        "label": {
+          "parts": ["Client satisfaction", "consistent & unmatched"]
+        }
+      },
+      "organizations": {
+        "value": "5+",
+        "label": {
+          "parts": ["Global organizations", "that trust us"]
+        }
+      },
+      "projects": {
+        "value": "90%",
+        "label": {
+          "parts": ["Projects pushed", "beyond MVP"]
+        }
+      }
+    },
+    "cta": "Get in touch"
+  },
+  "ourRole": {
+    "caption": "OUR ROLE",
+    "title": {
+      "parts": [
+        { "text": "Turning R Shiny apps into", "breakAfter": true },
+        { "text": " " },
+        { "text": "scalable, reliable", "highlight": true },
+        { "text": " data products." }
+      ]
+    },
+    "steps": [
+      {
+        "number": "01",
+        "title": "Turning your idea into a real, user-facing interface"
+      },
+      {
+        "number": "02",
+        "title": "Making your app stable and reliable"
+      },
+      {
+        "number": "03",
+        "title": "Design a user experience that feels intuitive"
+      },
+      {
+        "number": "04",
+        "title": "Industrialize your app to scale and last"
+      }
+    ],
+    "stepContent": [
+      {
+        "title": "You've got the idea, but can't picture how it should look or behave? That's fine.",
+        "intro": [
+          "We build a quick, focused Figma mockup to shape the user experience.",
+          "Then we turn it into a clean, functional data application tailored to your business needs."
+        ],
+        "beforeCode": {
+          "parts": [
+            "Before a single line of code, ",
+            {
+              "text": "here's what makes all the difference.",
+              "bold": true
+            }
+          ]
+        },
+        "description": "We don't jump into coding blindly — we clarify, structure, and prototype. Concretely:",
+        "items": [
+          {
+            "parts": [
+              "We run ",
+              {
+                "text": "functional scoping sessions",
+                "bold": true
+              },
+              " to understand your business needs, user scenarios, and key use cases."
+            ]
+          },
+          {
+            "parts": [
+              "We then design a ",
+              {
+                "text": "focused Figma mockup",
+                "bold": true
+              },
+              " — both visually polished and intuitive, guiding users smoothly through their journey."
+            ]
+          },
+          {
+            "parts": [
+              "From that mockup, we ",
+              {
+                "text": "build the full application",
+                "bold": true
+              },
+              ": front-end interface, business and scientific logic in R, and seamless integration with your data sources (Excel, SQL databases, APIs...)."
+            ]
+          },
+          {
+            "parts": [
+              "Finally, we ",
+              {
+                "text": "train your team",
+                "bold": true
+              },
+              " to confidently maintain, evolve, and take full ownership of the codebase."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "It works... until it doesn't. Slow loading, random errors, unexpected behaviors — we've seen it all.",
+        "intro": [
+          "We dig into the code, fix what's fragile, and make your app solid, smooth, and production-ready.",
+          "We improve performance, remove bottlenecks, and ensure your app stays responsive even under real user load."
+        ],
+        "whenSlips": "When your app starts slipping out of your hands...",
+        "howWeTakeOver": "Here is how we take over:",
+        "items": [
+          {
+            "parts": [
+              {
+                "text": "Targeted technical audit",
+                "bold": true
+              },
+              ": use modular organization and clean conventions, identify bottlenecks and improve performance"
+            ]
+          },
+          {
+            "parts": [
+              {
+                "text": "Fixing critical bugs",
+                "bold": true
+              },
+              " and unpredictable behaviors"
+            ]
+          },
+          {
+            "parts": [
+              {
+                "text": "Setting up",
+                "bold": true
+              },
+              ": logging, monitoring, and essential unit tests"
+            ]
+          },
+          {
+            "parts": [
+              {
+                "text": "Technical mentorship",
+                "bold": true
+              },
+              " to share best practices with your team and help them gain ",
+              {
+                "text": "autonomy",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "A powerful app is useless if people can't figure it out.",
+        "intro": [
+          "We redesign the user flow, navigation, and interactions to make everything feel natural.",
+          "The result? Users get what they need with minimal guidance and zero frustration."
+        ],
+        "uiux": {
+          "parts": [
+            "UI/UX — rarely taken seriously in Shiny. ",
+            {
+              "text": "That's where we shine.",
+              "bold": true
+            }
+          ]
+        },
+        "items": [
+          {
+            "parts": [
+              "Rapid or in-depth ",
+              {
+                "text": "UX analysis",
+                "bold": true
+              },
+              " based on user feedback or usability testing — leading to a ",
+              {
+                "text": "redesigned user journey",
+                "bold": true
+              },
+              " that makes the interface ",
+              {
+                "text": "more intuitive and easy to navigate",
+                "bold": true
+              },
+              "."
+            ]
+          },
+          {
+            "parts": [
+              {
+                "text": "Elegant UI design",
+                "bold": true
+              },
+              " aligned with your brand's visual identity."
+            ]
+          },
+          {
+            "parts": [
+              "Custom widgets built in R Shiny — and when Shiny's native options fall short, we leverage our expertise in modern web technologies (",
+              {
+                "text": "HTML, CSS, JavaScript",
+                "bold": true
+              },
+              ") to deliver ",
+              {
+                "text": "advanced, user-friendly interactions",
+                "bold": true
+              },
+              "."
+            ]
+          },
+          {
+            "parts": [
+              {
+                "text": "Tailored approach",
+                "bold": true
+              },
+              ": we adapt the interface to your audience — whether they're scientists, decision-makers, or mixed profiles."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Your app is no longer a prototype. It needs a production-ready system that holds up.",
+        "intro": [
+          "We structure the codebase, streamline deployments, document what matters, and lock in version control.",
+          "We onboard your team, transfer good practices, and ensure they can maintain and extend the app confidently."
+        ],
+        "description": "We step in to reinforce the foundations and prepare your app for sustainable, long-term use.",
+        "items": [
+          "Set up reliable deployment pipelines (CI/CD, Docker, GitHub Actions, etc.)",
+          {
+            "parts": [
+              "Write clear ",
+              {
+                "text": "technical and functional documentation",
+                "bold": true
+              },
+              " your team can actually use"
+            ]
+          },
+          {
+            "parts": [
+              {
+                "text": "Deploy",
+                "bold": true
+              },
+              " the app across development, staging, and production environments (Shiny Server, Fargate, Posit Connect...)"
+            ]
+          },
+          {
+            "parts": [
+              {
+                "text": "Support your team",
+                "bold": true
+              },
+              " with collaborative development practices: Git workflows, versioning, and long-term maintainability"
+            ]
+          }
+        ]
+      }
+    ],
+    "readMore": "Read More"
+  },
+  "realWorldExamples": {
+    "caption": "REAL-WORLD EXAMPLES",
+    "title": {
+      "parts": [
+        { "text": "Driving " },
+        { "text": "Results", "highlight": true },
+        { "text": " Through", "breakAfter": true },
+        { "text": "Innovation" }
+      ]
+    },
+    "slides": [
+      {
+        "title": "Capacity Planning",
+        "description": "An R Shiny clinical capacity planning tool replacing Excel, enabling scenario simulation from planners to vice presidents at a major pharmaceutical company.",
+        "buttonText": "See Client Testimonial"
+      },
+      {
+        "title": "Sales Pules",
+        "description": "We helped Digital Fuel Capital transform an internal Shiny prototype into a branded, scalable BI platform. We redesigned the UI/UX, unified fragmented workflows, implemented secure access, and optimized performance—delivering a product experience that turned users into ambassadors and accelerated portfolio-wide adoption.",
+        "buttonText": "See Case Study"
+      },
+      {
+        "title": "iCLEANED",
+        "description": "R Shiny tool simulating livestock scenarios and environmental impacts (GHG, water, land) for CGIAR, enabling researchers to analyze and visualize complex agricultural data.",
+        "buttonText": "See Client Testimonial"
+      },
+      {
+        "title": "AGRA Dashboard",
+        "description": "Collaborated with Mathematica to deliver a dynamic, self-generating R Shiny dashboard with real-time data customization and instant UI updates, enabling easy access agricultural KPIs, interpretation guides, and seamless exploration.",
+        "buttonText": "See Client Testimonial"
+      }
+    ]
+  },
+  "ourClients": {
+    "caption": "Our Clients About Applitics",
+    "title": {
+      "parts": [
+        "How It Feels to Work",
+        {
+          "text": "with Us",
+          "highlight": true
+        }
+      ]
+    },
+    "seeAllTestimonials": "See All Testimonials"
+  },
+  "ourTeam": {
+    "quote": "Who are we?",
+    "title": {
+      "parts": [
+        { "text": "We're not just " },
+        { "text": "R Shiny", "highlight": true, "breakAfter": true },
+        { "text": "developers." }
+      ]
+    },
+    "expertise": {
+      "title": {
+        "parts": [
+          "We're the team you call when your prototype needs to ",
+          {
+            "text": "grow up",
+            "highlight": true
+          },
+          "."
+        ]
+      },
+      "description": [
+        "At Applitics, we take apps that \"kinda work\" and turn them into tools people actually want to use — fast, intuitive, and built to last.",
+        "We bring together a full stack of expertise to turn your idea into a real web application."
+      ],
+      "items": [
+        {
+          "parts": [
+            "The precision of R Shiny experts : who move fast — and build robust backends that scale."
+          ]
+        },
+        {
+          "parts": [
+            "The creativity of UI/UX designers : who shape elegant interfaces that feel effortless to use."
+          ]
+        },
+        {
+          "parts": [
+            "The reliability of DevOps engineers who ensure stability, scalability, and smooth deployments."
+          ]
+        },
+        {
+          "parts": [
+            "And consultants who care about your business goals — not just your code."
+          ]
+        }
+      ]
+    }
+  }
+}

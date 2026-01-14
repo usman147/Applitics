@@ -1,0 +1,52 @@
+{
+  "notFound": {
+    "label": "Page Non Trouvée",
+    "title": {
+      "parts": [
+        "Il semble que vous vous soyez égaré",
+        {
+          "lineBreak": true,
+          "text": "hors des sentiers battus"
+        }
+      ]
+    },
+    "description": {
+      "parts": [
+        "La page que vous recherchez n'existe pas ou a été déplacée.",
+        {
+          "lineBreak": true,
+          "text": "Remettons-vous sur la bonne voie."
+        }
+      ]
+    },
+    "button": "Retour à l'accueil"
+  },
+  "header": {
+    "nav": {
+      "home": "Accueil",
+      "ourTeam": "Notre Équipe",
+      "testimonials": "Témoignages",
+      "caseStudy": "Étude de Cas",
+      "articles": "Articles"
+    },
+    "getInTouch": "Contactez-nous"
+  },
+  "footer": {
+    "nav": {
+      "home": "Accueil",
+      "ourTeam": "Notre Équipe",
+      "testimonials": "Témoignages",
+      "caseStudy": "Étude de Cas",
+      "articles": "Articles"
+    },
+    "privacyPolicy": "Politique de Confidentialité",
+    "legalPolicy": "Politique Légale",
+    "copyright": "© 2026 Applitics. Tous droits réservés."
+  },
+  "needASenior": {
+    "caption": "Contactez-nous",
+    "title": "Besoin d'expertise senior maintenant ?",
+    "subtitle": "Connectons-nous brièvement.",
+    "buttonText": "Contactez-nous"
+  }
+}

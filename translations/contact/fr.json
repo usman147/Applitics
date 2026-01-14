@@ -1,0 +1,69 @@
+{
+  "caption": "TÉMOIGNAGES",
+  "title": {
+    "parts": [
+      { "text": "Ce que disent " },
+      { "text": "nos clients", "highlight": true },
+      { "text": "" }
+    ]
+  },
+
+  "page": {
+    "badge": "FORMULAIRE DE CONTACT",
+    "title": {
+      "parts": [
+        "Consultez nos experts",
+        {
+          "lineBreak": true,
+          "text": "pour des solutions personnalisées"
+        }
+      ]
+    },
+    "getInTouch": {
+      "parts": [
+        "Contactez",
+        {
+          "lineBreak": true,
+          "text": "les experts Applitics"
+        }
+      ]
+    },
+    "message": "Nous vous contacterons dans les 24 heures !"
+  },
+  "form": {
+    "fields": {
+      "name": {
+        "label": "Nom",
+        "placeholder": "Quel est votre nom ?"
+      },
+      "email": {
+        "label": "Email professionnel",
+        "placeholder": "nom@votreentreprise.com"
+      },
+      "phone": {
+        "label": "Numéro de téléphone",
+        "optional": "(optionnel)",
+        "placeholder": "+33 1 23 45 67 89"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Je souhaiterais..."
+      }
+    },
+    "privacy": {
+      "text": "J'accepte la",
+      "privacyPolicy": "Politique de confidentialité",
+      "and": "et les",
+      "userTerms": "Conditions d'utilisation"
+    },
+    "submit": {
+      "sending": "Envoi en cours...",
+      "button": "Envoyer votre demande"
+    },
+    "messages": {
+      "success": "Merci ! Nous vous contacterons dans les 24 heures.",
+      "error": "Quelque chose s'est mal passé. Veuillez réessayer.",
+      "failedToSend": "Échec de l'envoi du message"
+    }
+  }
+}

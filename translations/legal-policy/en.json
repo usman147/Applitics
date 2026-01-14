@@ -1,0 +1,66 @@
+{
+  "legal": {
+    "page": {
+      "title": "Legal Notice",
+      "pillText": "LEGAL"
+    },
+    "sections": {
+      "websitePublisher": {
+        "title": "Website Publisher",
+        "companyName": "DATA CHAMP'",
+        "companyType": "Single-Member Limited Liability Company",
+        "siret": "SIRET: [Insert SIRET]",
+        "address": "Address: 98 rue de l'Égalité 69150 Décines-Charpieu, France",
+        "email": "Email:",
+        "emailLink": "contact@datachamp.fr"
+      },
+      "hosting": {
+        "title": "Hosting",
+        "intro": "This website is hosted by:",
+        "provider": "Hetzner",
+        "address": "Address: Industriestr. 25, 40477 Düsseldorf, Germany",
+        "contact": "Contact: info@hetzner.com"
+      },
+      "intellectualProperty": {
+        "title": "Intellectual Property",
+        "content": "All content on this website (texts, images, videos, etc.) is protected by copyright. Any reproduction, even partial, requires prior authorization from DATA CHAMP'."
+      },
+      "personalDataProtection": {
+        "title": "Personal Data Protection",
+        "intro": "In accordance with the General Data Protection Regulation (GDPR), you have the right to access, rectify, and delete your personal data. To exercise this right, please contact us at:",
+        "emailLink": "contact@datachamp.fr",
+        "usageIntro": "Personal data collected on this website is only used to:",
+        "usageItems": [
+          "Respond to your contact requests",
+          "Manage appointments",
+          "Send communications about our services"
+        ]
+      },
+      "cookies": {
+        "title": "Cookies",
+        "intro": "This website uses Matomo for audience analysis, configured to respect your privacy. The collected data is anonymized and not shared with third parties.",
+        "optOutIntro": "You can choose to opt-out from Matomo tracking:",
+        "optOutText": "You are not opted out. Uncheck this box to opt-out."
+      },
+      "credits": {
+        "title": "Credits",
+        "design": "Design: Atelier Qui Fait Mouche",
+        "designLink": "https://quifaitmouche.com",
+        "development": "Development: DATA CHAMP' in collaboration with Mahii Conception",
+        "developmentLink": "https://mahii.pro/",
+        "illustrations": "Illustrations: Alice Dessine"
+      },
+      "modification": {
+        "title": "Modification of Legal Notice",
+        "content": "DATA CHAMP' reserves the right to modify this legal notice at any time. We invite you to consult it regularly.",
+        "lastUpdated": "Last updated: November 14, 2024"
+      }
+    }
+  },
+  "privacy": {
+    "page": {
+      "title": "Privacy Policy",
+      "pillText": "PRIVACY"
+    }
+  }
+}

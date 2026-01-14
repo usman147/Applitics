@@ -1,0 +1,68 @@
+{
+  "caption": "TESTIMONIALS",
+  "title": {
+    "parts": [
+      { "text": "What Our " },
+      { "text": "Clients", "highlight": true },
+      { "text": " Say" }
+    ]
+  },
+  "page": {
+    "badge": "CONTACT FORM",
+    "title": {
+      "parts": [
+        "Consult with Our Experts",
+        {
+          "lineBreak": true,
+          "text": "for Custom Solutions"
+        }
+      ]
+    },
+    "getInTouch": {
+      "parts": [
+        "Get in touch",
+        {
+          "lineBreak": true,
+          "text": "with Applitics Experts"
+        }
+      ]
+    },
+    "message": "We will contact you within 24 hours!"
+  },
+  "form": {
+    "fields": {
+      "name": {
+        "label": "Name",
+        "placeholder": "What's your name?"
+      },
+      "email": {
+        "label": "Business Email",
+        "placeholder": "name@yourcompany.com"
+      },
+      "phone": {
+        "label": "Phone Number",
+        "optional": "(optional)",
+        "placeholder": "+1 (555) 732-5841"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "I would like to..."
+      }
+    },
+    "privacy": {
+      "text": "I accept the",
+      "privacyPolicy": "Privacy Policy",
+      "and": "and",
+      "userTerms": "User Terms"
+    },
+    "submit": {
+      "sending": "Sending...",
+      "button": "Send your request"
+    },
+    "messages": {
+      "success": "Thank you! We will contact you within 24 hours.",
+      "error": "Something went wrong. Please try again.",
+      "failedToSend": "Failed to send message"
+    }
+  }
+}

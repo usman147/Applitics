@@ -1,0 +1,52 @@
+{
+  "notFound": {
+    "label": "Page Not Found",
+    "title": {
+      "parts": [
+        "Looks like you've wandered",
+        {
+          "lineBreak": true,
+          "text": "off the beaten path"
+        }
+      ]
+    },
+    "description": {
+      "parts": [
+        "The page you're looking for doesn't exist or has been moved.",
+        {
+          "lineBreak": true,
+          "text": "Let's get you back on track."
+        }
+      ]
+    },
+    "button": "Go back home"
+  },
+  "header": {
+    "nav": {
+      "home": "Home",
+      "ourTeam": "Our Team",
+      "testimonials": "Testimonials",
+      "caseStudy": "Case Study",
+      "articles": "Articles"
+    },
+    "getInTouch": "Get in touch"
+  },
+  "footer": {
+    "nav": {
+      "home": "Home",
+      "ourTeam": "Our Team",
+      "testimonials": "Testimonials",
+      "caseStudy": "Case Study",
+      "articles": "Articles"
+    },
+    "privacyPolicy": "Privacy Policy",
+    "legalPolicy": "Legal Policy",
+    "copyright": "© 2026 Applitics. All rights reserved."
+  },
+  "needASenior": {
+    "caption": "Contact Us",
+    "title": "Need senior expertise now?",
+    "subtitle": "Let's connect briefly.",
+    "buttonText": "Get in touch"
+  }
+}

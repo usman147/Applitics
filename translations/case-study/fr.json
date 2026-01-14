@@ -1,0 +1,454 @@
+{
+  "hero": {
+    "badge": "DESIGN - UX - INDUSTRIALISATION",
+    "title": {
+      "line1": "Comment transformer le design",
+      "line2": "d'une application R Shiny"
+    },
+    "description": "Lors du déploiement d'une application R Shiny, APPLITICS est intervenu pour améliorer le design visuel, optimiser l'expérience utilisateur et mettre en place un système d'authentification et de contrôle d'accès.",
+    "objective": {
+      "label": "Objectif :",
+      "text": "Optimiser la rétention des utilisateurs et l'adoption de l'outil lors de son déploiement à grande échelle."
+    }
+  },
+  "slider": {
+    "before": "Avant",
+    "after": "Après"
+  },
+  "summary": {
+    "title": "Résumé",
+    "items": {
+      "section3": "Le point de départ de l'application",
+      "section4": "Défis rencontrés",
+      "section5": "Comment mettre en place un système d'authentification pour une application R Shiny",
+      "section6": "Préparation d'une maquette graphique",
+      "section7": "Construction du squelette HTML d'une application Shiny",
+      "section8": "Ajouter du style à une application R Shiny avec SASS",
+      "section9": "Comment créer des visualisations attrayantes dans Shiny",
+      "section10": "Créer votre propre widget dans Shiny"
+    }
+  },
+  "section1": {
+    "title": "Introduction",
+    "paragraph1": {
+      "companyName": "DIGITAL FUEL CAPITAL",
+      "text": "une société d'investissement spécialisée dans l'e-commerce, a développé en interne un outil de Business Intelligence (BI). Cet outil est conçu pour fournir aux entreprises leaders de l'industrie une analyse approfondie de leurs performances, les aidant à identifier de nouvelles opportunités de croissance et d'optimisation."
+    },
+    "paragraph2": "Cette initiative reflète l'engagement de l'entreprise à fournir non seulement un soutien financier, mais aussi des ressources stratégiques et opérationnelles pour aider ses partenaires à exceller dans leur niche.",
+    "paragraph3": {
+      "text": "L'équipe souhaitait industrialiser cet outil pour ses partenaires, mais un élément clé manquait encore : un design qui pourrait engager les utilisateurs et les encourager à partager leur expérience. De plus, il était crucial de créer un tableau de bord qui",
+      "highlightedText": "s'alignait parfaitement avec l'identité visuelle de l'entreprise"
+    },
+    "paragraph4": {
+      "text": "Dans cette étude de cas, nous examinerons de près comment APPLITICS a réussi à atteindre",
+      "highlightedText": "deux objectifs clés :"
+    },
+    "objective1": "Assurer une industrialisation transparente",
+    "objective2": "Transformer les utilisateurs en ambassadeurs de l'outil"
+  },
+  "section2": {
+    "title": "Améliorer l'UI/UX d'une application R Shiny conçue pour l'industrialisation",
+    "paragraph1": "Notre équipe s'est concentrée sur la création d'une interface utilisateur intuitive et moderne qui améliorerait considérablement l'expérience utilisateur. Le processus de refonte a impliqué une recherche utilisateur approfondie, des améliorations de conception itératives et une attention particulière aux normes d'accessibilité et de convivialité.",
+    "objective": "Objectif : Optimiser la rétention des utilisateurs et l'adoption de l'outil lors du déploiement à grande échelle",
+    "sector": "Secteur : Services financiers / Business Intelligence",
+    "client": "Client : Digital Fuel Capital"
+  },
+  "section3": {
+    "title": "Le point de départ de l'application",
+    "paragraph1": {
+      "text": "L'interface de l'application, initialement développée par Jeffrey Coughlin, a été conçue en utilisant",
+      "shinydashboard": "Shinydashboard",
+      "text2": "et comprenait principalement :"
+    },
+    "feature1": "Une barre latérale avec des onglets et des sous-onglets",
+    "feature2": "Un panneau latéral dédié aux filtres",
+    "feature3": "Une série de graphiques se mettant à jour dynamiquement en fonction des filtres sélectionnés.",
+    "paragraph2": {
+      "text": "Cependant, l'interface utilisateur, avec sa mise en page classique",
+      "shinydashboard": "Shinydashboard",
+      "text2": ", n'était pas encore adaptée à une utilisation à grande échelle."
+    },
+    "paragraph3": "En arrière-plan, des modèles analytiques avancés fonctionnaient, calculant des indicateurs clés de performance et générant des rapports détaillés sur les données des boutiques en ligne sélectionnées.",
+    "imageAlt": "Interface de l'application"
+  },
+  "section4": {
+    "title": "Défis rencontrés",
+    "intro": {
+      "text": "Jeff était confronté à",
+      "highlightedText": "deux défis principaux"
+    },
+    "challenge1": {
+      "title": "1. Mise en place d'un système d'authentification",
+      "point1": {
+        "text": "Dans la première version de l'application, les données de tous les partenaires étaient stockées dans des sous-dossiers du dossier principal",
+        "dataFolder": "data",
+        "text2": "Pour exécuter l'outil sur les données d'une boutique spécifique, l'équipe devait",
+        "highlightedText": "manuellement",
+        "text3": "spécifier le sous-dossier approprié dans le code."
+      },
+      "point2": {
+        "text": "Avec des dizaines de partenaires à gérer,",
+        "highlightedText": "cette approche était loin d'être pratique"
+      },
+      "point3": {
+        "text": "Pour éviter ce codage en dur, Jeff était convaincu qu'un système d'authentification reliant chaque utilisateur à son propre dossier de données était",
+        "highlightedText": "essentiel"
+      }
+    },
+    "challenge2": {
+      "title": "2. Améliorer le design",
+      "point1": "En regardant la version initiale de l'application, elle était visuellement acceptable... du moins pour un usage interne.",
+      "point2": {
+        "text": "Cependant, puisque cette application est destinée aux partenaires clés de l'entreprise, nous voulions qu'elle soit agréable à utiliser et qu'elle reflète l'identité visuelle de",
+        "companyName": "DIGITAL FUEL CAPITAL"
+      },
+      "point3": "C'est pourquoi Jeff a insisté pour faire appel à des experts."
+    }
+  },
+  "section5": {
+    "title": "Comment mettre en place un système d'authentification pour une application R Shiny",
+    "intro": "Pour sécuriser une application web Shiny, plusieurs technologies viennent à l'esprit. Notamment :",
+    "technology1": {
+      "name": "Shinymanager :",
+      "text": "un",
+      "rPackageLink": "package R",
+      "rPackageUrl": "https://github.com/datastorm-open/shinymanager",
+      "text2": "développé par",
+      "datastormLink": "Datastorm",
+      "datastormUrl": "https://www.datastorm.fr/",
+      "text3": "En plus de fournir une couche d'authentification, il offre un panneau d'administration pour",
+      "trackLink": "suivre l'utilisation de l'application",
+      "trackUrl": "https://github.com/datastorm-open/shinymanager/blob/master/man/figures/shinymanager-logs.png",
+      "text4": "par chaque utilisateur, ce qui peut être très utile dans certains cas."
+    },
+    "technology2": {
+      "name": "Shinyauth :",
+      "text": "un autre",
+      "rPackageLink": "package R",
+      "rPackageUrl": "https://github.com/PaulC91/shinyauthr",
+      "text2": "connu pour sa flexibilité dans la création de systèmes de connexion basés sur des bases de données d'utilisateurs personnalisées, ainsi qu'un système simple de gestion des utilisateurs et des rôles."
+    },
+    "technology3": {
+      "name": "Shinyproxy :",
+      "text": "une",
+      "solutionLink": "solution de déploiement de base",
+      "solutionUrl": "https://www.shinyproxy.io/",
+      "text2": "En utilisant Docker, chaque application est isolée dans son propre conteneur, ce qui améliore la sécurité et simplifie la gestion des ressources."
+    },
+    "paragraph1": "Il est évident que toutes les technologies mènent à des résultats similaires.",
+    "paragraph2": "Avec Jeff, nous n'avons pas hésité longtemps avant de faire notre choix. Nous avons opté pour auth0 car l'équipe DFC le connaissait déjà.",
+    "paragraph3": {
+      "text": "L'implémentation du package d'authentification est assez simple. Il existe plusieurs ressources en ligne efficaces disponibles. Ce guide de",
+      "cursoLink": "curso-r",
+      "cursoUrl": "https://curso-r.github.io/auth0/",
+      "text2": "est pratique."
+    },
+    "paragraph4": {
+      "text": "Une fois le package",
+      "auth0Package": "auth0",
+      "text2": "implémenté et les utilisateurs créés, l'étape suivante était de lier chaque utilisateur à son propre répertoire de données. Pour cela, il suffit d'utiliser la variable de session :",
+      "sessionVar": "session$userData$auth0_info",
+      "text3": "Une fois authentifié, cette variable contient diverses informations sur l'utilisateur."
+    },
+    "paragraph5": "Voici un exemple simple qui illustre ce cas d'usage :",
+    "paragraph6": {
+      "text": "La variable réactive",
+      "userDataVar": "user_data$data_folder",
+      "text2": "est ensuite utilisée dans l'application pour charger les données du bon répertoire, en fonction de l'utilisateur connecté."
+    },
+    "paragraph7": "Nous avons maintenant un système d'authentification qui lie chaque utilisateur à son propre répertoire de données.",
+    "paragraph8": {
+      "text": "L'étape suivante suit naturellement lorsque vous regardez la page d'authentification par défaut fournie par",
+      "auth0Package": "auth0",
+      "text2": " :"
+    },
+    "auth0UITitle": "Interface utilisateur par défaut d'Auth0",
+    "imageAlt": "Interface utilisateur par défaut d'Auth0",
+    "paragraph9": "C'est déjà assez bien, mais ce serait encore mieux si nous pouvions voir l'identité visuelle de DIGITAL FUEL CAPITAL dès que nous arrivons sur la page de connexion.",
+    "paragraph10": {
+      "text": "Pour ce faire, nous nous connectons à notre tableau de bord",
+      "auth0Package": "auth0",
+      "text2": ", allons dans",
+      "branding": "Branding",
+      "text3": "puis",
+      "universalLogin": "Universal Login",
+      "text4": "Ici, nous trouvons plusieurs niveaux de personnalisation. Si vous êtes familier avec les langages web, vous pouvez choisir les",
+      "advancedOptions": "Options avancées",
+      "text5": "où vous pouvez coder directement le style."
+    },
+    "paragraph11": "Je vous montrerai le résultat de la page de connexion améliorée dans la section suivante !"
+  },
+  "section6": {
+    "title": "Préparation d'une maquette graphique",
+    "paragraph1": "Le design se compose de deux parties : l'interface utilisateur (UI) et l'expérience utilisateur (UX).",
+    "paragraph2": {
+      "text": "Ces deux éléments sont",
+      "highlightedText": "essentiels pour l'industrialisation",
+      "text2": "d'un outil."
+    },
+    "uiDefinition": {
+      "label": "UI",
+      "text": "fait référence à la conception de l'interface, en se concentrant principalement sur son esthétique."
+    },
+    "uxDefinition": {
+      "label": "UX",
+      "text": "inclut tout ce qui concerne la façon dont l'utilisateur interagit avec l'application."
+    },
+    "paragraph3": {
+      "text": "En termes simples, l'objectif est de créer un produit qui soit à la fois",
+      "attractive": "attrayant",
+      "text2": "ET",
+      "functional": "fonctionnel",
+      "text3": "C'est ainsi que vous encouragez les gens à utiliser l'outil."
+    },
+    "paragraph4": "L'UI et l'UX sont des domaines spécialisés.",
+    "paragraph5": "Comme ce n'est pas mon domaine d'expertise, j'ai contacté une experte : Sundas.",
+    "paragraph6": "Je lui ai présenté l'application, expliqué son fonctionnement et exposé les objectifs de Jeff.",
+    "paragraph7": "Je n'avais aucune idée de ce à quoi ressemblerait l'application.",
+    "paragraph8": {
+      "text": "Mais quand j'ai vu le design, j'ai immédiatement pensé,",
+      "italicText": "C'est exactement ce qui était nécessaire !"
+    },
+    "paragraph9": "L'identité de marque de DIGITAL FUEL CAPITAL est instantanément reconnaissable.",
+    "mockupTitle": "Maquette graphique de la nouvelle interface utilisateur",
+    "imageAlt": "Image de maquette",
+    "paragraph10": {
+      "text": "Je partage le lien vers le site web de DIGITAL FUEL CAPITAL pour comparaison :",
+      "linkText": "lien",
+      "linkUrl": "https://digitalfuelcapital.com/"
+    },
+    "paragraph11": "À ce stade... il ne restait plus qu'à tout intégrer dans R Shiny.",
+    "paragraph12": "Et puis...",
+    "paragraph13": {
+      "text": "La grande question était : devrions-nous continuer à utiliser",
+      "shinydashboard": "Shinydashboard",
+      "text2": "?"
+    },
+    "paragraph14": "À première vue, cela pourrait sembler une bonne idée : ce package offre une barre latérale propre et pré-construite avec des capacités d'intégration hiérarchique.",
+    "paragraph15": {
+      "text": "Cependant, dans ce cas, nous recherchions un",
+      "highlightedText": "haut degré de personnalisation",
+      "text2": "et notre expertise en développement web nous a permis d'y parvenir plus efficacement."
+    },
+    "paragraph16": "Ainsi, partir de zéro et construire les éléments avec HTML et CSS s'est avéré être une solution plus simple pour nous."
+  },
+  "section7": {
+    "title": "Construction du squelette HTML d'une application Shiny",
+    "paragraph1": "Créer la structure HTML est assez simple.",
+    "paragraph2": "Shiny utilise Bootstrap par défaut, vous n'avez donc pas besoin de partir complètement de zéro.",
+    "paragraph3": {
+      "text": "Bootstrap offre de nombreux outils, comme la possibilité de créer une grille de colonnes en utilisant les fonctions",
+      "fluidRow": "fluidRow()",
+      "text2": "et",
+      "column": "column()",
+      "text3": "."
+    },
+    "paragraph4": "Voici un exemple de structure de tableau de bord :",
+    "paragraph5": "Et c'est tout ! Le reste consiste simplement à ajouter le contenu.",
+    "paragraph6": {
+      "text": "Nous utilisons l'argument",
+      "id": "id",
+      "text2": "pour les éléments de l'interface utilisateur."
+    },
+    "paragraph7": {
+      "text": "Ces",
+      "id": "id",
+      "text2": "seront largement utilisés plus tard dans CSS pour personnaliser l'apparence. Ils aident à créer des sélecteurs."
+    },
+    "paragraph8": "Car, par défaut, l'apparence ne sera pas très esthétique.",
+    "paragraph9": "Maintenant, il suffit de coder la partie visuelle ! Pour cela, nous devons utiliser CSS."
+  },
+  "section8": {
+    "title": "Ajouter du style à une application R Shiny avec SASS",
+    "paragraph1": "Mon outil préféré pour tout ce qui concerne le design est le package Sass, qui est une extension de CSS.",
+    "paragraph2": "Son objectif principal est d'organiser le code CSS, le rendant plus lisible et, surtout, plus facile à écrire.",
+    "paragraph3": "Par exemple :",
+    "cssTranslationTitle": "En CSS, cela se traduit par :",
+    "paragraph4": "La différence peut sembler mineure au premier abord. Cependant, le fichier CSS manque de structure, et les sélecteurs sont beaucoup plus longs.",
+    "paragraph5": "Dans ce petit exemple, c'est encore gérable. Mais lorsqu'il s'agit de centaines de lignes de code, il devient encore plus bénéfique de structurer et d'organiser les sélecteurs.",
+    "paragraph6": {
+      "text": "Pour utiliser un fichier",
+      "scss": ".scss",
+      "text2": "dans une application Shiny, il existe deux méthodes :"
+    },
+    "traditionalMethod": {
+      "text": "La méthode traditionnelle consiste à installer l'outil",
+      "sass": "sass",
+      "text2": "sur votre système et à compiler directement le fichier sass avec la commande :"
+    },
+    "command": "sass styles/style.scss www/style.css",
+    "paragraph7": {
+      "text": "Ou, encore plus simple, vous pouvez utiliser le package",
+      "sassPackage": "{sass}",
+      "text2": "développé par Posit (anciennement RStudio). Il s'occupera du travail pour vous."
+    },
+    "paragraph8": "La mise en page a été intégrée avec succès.",
+    "paragraph9": "Cependant, il y a certains composants d'interface utilisateur spécifiques : les visualisations et les entrées..."
+  },
+  "section9": {
+    "title": "Comment créer des visualisations attrayantes dans Shiny",
+    "paragraph1": {
+      "text": "Jeff a initialement utilisé la bibliothèque",
+      "ggplot2": "ggplot2",
+      "text2": "pour les visualisations du tableau de bord."
+    },
+    "paragraph2": "L'objectif était d'améliorer les visualisations en les rendant à la fois plus attrayantes visuellement, comme indiqué dans la maquette de conception, et plus interactives pour une meilleure expérience utilisateur.",
+    "subsection1": {
+      "title": {
+        "text": "1. Choix de la bibliothèque de visualisation :",
+        "highcharter": "Highcharter"
+      },
+      "intro": "Après une brève étude, deux choix ont été présélectionnés :",
+      "option1": {
+        "text": "Rester avec",
+        "ggplot2": "ggplot2",
+        "text2": "en ajoutant plus de personnalisation et en implémentant une info-bulle avec le",
+        "ggiraphLink": "package {ggiraph}",
+        "ggiraphUrl": "https://github.com/davidgohel/ggiraph?tab=readme-ov-file",
+        "text3": "pour l'interactivité."
+      },
+      "option2": {
+        "text": "Reconstruire les visualisations avec un autre package :",
+        "highcharterLink": "Highcharter",
+        "highcharterUrl": "https://jkunst.com/highcharter/"
+      },
+      "point1": {
+        "text": "D'une part,",
+        "ggplot2": "ggplot2",
+        "text2": "est le package de visualisation utilisé par défaut par les utilisateurs de R. Sa popularité lui confère une",
+        "highlightedText": "documentation redondante",
+        "text3": "et une force communautaire."
+      },
+      "point2": {
+        "text": "D'autre part,",
+        "highcharter": "Highcharter",
+        "text2": "développé par Joshua Kunst, est un wrapper R pour la bibliothèque JavaScript",
+        "highcharts": "Highcharts",
+        "text3": "qui est largement utilisée sur le web. Il offre",
+        "highlightedText": "des niveaux impressionnants de personnalisation",
+        "text4": "grâce à une",
+        "apiLink": "API riche",
+        "apiUrl": "https://api.highcharts.com/highcharts/",
+        "text5": "qui donne le contrôle sur l'ensemble du graphique."
+      },
+      "point3": {
+        "text": "Comme le développeur décrit le package R :",
+        "italicText": "\"Il n'y a pas d'arguments par défaut. Tous les arguments doivent être nommés.\""
+      },
+      "point4": {
+        "text": "En d'autres termes, cela signifie que vous avez une flexibilité totale pour utiliser toutes les fonctionnalités de la bibliothèque Highcharts JS",
+        "highlightedText": "dans R",
+        "text2": "."
+      },
+      "point5": {
+        "text": "",
+        "highcharter": "Highcharter",
+        "text2": "permet une utilisation efficace de la syntaxe JSON via les listes R pour définir et personnaliser vos graphiques. Cela fonctionne si bien",
+        "highlightedText": "grâce à la similitude entre les listes R et les objets JSON",
+        "text3": "utilisés par Highcharts en JavaScript."
+      },
+      "point6": "Par exemple, ce graphique en JS.",
+      "becomesInR": "... devient en R :",
+      "point7": {
+        "text": "Cependant, au-delà des visualisations statiques montrées plus tôt dans cette étude de cas, Jeff voulait également implémenter une fonctionnalité",
+        "italicText": "fancy",
+        "text2": "—de petits graphiques supplémentaires qui afficheraient, en temps réel, l'évolution de certaines métriques pré-calculées, mises à jour à la seconde."
+      },
+      "point8": {
+        "text": "Pour cette fonctionnalité,",
+        "highcharter": "Highcharter",
+        "text2": "s'est clairement démarqué comme la meilleure option pour le projet, grâce à ses animations particulièrement élégantes pour les mises à jour de graphiques en temps réel."
+      },
+      "point9": "De plus, puisque la politique du projet n'avait aucune restriction de licence, le passage à Highcharts est devenu un choix évident."
+    },
+    "subsection2": {
+      "title": "2. Comment créer un graphique qui se met à jour en temps réel avec 'highcharter'",
+      "point1": "Étant donné que les KPI pré-calculés sont confidentiels pour DIGITAL FUEL CAPITAL, j'ai créé un exemple avec des données fictives, toujours dans le contexte de l'e-commerce.",
+      "point2": "L'exemple est un simple graphique linéaire qui affiche l'évolution des visites sur un site web au fil du temps.",
+      "point3": {
+        "text": "Ensuite, l'ajout d'un nouveau point est géré directement par les fonctions proxy",
+        "hcpxyAddPoint": "hcpxy_add_point()",
+        "text2": "et",
+        "hcpxySetData": "hcpxy_set_data()",
+        "text3": "en spécifiant l'ID de la série."
+      },
+      "point4": {
+        "text": "Vous pouvez trouver le code source",
+        "linkText": "ici",
+        "linkUrl": "https://github.com/ahmedjoubest/real-time-charts"
+      },
+      "point5": {
+        "text": "Vous pouvez également consulter l'exemple en direct",
+        "linkText": "ici",
+        "linkUrl": "https://ahmedjouworker.shinyapps.io/real-time-charts/"
+      }
+    }
+  },
+  "section10": {
+    "title": "Créer votre propre widget dans Shiny",
+    "paragraph1": "Dans le contexte de l'industrialisation d'une application web, les entrées standard fournies par Shiny ne sont clairement pas visuellement suffisantes, surtout lorsqu'on essaie de suivre les directives de conception de l'entreprise.",
+    "paragraph2": "Voici les deux versions pour comparaison :",
+    "imageTitle": "Entrée de sélection personnalisée",
+    "imageAlt": "entrée de sélection personnalisée",
+    "paragraph3": "Sans surprise, l'entrée conçue dans la maquette s'intègre mieux dans l'univers visuel de DIGITAL FUEL CAPITAL.",
+    "paragraph4": "Pour changer l'apparence d'une entrée dans une application Shiny, il existe principalement deux méthodes :",
+    "method1": {
+      "label": "1. La méthode rapide et sale :",
+      "text": "Cela implique de remplacer directement le style par défaut d'une entrée Shiny standard. C'est utile lorsque vous devez ajuster rapidement quelques modifications mineures."
+    },
+    "method2": {
+      "label": "2. La méthode professionnelle :",
+      "text": "Cela implique de développer un widget personnalisé à partir de zéro. C'est plus complexe, mais cela permet une personnalisation complète et intégrée."
+    },
+    "paragraph5": {
+      "text": "Un bon point de départ pour la",
+      "quickMethod": "méthode rapide",
+      "text2": "est d'utiliser l'inspecteur de code pour ajuster temporairement le style visuel jusqu'à obtenir l'apparence souhaitée. Ensuite, vous ajouteriez simplement ces styles à l'en-tête de votre application Shiny."
+    },
+    "paragraph6": "La méthode professionnelle, en revanche, nécessite un peu plus de travail. Elle implique de créer un widget Shiny entièrement personnalisé en utilisant des composants HTML, CSS et JavaScript de base. Cela permet un contrôle total sur le comportement et l'apparence du widget, avec l'avantage supplémentaire d'une réutilisabilité et d'une maintenabilité accrues.",
+    "paragraph7": "Pour les curieux, voici quelques ressources intéressantes pour commencer :",
+    "resource1": {
+      "text": "Construire des objets d'entrée personnalisés",
+      "url": "https://shiny.rstudio.com/articles/building-inputs.html"
+    },
+    "resource2": {
+      "text": "Comment créer des liaisons d'entrée personnalisées",
+      "url": "https://shiny.rstudio.com/articles/js-custom-input.html"
+    },
+    "resource3": {
+      "text": "Débogage des entrées Shiny personnalisées",
+      "url": "http://jonkatz2.github.io/2018/09/27/Debugging-Custom-Shiny-Inputs"
+    },
+    "resource4": {
+      "text": "7 étapes faciles pour les entrées personnalisées dans shiny",
+      "url": "https://engel-wolf.com/?p=4357#b150"
+    },
+    "paragraph8": {
+      "text": "Dans notre exemple, voici le code complet :",
+      "linkText": "lien",
+      "linkUrl": "https://github.com/ahmedjoubest/custom-select-input"
+    },
+    "paragraph9": "Le code R : contient les balises HTML pour le widget. C'est simplement une balise d'entrée.",
+    "paragraph10": "Le code CSS : utilisé pour suivre les directives de conception.",
+    "paragraph11": "Le code JavaScript : c'est là que se trouve le code pour le transformer en widget Shiny."
+  },
+  "conclusion": {
+    "title": "OBJECTIF ATTEINT !",
+    "paragraph1": {
+      "text": "Une fois en production, l'application a été accueillie avec enthousiasme par tous les partenaires de l'entreprise, avec un",
+      "highlightedText": "taux de satisfaction de 100%"
+    },
+    "paragraph2": {
+      "text": "Ce fut un véritable succès dès sa publication. Les gestionnaires de boutiques en ligne, en tant qu'utilisateurs de l'outil, ont maintenant",
+      "highlightedText1": "une plus grande confiance",
+      "text2": "en lui, le voyant comme une solution robuste et professionnelle pour leur entreprise, plutôt que comme un simple tableau de bord précipité.",
+      "highlightedText2": "Ils reconnaissent la qualité et la fiabilité",
+      "text3": "de l'outil, renforçant leur engagement et leur satisfaction."
+    },
+    "paragraph3": {
+      "text": "Aujourd'hui, l'outil est pleinement opérationnel et entre dans une phase de",
+      "highlightedText": "amélioration continue",
+      "text2": "L'objectif est de continuer à optimiser l'expérience utilisateur en fonction des commentaires que nous recevons. Par exemple, nous travaillons sur l'intégration d'une fonctionnalité de benchmarking qui nous permettra de comparer les analyses effectuées par différents partenaires dans le même créneau de manière précise et structurée, afin de faciliter la prise de décision stratégique basée sur des données comparatives fiables."
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Applitics - R Shiny Experts",
+  "short_name": "Applitics",
+  "description": "Team of R Shiny experts at your side. Turn your homemade Shiny app into a real data product.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f5cc7",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

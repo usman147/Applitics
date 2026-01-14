@@ -1,0 +1,153 @@
+{
+  "caption": "CLIENTS TESTIMONIALS",
+  "title": {
+    "parts": [
+      { "text": "Trusted by Major Pharmaceutical", "breakAfter": true },
+      { "text": " and Global Institutions" }
+    ]
+  },
+  "detail": {
+    "sections": {
+      "impact": {
+        "title": "Impact & Results"
+      },
+      "conclusion": {
+        "title": "Conclusion"
+      }
+    }
+  },
+  "testimonials": {
+    "1": {
+      "title": "Capacity Planning – Confidential Big Pharma Client",
+      "name": "Gabriele Bano",
+      "role": "Head of Process Modeling at a Big Pharma",
+      "description": "An R Shiny clinical capacity planning tool replacing Excel, enabling scenario simulation from planners to vice presidents.",
+      "content": {
+        "introTitle": "Introduction",
+        "introText": [
+          "Moreover, the specialized grammar commonly has manually developed a Business Intelligence 2.0 tool. The result is designed to provide leading companies in the industry with in-depth performance analysis, helping them identify new opportunities for growth and optimization.",
+          "This initiative reflects the company's commitment to providing not only financial support but also strategic and operational resources to help its partners excel in their niche.",
+          "We have wanted to build a business tool for hyper growth, but also develop a strong ad business that could engage users and encourage them to share their experience. Additionally, it was crucial to create a dashboard that aligned perfectly with the company's visual identity."
+        ],
+        "impactText": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        ],
+        "conclusionText": [
+          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+          "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+        ]
+      }
+    },
+    "2": {
+      "title": "AGRA Dashboard – Mathematica",
+      "name": "Kim Siegal",
+      "role": "Senior Researcher at Mathematica",
+      "description": "An R Shiny dashboard with auto-generative UI controlled via Excel, enabling near no-code customization for AGRA.",
+      "content": {
+        "introTitle": "Introduction",
+        "introText": [
+          "Moreover, the specialized grammar commonly has manually developed a Business Intelligence 2.0 tool. The result is designed to provide leading companies in the industry with in-depth performance analysis, helping them identify new opportunities for growth and optimization.",
+          "This initiative reflects the company's commitment to providing not only financial support but also strategic and operational resources to help its partners excel in their niche.",
+          "We have wanted to build a business tool for hyper growth, but also develop a strong ad business that could engage users and encourage them to share their experience. Additionally, it was crucial to create a dashboard that aligned perfectly with the company's visual identity."
+        ],
+        "impactText": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        ],
+        "conclusionText": [
+          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+          "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+        ]
+      }
+    },
+    "3": {
+      "title": "Sales Pulse – Digital Fuel Capital",
+      "name": "Jeffrey Coughlin",
+      "role": "Director of Analytics at Digital Fuel Capital",
+      "description": "Enterprise-ready R Shiny app with improved UI/UX, authentication, and user data management driving adoption.",
+      "content": {
+        "introTitle": "Introduction",
+        "introText": [
+          "Moreover, the specialized grammar commonly has manually developed a Business Intelligence 2.0 tool. The result is designed to provide leading companies in the industry with in-depth performance analysis, helping them identify new opportunities for growth and optimization.",
+          "This initiative reflects the company's commitment to providing not only financial support but also strategic and operational resources to help its partners excel in their niche.",
+          "We have wanted to build a business tool for hyper growth, but also develop a strong ad business that could engage users and encourage them to share their experience. Additionally, it was crucial to create a dashboard that aligned perfectly with the company's visual identity."
+        ],
+        "impactText": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        ],
+        "conclusionText": [
+          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+          "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+        ]
+      }
+    },
+    "4": {
+      "title": "iCLEANED – CGIAR",
+      "name": "E. Mwema and A. Notenbaert",
+      "role": "Senior Researchers at CGIAR",
+      "description": "R Shiny tool simulating livestock scenarios and environmental impacts (GHG, water, land) for CGIAR.",
+      "content": {
+        "introTitle": "Introduction",
+        "introText": [
+          "Moreover, the specialized grammar commonly has manually developed a Business Intelligence 2.0 tool. The result is designed to provide leading companies in the industry with in-depth performance analysis, helping them identify new opportunities for growth and optimization.",
+          "This initiative reflects the company's commitment to providing not only financial support but also strategic and operational resources to help its partners excel in their niche.",
+          "We have wanted to build a business tool for hyper growth, but also develop a strong ad business that could engage users and encourage them to share their experience. Additionally, it was crucial to create a dashboard that aligned perfectly with the company's visual identity."
+        ],
+        "impactText": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        ],
+        "conclusionText": [
+          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+          "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+        ]
+      }
+    },
+    "5": {
+      "title": "Evidence Maturity – Mathematica",
+      "name": "G. Anapolle and J. Shieh",
+      "role": "Research Analysts at Mathematica",
+      "description": "Enterprise-ready R Shiny app with improved UI/UX, authentication, and user data management driving adoption.",
+      "content": {
+        "introTitle": "Introduction",
+        "introText": [
+          "Moreover, the specialized grammar commonly has manually developed a Business Intelligence 2.0 tool. The result is designed to provide leading companies in the industry with in-depth performance analysis, helping them identify new opportunities for growth and optimization.",
+          "This initiative reflects the company's commitment to providing not only financial support but also strategic and operational resources to help its partners excel in their niche.",
+          "We have wanted to build a business tool for hyper growth, but also develop a strong ad business that could engage users and encourage them to share their experience. Additionally, it was crucial to create a dashboard that aligned perfectly with the company's visual identity."
+        ],
+        "impactText": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        ],
+        "conclusionText": [
+          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+          "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+        ]
+      }
+    },
+    "6": {
+      "title": "Green Transition Navigator – University of Oxford",
+      "name": "P. Andres",
+      "role": "Economist at London Research School of Economics",
+      "description": "R Shiny web platform making green competitiveness and brown lock-in metrics accessible to policy makers and researchers.",
+      "content": {
+        "introTitle": "Introduction",
+        "introText": [
+          "Moreover, the specialized grammar commonly has manually developed a Business Intelligence 2.0 tool. The result is designed to provide leading companies in the industry with in-depth performance analysis, helping them identify new opportunities for growth and optimization.",
+          "This initiative reflects the company's commitment to providing not only financial support but also strategic and operational resources to help its partners excel in their niche.",
+          "We have wanted to build a business tool for hyper growth, but also develop a strong ad business that could engage users and encourage them to share their experience. Additionally, it was crucial to create a dashboard that aligned perfectly with the company's visual identity."
+        ],
+        "impactText": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        ],
+        "conclusionText": [
+          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+          "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+        ]
+      }
+    }
+  }
+}
