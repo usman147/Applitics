@@ -71,13 +71,13 @@ export default function DeepDown({ translations }: DeepDownProps) {
                   part
                 ) : (
                   <span className="relative inline-block">
-                    {part.beforeGamble} <span>{part.gamble}</span>
+                    {part.beforeGamble} <span className='italic'>{part.gamble}</span>
                     <Image
-                      src="/out-of-control-underline.svg"
+                      src="/Isolation_Mode.svg"
                       alt=""
                       width={220}
                       height={12}
-                      className="absolute bottom-[-6px] left-0 w-[220px] h-auto"
+                      className="absolute md:left-[67px] bottom-[-15px] md:w-[145px] w-[120px] left-[32px] h-auto"
                     />
                   </span>
                 )}

@@ -71,7 +71,7 @@ export default function BreakingPoint({ translations }: BreakingPointProps) {
                   <>
                     {part.beforeQuote}{' '}
                     <span className="italic text-primary-light">
-                      &quot;{part.quote}&quot;
+                     <span className='italic text-primary'>&ldquo;</span>{part.quote}<span className='italic text-primary'>&rdquo;</span>
                     </span>
                   </>
                 )}
@@ -86,7 +86,7 @@ export default function BreakingPoint({ translations }: BreakingPointProps) {
                         alt=""
                         width={271}
                         height={11}
-                        className="absolute bottom-0 left-0 w-full h-auto"
+                        className="absolute bottom-0 left-[-20px] md:w-[275px] w-[185px] max-w-none h-auto"
                         style={{ transform: 'translateY(100%)' }}
                       />
                     </span>

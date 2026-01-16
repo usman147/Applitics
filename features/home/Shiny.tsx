@@ -206,7 +206,7 @@ export default function Shiny({ translations }: ShinyProps) {
             </p>
 
             {/* Heading */}
-            <h2 className="font-serif text-[34px] md:text-[52px] leading-[36px] md:leading-[60px] font-normal text-primary">
+            <h2 className="font-normal font-serif leading-[36px] max-w-[360px] md:max-w-[initial] md:leading-[60px] md:text-[52px] mx-auto text-[34px] text-primary">
               {translations.title.parts.map((part, index) => (
                 <span key={index}>
                   {typeof part === 'string' ? (
@@ -388,30 +388,16 @@ export default function Shiny({ translations }: ShinyProps) {
                 className="w-full max-w-[400px] h-auto"
               />
 
-              {/* CTA Button */}
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 bg-primary text-white font-sans text-lg font-semibold px-10 py-4 rounded-full mt-[-20px] hover:bg-primary-light transition-colors"
-              >
-                {translations.cta}
-                <Image
-                  src="/icon-arrow.svg"
-                  alt=""
-                  width={20}
-                  height={20}
-                  className="w-5 h-5"
-                />
-              </Link>
             </div>
 
             {/* Stats Grid */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="flex flex-col items-center text-center bg-white rounded-2xl p-5 shadow-sm">
+            <div className="grid grid-cols-1 gap-4 max-w-[373px] m-auto">
+              <div className="flex flex-row justify-center items-center text-center gap-4 bg-white rounded-2xl p-8 shadow-sm">
                 <AnimatedNumber
                   value={translations.stats.prototypes.value}
-                  className="font-serif text-[40px] font-normal leading-[48px] text-primary-light"
+                  className="font-serif text-[52px] font-normal leading-[48px] text-primary-light"
                 />
-                <p className="font-sans text-xs font-semibold leading-[18px] text-primary mt-2">
+                <p className="font-sans text-md font-semibold leading-[18px] text-primary">
                   {translations.stats.prototypes.label.parts.map(
                     (part, index) => (
                       <span key={index}>
@@ -425,12 +411,12 @@ export default function Shiny({ translations }: ShinyProps) {
                 </p>
               </div>
 
-              <div className="flex flex-col items-center text-center bg-white rounded-2xl p-5 shadow-sm">
+              <div className="flex flex-row justify-center items-center text-center gap-4 bg-white rounded-2xl p-8 shadow-sm">
                 <AnimatedNumber
                   value={translations.stats.organizations.value}
-                  className="font-serif text-[40px] font-normal leading-[48px] text-primary-light"
+                  className="font-serif text-[52px] font-normal leading-[48px] text-primary-light"
                 />
-                <p className="font-sans text-xs font-semibold leading-[18px] text-primary mt-2">
+                <p className="font-sans text-md font-semibold leading-[18px] text-primary">
                   {translations.stats.organizations.label.parts.map(
                     (part, index) => (
                       <span key={index}>
@@ -444,12 +430,12 @@ export default function Shiny({ translations }: ShinyProps) {
                 </p>
               </div>
 
-              <div className="flex flex-col items-center text-center bg-white rounded-2xl p-5 shadow-sm">
+              <div className="flex flex-row justify-center items-center text-center gap-4 bg-white rounded-2xl p-8 shadow-sm">
                 <AnimatedNumber
                   value={translations.stats.satisfaction.value}
-                  className="font-serif text-[40px] font-normal leading-[48px] text-primary-light"
+                  className="font-serif text-[52px] font-normal leading-[48px] text-primary-light"
                 />
-                <p className="font-sans text-xs font-semibold leading-[18px] text-primary mt-2">
+                <p className="font-sans text-md font-semibold leading-[18px] text-primary">
                   {translations.stats.satisfaction.label.parts.map(
                     (part, index) => (
                       <span key={index}>
@@ -463,12 +449,12 @@ export default function Shiny({ translations }: ShinyProps) {
                 </p>
               </div>
 
-              <div className="flex flex-col items-center text-center bg-white rounded-2xl p-5 shadow-sm">
+              <div className="flex flex-row justify-center items-center text-center gap-4 bg-white rounded-2xl p-8 shadow-sm">
                 <AnimatedNumber
                   value={translations.stats.projects.value}
-                  className="font-serif text-[40px] font-normal leading-[48px] text-primary-light"
+                  className="font-serif text-[52px] font-normal leading-[48px] text-primary-light"
                 />
-                <p className="font-sans text-xs font-semibold leading-[18px] text-primary mt-2">
+                <p className="font-sans text-md font-semibold leading-[18px] text-primary">
                   {translations.stats.projects.label.parts.map(
                     (part, index) => (
                       <span key={index}>
@@ -482,6 +468,23 @@ export default function Shiny({ translations }: ShinyProps) {
                 </p>
               </div>
             </div>
+
+              {/* CTA Button */}
+              <div className='max-w-[373px] m-auto'>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 bg-primary-light text-white font-sans text-lg font-semibold px-10 py-4 rounded-full hover:bg-primary-light transition-colors my-8 w-full max-w-[390px] justify-center m-auto"
+                >
+                  {translations.cta}
+                  <Image
+                    src="/icon-arrow.svg"
+                    alt=""
+                    width={20}
+                    height={20}
+                    className="w-5 h-5"
+                  />
+                </Link>
+              </div>
           </div>
         </div>
       </div>

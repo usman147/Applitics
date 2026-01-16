@@ -216,12 +216,12 @@ const LeftSide = ({
               </div>
 
               {/* Separator */}
-              <div className="shrink-0 w-px h-12 bg-grey-light"></div>
+              <div className="shrink-0 w-px h-12 bg-grey-dark"></div>
 
               {/* Step Title */}
               <div className="flex-1">
                 <p
-                  className={`font-sans text-lg leading-[28px] tracking-[-0.004em] ${
+                  className={`font-serif text-[28px] md:max-w-[320px] leading-[28px] tracking-[-0.004em] ${
                     isActive ? 'text-primary font-semibold' : 'text-primary'
                   }`}
                 >
@@ -230,13 +230,13 @@ const LeftSide = ({
               </div>
 
               {/* Arrow with Timer Circle */}
-              <div className="shrink-0 relative w-[50px] h-[50px]">
+              <div className="shrink-0 relative w-[68px] h-[68px]">
                 {/* Circular Timer - Only show on active step before user interaction */}
                 {isActive && !hasUserInteracted && (
                   <svg
-                    className="absolute inset-0 transform -rotate-90"
-                    width="50"
-                    height="50"
+                    className="absolute inset-0 transform -rotate-90 w-[68px] h-[68px]"
+                    width="68"
+                    height="68"
                     viewBox="0 0 50 50"
                   >
                     {/* Background circle */}

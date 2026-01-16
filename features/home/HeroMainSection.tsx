@@ -33,11 +33,19 @@ export default function HeroMainSection({
             const text = typeof part === 'string' ? part : part.text;
             const highlight = typeof part === 'object' && part.highlight;
             const breakAfter = typeof part === 'object' && part.breakAfter;
+            const isRShiny =
+              typeof part === 'object' && part.text === 'R Shiny';
 
             return (
               <span key={index}>
-                {highlight ? (
-                  <span className="text-primary-light">{text}</span>
+                {highlight || isRShiny ? (
+                  <span
+                    className={`${highlight ? 'text-primary-light' : ''} ${
+                      isRShiny ? 'italic' : ''
+                    }`.trim()}
+                  >
+                    {text}
+                  </span>
                 ) : (
                   text
                 )}

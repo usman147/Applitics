@@ -2,7 +2,8 @@
   "hero": {
     "title": {
       "parts": [
-        { "text": "Team of R Shiny", "breakAfter": true },
+        { "text": "Team of "},
+        { "text": "R Shiny", "breakAfter": true },
         { "text": "experts at your side." }
       ]
     },

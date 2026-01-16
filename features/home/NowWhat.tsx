@@ -71,13 +71,15 @@ export default function NowWhat({ translations }: NowWhatProps) {
                 <span className="relative inline-block mt-2">
                   {translations.title.parts[2].split('critical')[0]}
                   <span className="italic">critical</span>
-                  {translations.title.parts[2].split('critical')[1]}
+                  <span className="italic">
+                    {translations.title.parts[2].split('critical')[1]}
+                  </span>
                   <Image
-                    src="/out-of-control-underline.svg"
+                    src="/business_critical.svg"
                     alt=""
                     width={320}
                     height={12}
-                    className="absolute bottom-[-6px] left-1/2 -translate-x-1/2 w-[320px] h-auto"
+                    className="absolute -translate-x-1/2 h-auto md:w-[410px] md:left-[66%] md:w-[265px] left-[65%]  bottom-[-15px]"
                   />
                 </span>
               </>
@@ -96,7 +98,7 @@ export default function NowWhat({ translations }: NowWhatProps) {
                     alt=""
                     width={320}
                     height={12}
-                    className="absolute bottom-[-6px] left-1/2 -translate-x-1/2 w-[320px] h-auto"
+                    className="absolute bottom-[-6px] left-1/2 -translate-x-1/2 md:w-[320px] w-[265px] h-auto"
                   />
                 </span>
               </>

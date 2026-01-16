@@ -10,6 +10,7 @@
   --color-grey-light: #d9dfeb;
   --color-light-blue-extra: #dfeaff;
   --color-grey-light: #f6f9ff;
+  --color-grey-dark: #d9dfeb;
 
   /* Fonts */
   --font-inter: var(--font-inter);
@@ -27,6 +28,7 @@
   --color-grey-light: #d9dfeb;
   --color-light-blue-extra: #dfeaff;
   --color-grey-light: #f6f9ff;
+  --color-grey-dark: #d9dfeb;
 
   /* Fonts */
   --font-sans: var(--font-inter);
