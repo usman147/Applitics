@@ -440,14 +440,20 @@
   "ourClients": {
     "caption": "Our Clients About Applitics",
     "title": {
-      "parts": [
-        "How It Feels to Work",
-        {
-          "text": "with Us",
-          "highlight": true
-        }
-      ]
-    },
+    "lines": [
+      {
+        "parts": [
+          "How It Feels to ",
+          { "text": "Work", "highlight": true }
+        ]
+      },
+      {
+        "parts": [
+          { "text": "with Us", "highlight": true }
+        ]
+      }
+    ]
+  },
     "seeAllTestimonials": "See All Testimonials"
   },
   "ourTeam": {

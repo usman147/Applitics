@@ -77,7 +77,7 @@ export default async function Contact({ params }: Props) {
           priority
         />
 
-        <div className="relative max-w-7xl mx-auto px-4">
+        <div className="relative max-w-8xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-[62px] items-start">
             {/* Left Side - Hero Content */}
             <div className="text-white pt-8">
@@ -88,7 +88,7 @@ export default async function Contact({ params }: Props) {
               </div>
 
               {/* Heading */}
-              <h1 className="font-serif text-[52px] leading-[60px] mb-8 font-normal">
+              <h1 className="font-serif text-[34px] leading-[36px] lg:text-[52px] lg:leading-[60px] mb-8 font-normal">
                 {translations.page.title.parts.map(
                   (
                     part: string | { lineBreak: boolean; text: string },
@@ -169,7 +169,7 @@ export default async function Contact({ params }: Props) {
 
               {/* Partner Logos */}
 
-              <div className="w-full h-full max-w-[100vw] overflow-hidden">
+              <div className="w-full h-full max-w-[100vw] overflow-hidden partners-fade">
                 <Marquee
                   speed={50}
                   style={{ maxWidth: 'calc(100vw - 2.5rem)' }}

@@ -126,3 +126,31 @@ body {
 .cursor-grabbing .animate-slide-mouse {
   animation-play-state: paused;
 }
+
+
+.partners-fade {
+  --partners-fade-size: 150px;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black var(--partners-fade-size),
+    black calc(100% - var(--partners-fade-size)),
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black var(--partners-fade-size),
+    black calc(100% - var(--partners-fade-size)),
+    transparent 100%
+  );
+}
+.rfm-initial-child-container{
+  margin-right: 55px;
+}
+
+@media (max-width: 640px) {
+  .partners-fade {
+    width: 100%;
+  }
+}

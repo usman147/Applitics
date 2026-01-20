@@ -122,13 +122,13 @@ export default function Header() {
       }`}
     >
     <header
-        className={`h-[62px] flex items-center px-6 bg-white transition-all duration-500 ease-in-out
+        className={`h-[62px] flex items-center lg:pl-[26px] lg:pr-[12px] pl-[16px] pr-[16px] bg-white transition-all duration-500 ease-in-out
           ${
             isHuggingSides
-              ? 'rounded-none px-6 shadow-md'
+              ? 'rounded-none lg:pl-[26px] lg:pr-[12px] pl-[16px] pr-[16px] shadow-md'
               : isMobileMenuOpen
-              ? 'rounded-t-4xl rounded-b-none px-4 shadow-none lg:rounded-full'
-              : 'rounded-full px-4 shadow-none'
+              ? 'rounded-t-4xl rounded-b-none lg:pl-[26px] lg:pr-[12px] pl-[16px] pr-[16px] shadow-none lg:rounded-full'
+              : 'rounded-full lg:pl-[26px] lg:pr-[12px] pl-[16px] pr-[16px] shadow-none'
           }
         `}
       >
@@ -148,7 +148,7 @@ export default function Header() {
         </Link>
 
         {/* Menu Container (Navigation Links) */}
-        <div className="hidden lg:flex items-center justify-center flex-1 h-[46px] p-2 xl:gap-[30px] gap-[10px]">
+        <div className="hidden lg:flex items-center justify-center flex-1 h-[46px] p-2 xl:gap-[26px] gap-[10px]">
           {navigationItems.map((item) => {
             const localizedHref = getLocalizedPath(item.href, currentLocale);
             const isActive =

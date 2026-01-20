@@ -10,13 +10,15 @@ interface OurClientsProps {
   translations: {
     caption: string;
     title: {
-      parts: Array<
-        | string
-        | {
-            text: string;
-            highlight: boolean;
-          }
-      >;
+      lines: Array<{
+        parts: Array<
+          | string
+          | {
+              text: string;
+              highlight?: boolean; // optional is fine if you only sometimes set it
+            }
+        >;
+      }>;
     };
     seeAllTestimonials: string;
   };
@@ -63,15 +65,18 @@ export default function OurClients({ translations }: OurClientsProps) {
             {translations.caption}
           </p>
           <h2 className="font-serif text-[34px] md:text-[52px] leading-[36px] md:leading-[60px] font-normal text-primary">
-            {translations.title.parts.map((part, index) => (
-              <span key={index}>
-                {typeof part === 'string' ? (
-                  part
-                ) : (
-                  <span className="text-primary-light">{part.text}</span>
+            {translations.title.lines.map((line, lineIndex) => (
+              <div key={lineIndex}>
+                {line.parts.map((part, partIndex) =>
+                  typeof part === "string" ? (
+                    part
+                  ) : (
+                    <span key={partIndex} className="text-primary-light">
+                      {part.text}
+                    </span>
+                  )
                 )}
-                {index < translations.title.parts.length - 1 && <br />}
-              </span>
+              </div>
             ))}
           </h2>
         </div>
