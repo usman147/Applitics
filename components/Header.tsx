@@ -202,7 +202,7 @@ export default function Header() {
         </div>
 
         {/* Right Side Container (Language Selector + CTA) */}
-        <div className="hidden lg:flex items-center w-auto h-[38px] gap-[10px] ml-auto">
+        <div className="hidden lg:flex items-center w-auto h-[38px] gap-[16px] ml-auto">
           <div className="relative" ref={dropdownRef}>
             <button
               onClick={() => setIsLanguageDropdownOpen(!isLanguageDropdownOpen)}
