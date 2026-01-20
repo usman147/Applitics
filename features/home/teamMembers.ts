@@ -31,6 +31,12 @@ export const TEAM_MEMBERS: TeamMember[] = [
     image: '/team/member-nadim.png',
   },
   {
+    id: 5,
+    name: 'Zauad Shahreer Abeer',
+    role: 'Senior Front-End R Shiny Developer',
+    image: '/team/member-zauad.png',
+  },
+  {
     id: 6,
     name: 'Julien Lefèvre',
     role: 'Strategy & Operations Advisor',

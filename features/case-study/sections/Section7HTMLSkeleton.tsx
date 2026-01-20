@@ -37,7 +37,7 @@ export default function Section7HTMLSkeleton({
   translations,
 }: Section7HTMLSkeletonProps) {
   return (
-    <div id="section-7" className="bg-white px-4 py-6 rounded-lg">
+    <div id="section-7" className="bg-white px-4 py-6 rounded-[20px]">
       <h2 className="font-serif text-[34px] leading-[40px] text-primary mb-4 font-normal">
         {translations.title}
       </h2>

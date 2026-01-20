@@ -20,17 +20,17 @@ export default function NeedASenior({ translations }: NeedASeniorProps) {
     <section className="w-full">
       <div className="max-w-7xl mx-auto px-4">
         <div
-          className="min-h-[408px] flex items-center justify-center rounded-[20px] overflow-hidden text-center relative bg-cover bg-center bg-no-repeat"
+          className="min-h-[408px] flex items-center justify-center rounded-[20px] overflow-hidden text-center relative bg-cover bg-center bg-no-repeat pt-[25px] pb-[37px]"
           style={{ backgroundImage: "url('/contact-us-image.svg')" }}
         >
           <div className="relative z-10 flex flex-col items-center">
             <span className="text-white/80 font-ibm-plex-sans-condensed tracking-[0.26em] text-[16px] leading-[26px] font-medium uppercase mb-4">
               {translations.caption}
             </span>
-            <h2 className="font-serif text-[52px] leading-[60px] text-white mb-2 font-normal">
+            <h2 className="font-serif text-[52px] leading-[60px] text-white mb-2 font-normal px-[21]">
               {translations.title}
             </h2>
-            <h2 className="font-serif text-[52px] leading-[60px] text-white italic mb-10 font-normal">
+            <h2 className="font-serif text-[52px] leading-[60px] text-white italic mb-10 font-normal px-[21]">
               {translations.subtitle}
             </h2>
 

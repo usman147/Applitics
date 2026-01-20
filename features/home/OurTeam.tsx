@@ -170,7 +170,7 @@ export default function OurTeam({ translations }: OurTeamProps) {
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 mt-16 reveal-on-scroll">
           {/* Left Section */}
           <div className="flex-1">
-            <h2 className="font-serif text-[34px] md:text-[52px] leading-[36px] md:leading-[60px] font-normal text-primary">
+            <h2 className="font-serif text-[34px] md:text-[34px] leading-[36px] md:leading-[34px] font-normal text-primary">
               {translations.expertise.title.parts.map((part, index) => (
                 <span key={index}>
                   {typeof part === 'string' ? (

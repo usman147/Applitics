@@ -117,12 +117,12 @@ export default function Header() {
         isAtTop
           ? isHuggingSides
             ? 'top-0 px-0'
-            : 'top-0 max-w-7xl mx-auto px-4'
-          : 'top-[40px] max-w-7xl mx-auto px-4'
+            : 'top-0 max-w-8xl mx-auto'
+          : 'top-[40px] max-w-8xl mx-auto px-4 lg:px-0'
       }`}
     >
     <header
-        className={`h-[62px] flex items-center p-4 bg-white transition-all duration-500 ease-in-out
+        className={`h-[62px] flex items-center px-6 bg-white transition-all duration-500 ease-in-out
           ${
             isHuggingSides
               ? 'rounded-none px-6 shadow-md'

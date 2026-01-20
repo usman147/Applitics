@@ -53,7 +53,7 @@ export default function HeroSection({ translations }: HeroSectionProps) {
         />
       </div>
       {/* middle section */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 w-full h-full flex flex-col md:flex-row justify-between md:items-center">
+      <div className="relative z-10 max-w-8xl mx-auto px-4 lg:px-0 w-full h-full flex flex-col md:flex-row justify-between md:items-center">
         {/* Text Section */}
         <HeroMainSection translations={translations} />
         {/* Stars Section */}
@@ -85,9 +85,9 @@ export default function HeroSection({ translations }: HeroSectionProps) {
         </div>
       </div>
       {/* Partners section */}
-      <div className="absolute bottom-0 left-0 right-0 w-full partners-container pb-10 z-10">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-6">
-          <p className="text-white font-sans font-semibold text-base shrink-0 flex flex-col">
+      <div className="absolute bottom-0 left-0 right-0 w-full partners-container pb-75 z-10 pt-100">
+        <div className="max-w-8xl mx-auto flex flex-col md:flex-row items-center gap-6">
+          <p className="text-white font-sans font-semibold text-base shrink-0 flex flex-col uppercase ">
             {translations.partnering.parts.map((part, index) => (
               <span key={index}>
                 {part}

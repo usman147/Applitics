@@ -86,7 +86,7 @@ export default function Section6GraphicMockup({
   }
 
   return (
-    <div id="section-6" className="bg-white px-4 py-6 rounded-lg">
+    <div id="section-6" className="bg-white px-4 py-6 rounded-[20px]">
       <h2 className="font-serif text-[34px] leading-[40px] text-primary mb-4 font-normal">
         {translations.title}
       </h2>

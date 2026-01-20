@@ -196,8 +196,8 @@ const LeftSide = ({
         return (
           <div
             key={index}
-            className={`relative bg-white rounded-2xl p-6 cursor-pointer transition-all duration-300 ${
-              isActive ? 'shadow-lg ring-2 ring-primary-lighter' : 'shadow-sm'
+            className={`relative bg-white rounded-[24px] p-6 cursor-pointer transition-all duration-300 ${
+              isActive ? 'ring-2 ring-primary-lighter' : ''
             }`}
             onClick={() => onStepClick(index)}
           >
@@ -305,7 +305,7 @@ const RightSide = ({
   readMore,
 }: RightSideProps) => {
   return (
-    <div className="max-h-[520px] bg-primary rounded-2xl p-[44px] overflow-hidden text-white flex flex-col relative flex-1 h-full transition-all duration-500 ease-in-out">
+    <div className="max-h-[536px] bg-primary rounded-[24px] p-[44px] overflow-hidden text-white flex flex-col relative flex-1 h-full transition-all duration-500 ease-in-out">
       <div
         ref={contentRef}
         key={currentStep}
@@ -512,7 +512,7 @@ export default function OurRole({ translations }: OurRoleProps) {
   const circumference = 2 * Math.PI * radius;
 
   return (
-    <section ref={sectionRef} className="w-full our-role-section">
+    <section ref={sectionRef} className="w-full our-role-section hidden md:block">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12 reveal-on-scroll">

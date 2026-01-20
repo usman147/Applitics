@@ -21,7 +21,7 @@ export default function CaseStudySummary({
 }: CaseStudySummaryProps) {
   return (
     <aside className="lg:sticky lg:top-24 self-start w-full lg:max-w-[428px]">
-      <div className="bg-white rounded-[20px] p-[30px]">
+      <div className="bg-white rounded-[20px] p-[30px] border border-primary-lighter">
         <h3 className="font-serif text-[34px] leading-[36px] tracking-[-0.01em] text-primary mb-6 font-normal">
           {title}
         </h3>
@@ -35,7 +35,7 @@ export default function CaseStudySummary({
                   className={`w-full text-left transition-colors py-3 ${
                     isActive
                       ? 'text-primary-lighter font-normal'
-                      : 'text-grey-text hover:text-primary font-normal'
+                      : 'text-grey-text hover:text-primary font-normal cursor-pointer'
                   }`}
                 >
                   <span className="font-sans text-lg leading-[28px] tracking-[-0.004em]">

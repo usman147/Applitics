@@ -24,6 +24,7 @@
   position: relative;
   overflow: visible;
   width: 100%;
+  padding-top: 108px;
 }
 
 .partners-fade {
@@ -42,6 +43,9 @@
     black calc(100% - var(--partners-fade-size)),
     transparent 100%
   );
+}
+.rfm-initial-child-container{
+  margin-right: 55px;
 }
 
 @media (max-width: 640px) {
