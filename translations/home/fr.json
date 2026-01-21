@@ -443,11 +443,19 @@
   "ourClients": {
     "caption": "Nos clients parlent d'Applitics",
     "title": {
-      "parts": [
-        "Ce que c'est de travailler",
+      "lines": [
         {
-          "text": "avec nous",
-          "highlight": true
+          "parts": [
+            "Ce que c'est de travailler"
+          ]
+        },
+        {
+          "parts": [
+            {
+              "text": "avec nous",
+              "highlight": true
+            }
+          ]
         }
       ]
     },

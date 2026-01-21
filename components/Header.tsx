@@ -4,7 +4,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import { useState, useEffect, useRef } from 'react';
-import { getLocale, getLocalizedPath, switchLocale } from '../lib/i18n';
+import {
+  getLocale,
+  getLocalizedPath,
+  removeLocalePrefix,
+  switchLocale,
+} from '../lib/i18n';
 import { localeCodes, type Locale } from '../i18n.config';
 import { useTranslations } from '../lib/useTranslations';
 
@@ -90,6 +95,7 @@ export default function Header() {
     setIsMobileMenuOpen(false);
   };
 
+  const basePathname = removeLocalePrefix(pathname);
   const navigationItems = [
     { href: '/', label: translations?.header?.nav?.home || 'Home' },
     {
@@ -151,10 +157,7 @@ export default function Header() {
         <div className="hidden lg:flex items-center justify-center flex-1 h-[46px] p-2 xl:gap-[26px] gap-[10px]">
           {navigationItems.map((item) => {
             const localizedHref = getLocalizedPath(item.href, currentLocale);
-            const isActive =
-              pathname === localizedHref ||
-              (item.href === '/' &&
-                pathname === getLocalizedPath('/', currentLocale));
+            const isActive = basePathname === item.href;
             const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
               if (item.isScroll) {
                 e.preventDefault();
@@ -289,10 +292,7 @@ export default function Header() {
                   item.href,
                   currentLocale
                 );
-                const isActive =
-                  pathname === localizedHref ||
-                  (item.href === '/' &&
-                    pathname === getLocalizedPath('/', currentLocale));
+                const isActive = basePathname === item.href;
                 const handleClick = (
                   e: React.MouseEvent<HTMLAnchorElement>
                 ) => {
