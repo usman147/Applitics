@@ -307,7 +307,7 @@ export default function CaseStudyClient({
         />
 
         <div className="relative max-w-8xl mx-auto px-4">
-          <div className="grid lg:grid-cols-[0.85fr_1.15fr] gap-8 lg:gap-[62px] items-start pb-[116px] pt-8">
+          <div className="grid lg:grid-cols-[0.85fr_1.15fr] gap-8 lg:gap-[62px] items-start pb-[65px] pt-8">
             {/* Left Side - Case Study Content */}
             <div className="text-white space-y-4 pt-8">
               <div className="inline-flex px-4 py-1 bg-white rounded-[100px] justify-center items-center">

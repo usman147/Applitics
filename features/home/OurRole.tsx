@@ -196,7 +196,7 @@ const LeftSide = ({
         return (
           <div
             key={index}
-            className={`relative bg-white rounded-[24px] p-6 cursor-pointer transition-all duration-300 ${
+            className={`relative bg-white rounded-[24px] p-4 cursor-pointer transition-all duration-300 ${
               isActive ? 'ring-2 ring-primary-lighter' : ''
             }`}
             onClick={() => onStepClick(index)}
@@ -216,7 +216,7 @@ const LeftSide = ({
               </div>
 
               {/* Separator */}
-              <div className="shrink-0 w-px h-12 bg-grey-dark"></div>
+              <div className="shrink-0 w-px h-[83px] bg-grey-dark"></div>
 
               {/* Step Title */}
               <div className="flex-1">
@@ -230,32 +230,33 @@ const LeftSide = ({
               </div>
 
               {/* Arrow with Timer Circle */}
-              <div className="shrink-0 relative w-[68px] h-[68px]">
-                {/* Circular Timer - Only show on active step before user interaction */}
+              {/* Change container to 74px */}
+              <div className="shrink-0 relative w-[74px] h-[74px]">
+                {/* Circular Timer */}
                 {isActive && !hasUserInteracted && (
                   <svg
-                    className="absolute inset-0 transform -rotate-90 w-[68px] h-[68px]"
-                    width="68"
-                    height="68"
-                    viewBox="0 0 50 50"
+                    className="absolute inset-0 transform -rotate-90 w-[74px] h-[74px]"
+                    width="74"
+                    height="74"
+                    viewBox="0 0 74 74" 
                   >
                     {/* Background circle */}
                     <circle
-                      cx="25"
-                      cy="25"
+                      cx="37" // Center point (74 / 2)
+                      cy="37"
                       r={radius}
                       fill="none"
                       stroke="#D9DFEB"
-                      strokeWidth="2"
+                      strokeWidth="1" // Reduced to 1px
                     />
                     {/* Progress circle */}
                     <circle
-                      cx="25"
-                      cy="25"
+                      cx="37"
+                      cy="37"
                       r={radius}
                       fill="none"
                       stroke="#3EAAFF"
-                      strokeWidth="2"
+                      strokeWidth="1" // Reduced to 1px
                       strokeDasharray={circumference}
                       strokeDashoffset={stepOffset}
                       strokeLinecap="round"
@@ -263,18 +264,17 @@ const LeftSide = ({
                     />
                   </svg>
                 )}
-                {/* Padded Arrow Container - Only show on active step and before user interaction */}
+
+                {/* Arrow Icon */}
                 {isActive && !hasUserInteracted && (
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="p-[5px]">
-                      <Image
-                        src="/right-arrow.svg"
-                        alt="Arrow"
-                        width={30}
-                        height={30}
-                        className="w-[30px] h-[30px]"
-                      />
-                    </div>
+                    <Image
+                      src="/right-arrow.svg"
+                      alt="Arrow"
+                      width={34} // Matches arrowSize
+                      height={34}
+                      className="w-[34px] h-[34px]"
+                    />
                   </div>
                 )}
               </div>
@@ -505,11 +505,10 @@ export default function OurRole({ translations }: OurRoleProps) {
 
   // Calculate circle circumference for SVG timer
   // Circle should fit around the padded arrow container
-  const arrowSize = 30;
-  const arrowPadding = 5;
-  const paddedArrowSize = arrowSize + arrowPadding * 2; // 40px
-  const radius = paddedArrowSize / 2; // 20px radius
-  const circumference = 2 * Math.PI * radius;
+const arrowSize = 34;        // Slightly larger to fill the space
+const arrowPadding = 4;      
+const radius = 34;           // Diameter of 68px
+const circumference = 2 * Math.PI * radius;
 
   return (
     <section ref={sectionRef} className="w-full our-role-section hidden md:block">
@@ -540,7 +539,7 @@ export default function OurRole({ translations }: OurRoleProps) {
         </div>
 
         {/* Two Column Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+        <div className="grid grid-cols-1 gap-[25px] lg:grid-cols-[minmax(0,585px)_minmax(0,545px)]">
           <LeftSide
             steps={STEPS}
             currentStep={currentStep}

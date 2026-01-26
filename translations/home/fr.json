@@ -69,9 +69,9 @@
           {
             "beforeItalic": "Aujourd'hui, votre équipe",
             "italic": "le maintient en vie.."
-          },
-          "avec du code fragile, une structure instable, et aucun contrôle technique réel."
-        ]
+          }
+        ],
+        "lastPart":"avec du code fragile, une structure instable, et aucun contrôle technique réel."
       },
       "description": "Vous livrez de petites corrections, évitez les parties fragiles, et vous dites que c'est \"assez bien\"."
     }

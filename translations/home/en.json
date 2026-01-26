@@ -70,9 +70,9 @@
           {
             "beforeItalic": "Today, your team is",
             "italic": "keeping it alive.."
-          },
-          "with fragile code, shaky structure, and no real technical control."
-        ]
+          }
+        ],
+        "lastPart":"with fragile code, shaky structure, and no real technical control."
       },
       "description": "You ship small fixes, avoid the fragile parts, and tell yourself it's \"good enough.\""
     }

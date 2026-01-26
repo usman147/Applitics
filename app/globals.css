@@ -39,10 +39,19 @@
 
   /* Custom Overrides */
   --text-6-5xl: 3.65rem;
-  --container-8xl: 83.33rem; 
+  --container-7-5xl: 74.5rem; 
+  --container-8xl: 83.33rem;  
+
+  /* Added Extra small breakpoint for very small mobile devices. */ 
+  --breakpoint-xs: 360px;
 }
 
+
+
 @layer utilities {
+  .max-w-7-5xl {
+    max-width: var(--container-7-5xl);
+  }
   .max-w-8xl {
     max-width: var(--container-8xl);
   }

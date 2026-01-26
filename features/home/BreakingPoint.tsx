@@ -54,7 +54,7 @@ export default function BreakingPoint({ translations }: BreakingPointProps) {
 
   return (
     <section className="breaking-point w-full">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7-5xl mx-auto px-4">
         {/* Caption Large Title */}
         <div className="text-center mb-6 reveal-on-scroll">
           <h2 className="font-ibm-plex-sans-condensed text-base font-medium uppercase leading-[26px] tracking-[0.26em] text-primary">
@@ -63,7 +63,7 @@ export default function BreakingPoint({ translations }: BreakingPointProps) {
         </div>
 
         {/* Heading 2 with italic mix */}
-        <div className="text-center mb-12 reveal-on-scroll">
+        <div className="text-center mb-16 reveal-on-scroll">
           <h2 className="font-serif text-[34px] md:text-[52px] leading-[36px] md:leading-[60px] font-normal text-primary">
             {translations.title.parts.map((part, index) => (
               <span key={index}>
@@ -99,7 +99,7 @@ export default function BreakingPoint({ translations }: BreakingPointProps) {
         </div>
 
         {/* Main Content: Image on left, Text on right */}
-        <div className="flex flex-col-reverse lg:flex-row bg-white py-[34px] px-6 lg:pl-[50px] lg:pr-0 items-center rounded-[24px]">
+        <div className="flex flex-col-reverse lg:flex-row items-start bg-white pb-8 lg:pl-[50px] lg:pr-0 items-center rounded-[24px]">
           {/* Image Section */}
           <div className="flex-1 reveal-on-scroll">
             <Image
@@ -107,18 +107,18 @@ export default function BreakingPoint({ translations }: BreakingPointProps) {
               alt="Breaking point illustration"
               width={400}
               height={400}
-              className="w-full min-h-[319px]"
+              className="w-full min-h-[319px] p-8"
             />
           </div>
 
           {/* Text Section */}
-          <div className="flex-1 flex flex-col gap-8 reveal-on-scroll">
+          <div className="flex-1 flex flex-col gap-8 lg:p-0 lg:pt-8 p-8 reveal-on-scroll">
             {/* First Text Block */}
             <div>
               <h4 className="font-serif text-[28px] font-normal leading-[34px] text-primary mb-4">
                 {translations.firstBlock.title}
               </h4>
-              <ul className="space-y-3">
+              <ul className="space-y-5">
                 {translations.firstBlock.items.map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <Image
@@ -141,7 +141,7 @@ export default function BreakingPoint({ translations }: BreakingPointProps) {
               <h4 className="font-serif text-[28px] font-normal leading-[34px] text-primary mb-4">
                 {translations.secondBlock.title}
               </h4>
-              <ul className="space-y-3">
+              <ul className="space-y-5">
                 {translations.secondBlock.items.map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <Image

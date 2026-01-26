@@ -194,10 +194,10 @@ export default function Shiny({ translations }: ShinyProps) {
   }, []);
 
   return (
-    <section className="w-full shiny-section">
-      <div className="max-w-7xl mx-auto px-4 relative z-2">
+    <section className="w-full shiny-section mt-[36px]">
+      <div className="max-w-7-5xl mx-auto px-4 relative z-2">
         {/* Top Section - Two Columns */}
-        <div className="flex flex-col lg:flex-row lg:items-end gap-12 lg:gap-20 mb-16 reveal-on-scroll">
+        <div className="flex flex-col lg:flex-row lg:items-end gap-12 lg:gap-20 mb-32 reveal-on-scroll">
           {/* Left Side */}
           <div className="flex-1">
             {/* Quote/Caption */}
@@ -227,9 +227,9 @@ export default function Shiny({ translations }: ShinyProps) {
           </div>
 
           {/* Right Side - Points */}
-          <div className="flex-1 flex flex-col gap-5">
+          <div className="flex flex-1 flex-col flex-wrap gap-4 content-end pr-[23px]">
             {/* X Point */}
-            <div className="flex items-start gap-4">
+            <div className="flex gap-4 items-center">
               <Image
                 src="/x-icon.svg"
                 alt="X"
@@ -248,7 +248,7 @@ export default function Shiny({ translations }: ShinyProps) {
             </div>
 
             {/* Check Point */}
-            <div className="flex items-start gap-4">
+            <div className="flex items-center gap-4">
               <Image
                 src="/check-icon.svg"
                 alt="Check"
@@ -268,13 +268,13 @@ export default function Shiny({ translations }: ShinyProps) {
           {/* Desktop Layout */}
           <div className="hidden lg:flex items-center justify-center gap-6">
             {/* Left Section */}
-            <div className="min-w-[240px] max-w-[240px] flex-1 flex flex-col gap-[126px] items-end">
-              <div className="w-full flex flex-col items-center text-center bg-white rounded-2xl px-8 py-6 shadow-sm">
+            <div className="min-w-[240px] max-w-[240px] flex-1 flex flex-col gap-[106px] items-end">
+              <div className="w-full flex flex-col items-center text-center bg-white rounded-2xl px-4 py-6 shadow-sm">
                 <AnimatedNumber
                   value={translations.stats.prototypes.value}
                   className="font-serif text-[52px] font-normal leading-[60px] text-primary-light"
                 />
-                <p className="font-sans text-sm font-semibold leading-[22px] text-primary mt-2">
+                <p className="font-sans text-[16px] font-semibold leading-[22px] text-primary">
                   {translations.stats.prototypes.label.parts.map(
                     (part, index) => (
                       <span key={index}>
@@ -288,12 +288,12 @@ export default function Shiny({ translations }: ShinyProps) {
                 </p>
               </div>
 
-              <div className="w-full flex flex-col items-center text-center bg-white rounded-2xl px-8 py-6 shadow-sm">
+              <div className="w-full flex flex-col items-center text-center bg-white rounded-2xl px-4 py-6 shadow-sm">
                 <AnimatedNumber
                   value={translations.stats.satisfaction.value}
                   className="font-serif text-[52px] font-normal leading-[60px] text-primary-light"
                 />
-                <p className="font-sans text-sm font-semibold leading-[22px] text-primary mt-2">
+                <p className="font-sans text-[16px] font-semibold leading-[22px] text-primary">
                   {translations.stats.satisfaction.label.parts.map(
                     (part, index) => (
                       <span key={index}>
@@ -335,13 +335,13 @@ export default function Shiny({ translations }: ShinyProps) {
             </div>
 
             {/* Right Section */}
-            <div className="min-w-[240px] max-w-[240px] flex-1 flex flex-col gap-[126px] items-start">
-              <div className="w-full flex flex-col items-center text-center bg-white rounded-2xl px-8 py-6 shadow-sm">
+            <div className="min-w-[240px] max-w-[240px] flex-1 flex flex-col gap-[106px] items-start">
+              <div className="w-full flex flex-col items-center text-center bg-white rounded-2xl px-4 py-6 shadow-sm">
                 <AnimatedNumber
                   value={translations.stats.organizations.value}
                   className="font-serif text-[52px] font-normal leading-[60px] text-primary-light"
                 />
-                <p className="font-sans text-sm font-semibold leading-[22px] text-primary mt-2">
+                <p className="font-sans text-[16px] font-semibold leading-[22px] text-primary">
                   {translations.stats.organizations.label.parts.map(
                     (part, index) => (
                       <span key={index}>
@@ -355,12 +355,12 @@ export default function Shiny({ translations }: ShinyProps) {
                 </p>
               </div>
 
-              <div className="w-full flex flex-col items-center text-center bg-white rounded-2xl px-8 py-6 shadow-sm">
+              <div className="w-full flex flex-col items-center text-center bg-white rounded-2xl px-4 py-6 shadow-sm">
                 <AnimatedNumber
                   value={translations.stats.projects.value}
                   className="font-serif text-[52px] font-normal leading-[60px] text-primary-light"
                 />
-                <p className="font-sans text-sm font-semibold leading-[22px] text-primary mt-2">
+                <p className="font-sans text-[16px] font-semibold leading-[22px] text-primary">
                   {translations.stats.projects.label.parts.map(
                     (part, index) => (
                       <span key={index}>

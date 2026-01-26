@@ -73,9 +73,9 @@ export default async function Home({ params }: Props) {
           <Image
             src="/circular-arrow.svg"
             alt=""
-            width={120}
+            width={140}
             height={120}
-            className="absolute top-[-40px] w-[120px] h-[120px]"
+            className="absolute top-[-40px] w-[140px] h-[144px]"
             loading="lazy"
           />
         </div>

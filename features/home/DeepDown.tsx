@@ -54,7 +54,7 @@ export default function DeepDown({ translations }: DeepDownProps) {
 
   return (
     <section className="deep-down w-full relative z-2">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7-5xl mx-auto px-4">
         {/* Caption */}
         <div className="text-center mb-3 reveal-on-scroll">
           <p className="font-ibm-plex-sans-condensed text-base font-medium uppercase leading-[26px] tracking-[0.26em] text-primary">
@@ -63,7 +63,7 @@ export default function DeepDown({ translations }: DeepDownProps) {
         </div>
 
         {/* Heading */}
-        <div className="text-center mb-12 reveal-on-scroll">
+        <div className="text-center mb-16 reveal-on-scroll">
           <h2 className="font-serif text-[34px] md:text-[52px] leading-[36px] md:leading-[60px] font-normal text-primary">
             {translations.title.parts.map((part, index) => (
               <span key={index}>
@@ -88,7 +88,7 @@ export default function DeepDown({ translations }: DeepDownProps) {
         </div>
 
         {/* Card */}
-        <div className="bg-white rounded-[24px] px-6 lg:pl-[50px] lg:pr-0 py-12 flex flex-col-reverse lg:flex-row items-center gap-10 reveal-on-scroll">
+        <div className="bg-white rounded-[24px] pl-[15px] pr-[45px] pt-[45px] pb-[40px] flex flex-col-reverse lg:flex-row items-start gap-10 reveal-on-scroll">
           {/* Left illustration */}
           <div className="flex-1 w-full flex justify-center reveal-on-scroll">
             <Image
@@ -105,7 +105,7 @@ export default function DeepDown({ translations }: DeepDownProps) {
             <h3 className="font-serif text-[32px] font-normal leading-[38px] text-primary">
               {translations.card.title}
             </h3>
-            <ul className="space-y-3 text-primary">
+            <ul className="space-y-5 text-primary">
               {translations.card.items.map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <Image
@@ -124,13 +124,20 @@ export default function DeepDown({ translations }: DeepDownProps) {
                       <p className="font-semibold reveal-on-scroll">
                         {item.question}
                       </p>
-                      <div className="pl-5 space-y-2">
+                      <ul className="space-y-5">
                         {item.answers.map((answer, answerIndex) => (
-                          <p key={answerIndex} className="reveal-on-scroll">
+                          <li key={answerIndex} className="flex items-start gap-3 reveal-on-scroll">
+                            <Image
+                              src="/list-arrow.svg"
+                              alt="arrow"
+                              width={20}
+                              height={20}
+                              className="mt-1 shrink-0"
+                            />
                             {answer}
-                          </p>
+                          </li>
                         ))}
-                      </div>
+                      </ul>
                     </div>
                   )}
                 </li>

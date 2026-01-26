@@ -18,6 +18,7 @@ interface NowWhatProps {
               italic: string;
             }
         >;
+        lastPart: string;
       };
       description: string;
     };
@@ -50,7 +51,7 @@ export default function NowWhat({ translations }: NowWhatProps) {
 
   return (
     <section className="now-what w-full">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7-5xl mx-auto px-4">
         {/* Caption */}
         <div className="text-center mb-4 reveal-on-scroll">
           <p className="font-ibm-plex-sans-condensed text-base font-medium uppercase leading-[26px] tracking-[0.26em] text-primary">
@@ -60,7 +61,7 @@ export default function NowWhat({ translations }: NowWhatProps) {
 
         {/* Heading */}
         <div className="text-center mb-12 reveal-on-scroll">
-          <h2 className="font-serif text-[34px] md:text-[52px] leading-[36px] md:leading-[60px] font-normal text-primary">
+          <h2 className="font-serif text-[34px] md:text-[52px] xs:text-[30px] leading-[36px] md:leading-[60px] font-normal text-primary">
             {translations.title.parts.length === 3 ? (
               <>
                 <span>{translations.title.parts[0]}</span>
@@ -79,7 +80,7 @@ export default function NowWhat({ translations }: NowWhatProps) {
                     alt=""
                     width={320}
                     height={12}
-                    className="absolute -translate-x-1/2 h-auto md:w-[410px] md:left-[66%] md:w-[265px] left-[65%]  bottom-[-15px]"
+                    className="absolute -translate-x-1/2 h-auto md:w-[410px] md:left-[66%] w-[265px] left-[65%] bottom-[-15px]"
                   />
                 </span>
               </>
@@ -121,22 +122,26 @@ export default function NowWhat({ translations }: NowWhatProps) {
             </div>
             <h3 className="font-serif text-[32px] font-normal leading-[38px] text-primary">
               {translations.card.title.parts.map((part, index) => (
-                <span key={index}>
-                  {typeof part === 'string' ? (
-                    part
-                  ) : (
-                    <>
-                      {part.beforeItalic}{' '}
-                      <span className="italic text-primary-light">
-                        {part.italic}
-                      </span>
-                    </>
-                  )}
-                  {index < translations.card.title.parts.length - 1 && <br />}
-                </span>
-              ))}
+                  <span key={index}>
+                    {typeof part === 'string' ? (
+                      part
+                    ) : (
+                      <>
+                        {part.beforeItalic}{' '}
+                        <span className="italic text-primary-light">
+                          {part.italic}
+                        </span>
+                      </>
+                    )}
+                    <br />
+                  </span>
+                ))}
+
+                {translations.card.title.lastPart && (
+                  <span className='inline-block max-w-[460px]'>{translations.card.title.lastPart}</span>
+                )}
             </h3>
-            <p className="font-sans text-lg font-normal italic leading-[28px] tracking-[-0.004em] text-primary max-w-[560px]">
+            <p className="font-sans text-lg font-normal italic leading-[28px] tracking-[-0.004em] text-primary max-w-[350px]">
               {translations.card.description}
             </p>
           </div>
