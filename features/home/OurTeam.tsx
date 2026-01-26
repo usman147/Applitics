@@ -181,10 +181,10 @@ export default function OurTeam({ translations }: OurTeamProps) {
                 </span>
               ))}
             </h2>
-            <p className="font-sans text-lg leading-[28px] tracking-[-0.004em] text-grey-text my-4">
+            <p className="font-sans text-lg leading-[28px] tracking-[-0.004em] text-grey-text my-4 max-w-[455px]">
               {translations.expertise.description[0]}
             </p>
-            <p className="font-sans text-lg leading-[28px] tracking-[-0.004em] text-grey-text">
+            <p className="font-sans text-lg leading-[28px] tracking-[-0.004em] text-grey-text max-w-[400px]">
               {translations.expertise.description[1]}
             </p>
           </div>
