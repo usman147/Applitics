@@ -168,26 +168,27 @@ export default async function Contact({ params }: Props) {
               </p>
 
               {/* Partner Logos */}
-
-              <div className="w-full h-full max-w-[100vw] overflow-hidden partners-fade">
-                <Marquee
-                  speed={50}
-                  style={{ maxWidth: 'calc(100vw - 2.5rem)' }}
-                >
-                  {partnerLogos.map((logo, index) => (
-                    <div key={index} className="h-[50px] mx-10">
-                      <Image
-                        key={index}
-                        src={logo}
-                        alt={`Partner ${index + 1}`}
-                        width={150}
-                        height={50}
-                        className="h-full object-fill"
-                        loading="lazy"
-                      />
-                    </div>
-                  ))}
-                </Marquee>
+              <div className='border-y-[0.6px] border-x-0 border-solid border-white/12 w-full h-full max-w-[100vw] '>              
+                <div className="w-full h-full max-w-[100vw] overflow-hidden partners-fade">
+                  <Marquee
+                    speed={50}
+                    style={{ maxWidth: 'calc(100vw - 2.5rem)' }}
+                  >
+                    {partnerLogos.map((logo, index) => (
+                      <div key={index} className="h-[50px] mx-10">
+                        <Image
+                          key={index}
+                          src={logo}
+                          alt={`Partner ${index + 1}`}
+                          width={150}
+                          height={50}
+                          className="h-full object-fill"
+                          loading="lazy"
+                        />
+                      </div>
+                    ))}
+                  </Marquee>
+                </div>
               </div>
             </div>
 
