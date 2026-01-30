@@ -53,11 +53,11 @@ export default function Section3StartingPoint({
           <li className="flex items-start gap-3">
             <div className="mt-1 shrink-0">
               <Image
-                src="/check-icon.svg"
-                alt=""
+                src="/list-arrow.svg"
+                alt="arrow"
                 width={20}
                 height={20}
-                className="w-5 h-5"
+                className="mt-1 shrink-0"
               />
             </div>
             <span className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em] text-grey-text">
@@ -67,11 +67,11 @@ export default function Section3StartingPoint({
           <li className="flex items-start gap-3">
             <div className="mt-1 shrink-0">
               <Image
-                src="/check-icon.svg"
-                alt=""
+                src="/list-arrow.svg"
+                alt="arrow"
                 width={20}
                 height={20}
-                className="w-5 h-5"
+                className="mt-1 shrink-0"
               />
             </div>
             <span className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em] text-grey-text">
@@ -81,11 +81,11 @@ export default function Section3StartingPoint({
           <li className="flex items-start gap-3">
             <div className="mt-1 shrink-0">
               <Image
-                src="/check-icon.svg"
-                alt=""
+                src="/list-arrow.svg"
+                alt="arrow"
                 width={20}
                 height={20}
-                className="w-5 h-5"
+                className="mt-1 shrink-0"
               />
             </div>
             <span className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em] text-grey-text">
