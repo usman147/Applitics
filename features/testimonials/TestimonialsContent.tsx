@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { getTestimonialById, TESTIMONIALS } from '@/features/testimonials/data';
 import { getLocale } from '@/lib/i18n';
+import { AudioPlayer } from '@/components/AudioPlayer';
 
 interface TestimonialsContentProps {
   id: string;
@@ -103,9 +104,10 @@ export default function TestimonialsContent({ id }: TestimonialsContentProps) {
                 sizes="(max-width: 768px) 100vw, 1600px"
               />
               {embedUrl && (
+                <>
                 <button
                   onClick={() => setIsVideoPlaying(true)}
-                  className="absolute inset-0 flex items-center justify-center bg-black/20 hover:bg-black/30 transition-colors cursor-pointer group"
+                  className="absolute inset-0 flex items-center justify-center bg-black/20 hover:bg-black/30 transition-colors z-10 cursor-pointer group"
                   aria-label="Play video"
                 >
                   <div className="relative w-[40px] h-[40px] md:w-[100px] md:h-[100px] sm:w-[50px] sm:h-[50px] flex items-center justify-center">
@@ -118,6 +120,10 @@ export default function TestimonialsContent({ id }: TestimonialsContentProps) {
                     />
                   </div>
                 </button>
+                <div className="absolute bottom-0 left-0 w-full">
+                  <AudioPlayer youtubeVideoDuration={testimonial.youtubeVideoDuration} />
+                </div>
+                </>
               )}
             </>
           )}

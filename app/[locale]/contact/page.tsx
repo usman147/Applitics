@@ -6,6 +6,7 @@ import Marquee from 'react-fast-marquee';
 import { getAllLocalizedPaths } from '@/lib/i18n';
 import { getTranslations } from '@/lib/translations';
 import { type Locale, isValidLocale, DEFAULT_LOCALE } from '@/i18n.config';
+import { PartnerTicker } from '@/components/PartnerLogoTicker';
 
 const partnerLogos = [
   '/partners/oxford.svg',
@@ -170,7 +171,7 @@ export default async function Contact({ params }: Props) {
               {/* Partner Logos */}
               <div className='border-y-[0.6px] border-x-0 border-solid border-white/12 w-full h-full max-w-[100vw] '>              
                 <div className="w-full h-full max-w-[100vw] overflow-hidden partners-fade">
-                  <Marquee
+                  {/* <Marquee
                     speed={50}
                     style={{ maxWidth: 'calc(100vw - 2.5rem)' }}
                   >
@@ -187,7 +188,8 @@ export default async function Contact({ params }: Props) {
                         />
                       </div>
                     ))}
-                  </Marquee>
+                  </Marquee> */}
+                   <PartnerTicker partnerLogos={partnerLogos} small />
                 </div>
               </div>
             </div>

@@ -6,6 +6,7 @@ export interface Testimonial {
   role: string;
   description: string;
   youtubeUrl?: string;
+  youtubeVideoDuration?: string;
 }
 
 export const TESTIMONIALS: Testimonial[] = [
@@ -18,6 +19,7 @@ export const TESTIMONIALS: Testimonial[] = [
     description:
       'An R Shiny clinical capacity planning tool replacing Excel, enabling scenario simulation from planners to vice presidents.',
     youtubeUrl: 'https://www.youtube.com/embed/b3nZf1Xfq6s',
+    youtubeVideoDuration: '7:38',
   },
   {
     id: '2',
@@ -28,6 +30,7 @@ export const TESTIMONIALS: Testimonial[] = [
     description:
       'An R Shiny dashboard with auto-generative UI controlled via Excel, enabling near no-code customization for AGRA.',
     youtubeUrl: 'https://www.youtube.com/embed/Z3HZahCtAus',
+    youtubeVideoDuration: '5:57',
   },
   {
     id: '3',
@@ -38,6 +41,7 @@ export const TESTIMONIALS: Testimonial[] = [
     description:
       'Enterprise-ready R Shiny app with improved UI/UX, authentication, and user data management driving adoption.',
     youtubeUrl: 'https://www.youtube.com/embed/6-lsqQmM_9s',
+    youtubeVideoDuration: '8:04',
   },
   {
     id: '4',
@@ -48,6 +52,7 @@ export const TESTIMONIALS: Testimonial[] = [
     description:
       'R Shiny tool simulating livestock scenarios and environmental impacts (GHG, water, land) for CGIAR.',
     youtubeUrl: 'https://www.youtube.com/embed/eHb6jyH0AiI',
+    youtubeVideoDuration: '16:02',
   },
   {
     id: '5',
@@ -56,7 +61,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'G. Anapolle and J. Shieh',
     role: 'Research Analysts at Mathematica',
     description:
-      'Enterprise-ready R Shiny app with improved UI/UX, authentication, and user data management driving adoption.',
+      'Enterprise-ready R Shiny app with improved UI/UX, authentication, and user data management driving adoption.',      
   },
   {
     id: '6',
@@ -67,6 +72,7 @@ export const TESTIMONIALS: Testimonial[] = [
     description:
       'R Shiny web platform making green competitiveness and brown lock-in metrics accessible to policy makers and researchers.',
     youtubeUrl: 'https://www.youtube.com/embed/RNkP9ILUIyw',
+    youtubeVideoDuration: '06:45',
   },
 ];
 

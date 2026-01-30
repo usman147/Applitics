@@ -99,6 +99,7 @@ export default function OurClients({ translations }: OurClientsProps) {
                   description={testimonial.description}
                   showPlayButton={true}
                   youtubeUrl={testimonial.youtubeUrl}
+                  youtubeVideoDuration={testimonial.youtubeVideoDuration}
                 />
               </Link>
             ))}

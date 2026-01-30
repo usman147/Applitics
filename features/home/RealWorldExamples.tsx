@@ -236,7 +236,7 @@ export default function RealWorldExamples({
   return (
     <section
       id="real-world-examples"
-      className="w-full real-world-examples-section"
+      className="w-full real-world-examples-section scroll-mt-[110px]"
     >
       {/* Header */}
       <div className="text-center mb-12 reveal-on-scroll max-w-7xl mx-auto px-4">
@@ -271,6 +271,7 @@ export default function RealWorldExamples({
           slidesPerView={1.7}
           centeredSlides={true}
           initialSlide={1}
+          autoHeight={true}
           allowTouchMove={true}
           noSwipingClass="compare-slider-container"
           onSwiper={(swiper) => {
@@ -325,7 +326,7 @@ export default function RealWorldExamples({
             const slideImage = SLIDE_IMAGES[index];
             return (
               <SwiperSlide key={index + 1} className="w-full h-auto">
-                <div className="max-w-[880px] mx-auto w-full flex justify-center rounded-2xl p-5 flex-col bg-white space-y-5 min-h-[660px]">
+                <div className="max-w-[880px] mx-auto w-full flex justify-center rounded-2xl p-5 flex-col bg-white space-y-5 min-h-0 lg:min-h-[660px]">
                   <SwiperSlideImage
                     image={slideImage.image}
                     imageRight={slideImage.imageRight}

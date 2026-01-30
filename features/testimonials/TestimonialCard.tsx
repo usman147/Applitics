@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import { AudioPlayer } from '@/components/AudioPlayer';
 
 interface TestimonialCardProps {
   id: string;
@@ -12,6 +13,7 @@ interface TestimonialCardProps {
   description: string;
   showPlayButton?: boolean;
   youtubeUrl?: string;
+  youtubeVideoDuration?: string;
   onPlayClick?: (id: string) => void;
 }
 
@@ -43,11 +45,12 @@ export default function TestimonialCard({
   description,
   showPlayButton = false,
   youtubeUrl,
+  youtubeVideoDuration,
   onPlayClick,
 }: TestimonialCardProps) {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const embedUrl = youtubeUrl ? getYouTubeEmbedUrl(youtubeUrl) : null;
-  const hasVideo = showPlayButton && !!embedUrl;
+  const hasVideo = showPlayButton && !!embedUrl;  
 
   const handlePlayClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -83,6 +86,7 @@ export default function TestimonialCard({
               sizes="(max-width: 768px) 100vw, 50vw"
             />
             {hasVideo && (
+              <>
               <button
                 onClick={handlePlayClick}
                 className="absolute inset-0 flex items-center justify-center bg-black/20 hover:bg-black/30 transition-colors cursor-pointer group rounded-[10px] z-10"
@@ -99,6 +103,10 @@ export default function TestimonialCard({
                   />
                 </div>
               </button>
+              <div className='absolute bottom-0  w-full'>
+                <AudioPlayer youtubeVideoDuration={youtubeVideoDuration} />
+              </div>
+              </>
             )}
           </>
         )}

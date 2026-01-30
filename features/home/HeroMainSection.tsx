@@ -27,7 +27,7 @@ export default function HeroMainSection({
 }: HeroMainSectionProps) {
   return (
     <div className="flex flex-col justify-start items-start gap-5 relative z-10">
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-6">
         <h1 className="text-white text-6-5xl md:text-7xl font-normal font-serif leading-[54px] md:leading-[72px]">
           {translations.title.parts.map((part, index) => {
             const text = typeof part === 'string' ? part : part.text;
@@ -63,7 +63,7 @@ export default function HeroMainSection({
           ))}
         </p>
       </div>
-      <div className="flex flex-col md:flex-row items-center gap-5 mt-1 md:mt-5 w-full md:w-auto">
+      <div className="flex flex-col md:flex-row items-center gap-5 mt-1 md:mt-6 w-full md:w-auto">
         <Link
           href="/contact"
           className="w-full md:w-auto px-5 py-3 bg-white rounded-[40.06px] text-primary-light text-sm font-semibold font-sans text-center"

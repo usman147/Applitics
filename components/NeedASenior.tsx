@@ -20,8 +20,11 @@ export default function NeedASenior({ translations }: NeedASeniorProps) {
     <section className="w-full">
       <div className="max-w-7xl mx-auto px-4">
         <div
-          className="min-h-[408px] flex items-center justify-center rounded-[20px] overflow-hidden text-center relative bg-cover bg-center bg-no-repeat pt-[25px] pb-[37px]"
-          style={{ backgroundImage: "url('/contact-us-image.svg')" }}
+          className="min-h-[408px] flex items-center justify-center rounded-[20px] overflow-hidden text-center relative 
+          bg-cover bg-center bg-no-repeat
+          bg-[url('/contact-us-mobile.svg')]
+          md:bg-[url('/contact-us-image.svg')]
+          pt-[25px] pb-[37px]"          
         >
           <div className="relative z-10 flex flex-col items-center">
             <span className="text-white/80 font-ibm-plex-sans-condensed tracking-[0.26em] text-[16px] leading-[26px] font-medium uppercase mb-4">

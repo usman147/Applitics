@@ -8,7 +8,7 @@ const HAnimatedDnaSvg = () => (
     viewBox="0 0 430 355"
     fill="none"
     className="h-full w-full"
-    style={{ width: '100%', height: '120%' }}
+    style={{ width: '100%', height: '130%' }}
   >
     <mask
       id="b"

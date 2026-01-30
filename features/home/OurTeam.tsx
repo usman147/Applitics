@@ -120,7 +120,7 @@ export default function OurTeam({ translations }: OurTeamProps) {
   }, []);
 
   return (
-    <section id="our-team" className="our-team-section w-full">
+    <section id="our-team" className="our-team-section scroll-mt-[80px] w-full">
       <div className="max-w-7xl mx-auto px-4">
         {/* Quote */}
         <div className="text-center mb-6 reveal-on-scroll">

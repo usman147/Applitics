@@ -7,7 +7,7 @@
   }
 
   50% {
-    transform: rotateY(30deg);
+    transform: rotateY(20deg);
   }
 
   100% {
@@ -24,9 +24,13 @@
   position: relative;
   overflow: visible;
   width: 100%;
-  padding-top: 108px;
+  padding-top: 90px;
 }
-
+@media (max-width: 639px) {
+  .partners-container {
+    padding-top: 1.5rem;
+  }
+}
 .partners-fade {
   --partners-fade-size: 150px;
   mask-image: linear-gradient(

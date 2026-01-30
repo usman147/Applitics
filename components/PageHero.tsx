@@ -17,7 +17,7 @@ export default function PageHero({ title, pillText }: PageHeroProps) {
         className="object-fill object-center"
         sizes="100vw"
       />
-      <div className="z-10 text-center flex flex-col items-center gap-[22px] max-w-4xl px-4 my-18">
+      <div className="z-10 text-center flex flex-col items-center gap-[22px] max-w-4xl px-4 my-18 mb-[20px]">
         {/* Pill */}
         <div className="inline-flex px-4 py-1 bg-white rounded-[100px] justify-center items-center">
           <span className="text-primary text-[14px] font-normal font-ibm-plex-sans-condensed uppercase leading-[26px] tracking-[0.05em]">

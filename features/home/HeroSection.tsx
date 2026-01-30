@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 import AnimatedDnaSvg from './AnimatedDnaSvg';
 import HAnimatedDnaSvg from './HAnimatedDnaSvg';
+import { PartnerTicker } from '@/components/PartnerLogoTicker';
 
 // Partner logos array - add more logos here as you get them
 const partnerLogos = [
@@ -59,14 +60,14 @@ export default function HeroSection({ translations }: HeroSectionProps) {
         {/* Stars Section */}
         <div className="relative flex-1 h-full flex flex-col items-center justify-center gap-4 min-h-[60vw] md:min-h-0">
           {/* DNA Animation SVG - Background Layer Desktop */}
-          <div className="hidden md:flex absolute h-full inset-0 z-1 items-center justify-center lg:translate-x-[-20%] md:translate-x-[-40%]">
+          <div className="hidden md:flex absolute h-full inset-0 z-1 items-center justify-center lg:translate-x-[7.5%] md:translate-x-[-40%] translate-y-[-3px]">
             <AnimatedDnaSvg />
           </div>
           {/* DNA Animation SVG - Background Layer Mobile */}
-          <div className="flex md:hidden absolute h-full inset-0 right-[-50%] left-[-50%] z-1 items-center justify-center">
+          <div className="flex md:hidden absolute h-full inset-0 right-[-50%] left-[-50%] z-1 items-center justify-center lg:mt-0 mt-11">
             <HAnimatedDnaSvg />
           </div>
-          <div className="relative z-10 flex items-center justify-center gap-2 mt-5 sm:mt-10">
+          <div className="relative z-10 flex items-center justify-center gap-2 lg:mt-16 sm:mt-10 lg:translate-x-[68px] mt-16">
             {Array.from({ length: 5 }).map((_, index) => (
               <Image
                 key={index}
@@ -79,13 +80,14 @@ export default function HeroSection({ translations }: HeroSectionProps) {
               />
             ))}
           </div>
-          <div className="max-w-[45vw] sm:max-w-[40vw] md:max-w-[300px] text-[18px] sm:text-[18px] md:text-lg relative z-10 flex flex-col text-center text-white font-ibm-plex-sans-condensed  font-medium italic uppercase leading-[118%] tracking-[-0.01em]">
+          <div className="max-w-[45vw] sm:max-w-[40vw] md:max-w-[300px] text-[18px] sm:text-[18px] md:text-lg relative 
+          z-10 flex flex-col text-center text-white font-ibm-plex-sans-condensed  font-medium italic uppercase leading-[118%] tracking-[-0.01em] lg:translate-x-[68px]">
             {translations.trustBadge}
           </div>
         </div>
       </div>
       {/* Partners section */}
-      <div className="absolute bottom-0 left-0 right-0 w-full partners-container pb-75 z-10 pt-100">
+      <div className="absolute bottom-0 left-0 right-0 w-full partners-container pb-[45px] z-10 pt-100">
         <div className="max-w-8xl mx-auto flex flex-col md:flex-row items-center gap-6">
           <p className="text-white font-sans font-semibold text-base shrink-0 flex flex-col uppercase ">
             {translations.partnering.parts.map((part, index) => (
@@ -96,7 +98,7 @@ export default function HeroSection({ translations }: HeroSectionProps) {
             ))}
           </p>
           <div className="flex-1 overflow-hidden partners-fade">
-            <Marquee speed={50}>
+            {/* <Marquee speed={50}>
               {partnerLogos.map((logo, index) => (
                 <div key={index} className="shrink-0 h-[50px] mx-10">
                   <Image
@@ -110,7 +112,9 @@ export default function HeroSection({ translations }: HeroSectionProps) {
                   />
                 </div>
               ))}
-            </Marquee>
+            </Marquee> */}
+            
+            <PartnerTicker partnerLogos={partnerLogos} />
           </div>
         </div>
       </div>
