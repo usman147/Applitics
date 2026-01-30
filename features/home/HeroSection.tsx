@@ -42,9 +42,20 @@ export default function HeroSection({ translations }: HeroSectionProps) {
   return (
     <section className="relative overflow-hidden min-h-[903px] md:min-h-[772px] flex flex-col justify-between pt-[150px] md:pt-[224px]">
       {/* Hero Background Image - Optimized */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 hidden lg:block">
         <Image
           src="/hero-image.jpg"
+          alt="hero background image"
+          fill
+          priority
+          className="object-cover"
+          sizes="100vw"
+          quality={100}
+        />
+      </div>
+      <div className="absolute inset-0 z-0 block lg:hidden">
+        <Image
+          src="/hero-image-moble.svg"
           alt="hero background image"
           fill
           priority
