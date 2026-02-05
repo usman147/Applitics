@@ -108,9 +108,9 @@ export default function NowWhat({ translations }: NowWhatProps) {
         </div>
 
         {/* Card */}
-        <div className="bg-white rounded-[24px] px-6 lg:pl-[50px] lg:pr-0 py-12 flex flex-col lg:flex-row items-center gap-10 reveal-on-scroll">
+        <div className="bg-white rounded-[24px] lg:py-12 pt-12 pb-0 flex flex-col lg:flex-row items-center gap-10 reveal-on-scroll">
           {/* Left content */}
-          <div className="flex-1 flex flex-col gap-5">
+          <div className="flex-1 flex flex-col gap-5 px-6 lg:pl-[50px] lg:pr-0">
             <div className="w-[86px] h-[86px]">
               <Image
                 src="/warning-bubble.svg"

@@ -264,12 +264,14 @@ export default function RealWorldExamples({
       </div>
 
       {/* Carousel */}
-      <div className="reveal-on-scroll w-full h-full">
+      <div className="reveal-on-scroll w-full h-full relative">
+        {/* left fade */}         
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-12 lg:w-25 z-10 [background-image:linear-gradient(to_right,white,transparent)]"></div>
         <Swiper
           modules={[Navigation]}
           spaceBetween={24}
           slidesPerView={1.7}
-          centeredSlides={true}
+          centeredSlides={true}          
           initialSlide={1}
           autoHeight={true}
           allowTouchMove={true}
@@ -333,9 +335,9 @@ export default function RealWorldExamples({
                     title={slide.title}
                   />
 
-                  <div className="flex flex-col md:flex-row gap-5 justify-between items-center md:items-start">
-                    <div className="flex flex-col gap-[20px] flex-1">
-                      <h3 className="font-serif text-[34px] line-height-[36px]">
+                  <div className="flex flex-col md:flex-row gap-5 justify-between items-center md:items-stretch">
+                    <div className="flex flex-col gap-[10px] lg:gap-[13px] flex-1">
+                      <h3 className="font-serif text-[34px] line-height-[36px] text-primary">
                         {slide.title}
                       </h3>
                       <p className="text-sm leading-5 font-sans text-grey-text overflow-hidden">
@@ -343,7 +345,7 @@ export default function RealWorldExamples({
                       </p>
                     </div>
 
-                    <div className="mt-[44px] w-full md:w-auto">
+                    <div className="flex items-center w-full md:w-auto">
                       <SwiperSlideButton
                         youtubeUrl={slideImage.youtubeUrl}
                         testimonialId={slideImage.testimonialId}
@@ -356,6 +358,8 @@ export default function RealWorldExamples({
             );
           })}
         </Swiper>
+        {/* right fade */}
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-12 lg:w-25 z-10 [background-image:linear-gradient(to_left,white,transparent)]"></div>
 
         {/* Navigation Arrows */}
         <div className="flex justify-center gap-4 mt-[30px]">

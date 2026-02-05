@@ -284,7 +284,7 @@ export default function Header() {
           >
           <div className={`
              mx-auto px-6 py-8 bg-white
-            ${ isHuggingSides ? '' : 'rounded-b-2xl'}
+            ${ isHuggingSides ? 'shadow-[0_0_12px_0_rgba(0,0,0,0.65)]' : 'rounded-b-2xl'}
             `}>
             <nav className="flex flex-col gap-4">
               {navigationItems.map((item) => {

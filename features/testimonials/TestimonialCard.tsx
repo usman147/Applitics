@@ -65,7 +65,7 @@ export default function TestimonialCard({
   return (
     <div className="bg-white rounded-[20px] p-6 flex flex-col gap-[20px] w-full h-full hover:shadow-lg transition-shadow">
       {/* Thumbnail */}
-      <div className="block w-full h-[292px] rounded-[10px] relative overflow-hidden">
+      <div className="block w-full aspect-[16/9] md:h-[292px] md:aspect-auto rounded-[10px] relative overflow-hidden">
         {isVideoPlaying && embedUrl ? (
           <iframe
             src={`${embedUrl}?autoplay=1`}

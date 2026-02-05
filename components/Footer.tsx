@@ -40,7 +40,7 @@ export default function Footer() {
             </div>
 
             {/* Navigation */}
-            <nav className="flex flex-wrap justify-center gap-[52px] text-[14px] leading-[20px] font-semibold tracking-[-0.004em] text-grey-text">
+            <nav className="flex flex-wrap justify-center gap-[52px] text-[14px] leading-[20px] font-semibold tracking-[-0.004em] text-primary lg:flex-row md:flex-row flex-col items-center">
               <Link href={getLocalizedPath('/', currentLocale)}>{translations?.footer?.nav?.home || 'Home'}</Link>
               <Link href={`${getLocalizedPath('/', currentLocale)}#our-team`}>{translations?.footer?.nav?.ourTeam || 'Our Team'}</Link>
               <Link href={getLocalizedPath('/testimonials', currentLocale)}>{translations?.footer?.nav?.testimonials || 'Testimonials'}</Link>

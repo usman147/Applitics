@@ -217,3 +217,7 @@ body {
     --logo-gap: 2rem;
   }
 }
+
+/* Swiper Slider */
+.swiper { overflow: visible; }      
+.swiper-slide { overflow: visible; }

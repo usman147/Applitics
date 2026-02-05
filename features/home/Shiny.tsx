@@ -229,7 +229,7 @@ export default function Shiny({ translations }: ShinyProps) {
           {/* Right Side - Points */}
           <div className="flex flex-1 flex-col flex-wrap gap-4 content-end pr-[23px]">
             {/* X Point */}
-            <div className="flex gap-4 items-center">
+            <div className="flex gap-4 items-start md:items-center lg:items-center">
               <Image
                 src="/x-icon.svg"
                 alt="X"
@@ -248,7 +248,7 @@ export default function Shiny({ translations }: ShinyProps) {
             </div>
 
             {/* Check Point */}
-            <div className="flex items-center gap-4">
+            <div className="flex gap-4 items-start md:items-center lg:items-center">
               <Image
                 src="/check-icon.svg"
                 alt="Check"

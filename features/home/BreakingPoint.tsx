@@ -107,7 +107,7 @@ export default function BreakingPoint({ translations }: BreakingPointProps) {
               alt="Breaking point illustration"
               width={400}
               height={400}
-              className="w-full min-h-[319px] p-8"
+              className="w-full min-h-[319px] p-0 lg:p-8"
             />
           </div>
 

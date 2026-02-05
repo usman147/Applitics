@@ -196,7 +196,7 @@ const LeftSide = ({
         return (
           <div
             key={index}
-            className={`relative bg-white rounded-[24px] p-4 cursor-pointer transition-all duration-300 ${
+            className={`relative bg-white rounded-[24px] py-[16px] px-[30px] cursor-pointer transition-all duration-300 ${
               isActive ? 'ring-2 ring-primary-lighter' : ''
             }`}
             onClick={() => onStepClick(index)}

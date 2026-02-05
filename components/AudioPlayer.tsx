@@ -10,7 +10,7 @@ export function AudioPlayer({ youtubeVideoDuration }: AudioPlayerProps) {
       <div
         className="
           flex items-center gap-4
-          px-4 py-4
+          px-4 md:py-4 py-2 
           bg-[rgba(233,245,255,0.6)]
           backdrop-blur-[44px]          
         "
@@ -18,7 +18,7 @@ export function AudioPlayer({ youtubeVideoDuration }: AudioPlayerProps) {
         {/* Play button (fixed) */}
         <button
           type="button"
-          className="shrink-0 rounded-full focus:outline-none w-[32px] h-[32px]"
+          className="shrink-0 rounded-full focus:outline-none lg:w-[32px] lg:h-[32px] w-[25px] h-[25px]"
           aria-label="Play"
         >          
           <svg
@@ -47,7 +47,7 @@ export function AudioPlayer({ youtubeVideoDuration }: AudioPlayerProps) {
 
         {/* Waveform (fluid) */}
         <div className="flex-1 min-w-0 overflow-hidden">
-          <div className="h-[25px] w-full">
+          <div className="lg:h-[25px] h-[18px] w-full">
             {/* Vector.svg */}
             <svg
               viewBox="0 0 729 25"
@@ -70,7 +70,7 @@ export function AudioPlayer({ youtubeVideoDuration }: AudioPlayerProps) {
 
         {/* Time (optional if video is present) */}
         {youtubeVideoDuration && (
-          <div className="shrink-0 tabular-nums text-sm font-semibold text-[#0352A3]">
+          <div className="shrink-0 tabular-nums lg:text-sm text-[12px] font-semibold text-[#0352A3]">
             {youtubeVideoDuration}
           </div>
         )}
