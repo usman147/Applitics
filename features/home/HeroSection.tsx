@@ -78,7 +78,7 @@ export default function HeroSection({ translations }: HeroSectionProps) {
           <div className="flex md:hidden absolute h-full inset-0 right-[-50%] left-[-50%] z-1 items-center justify-center lg:mt-0 mt-11">
             <HAnimatedDnaSvg />
           </div>
-          <div className="relative z-10 flex items-center justify-center gap-2 lg:mt-16 sm:mt-10 lg:translate-x-[68px] mt-16">
+          <div className="relative z-10 flex items-center justify-center gap-2 lg:mt-4 sm:mt-10 lg:translate-x-[68px] mt-16">
             {Array.from({ length: 5 }).map((_, index) => (
               <Image
                 key={index}

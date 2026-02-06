@@ -99,15 +99,15 @@ export default function BreakingPoint({ translations }: BreakingPointProps) {
         </div>
 
         {/* Main Content: Image on left, Text on right */}
-        <div className="flex flex-col-reverse lg:flex-row items-start bg-white pb-8 lg:pl-[50px] lg:pr-0 items-center rounded-[24px]">
+        <div className="flex flex-col-reverse lg:flex-row items-start bg-white lg:pb-8 md:pb-8 lg:pl-[50px] lg:pr-0 items-center rounded-[24px]">
           {/* Image Section */}
-          <div className="flex-1 reveal-on-scroll">
+          <div className="flex-1 reveal-on-scroll lg:w-auto w-full">
             <Image
               src="/breaking-point-animated-image.svg"
               alt="Breaking point illustration"
               width={400}
               height={400}
-              className="w-full min-h-[319px] p-0 lg:p-8"
+              className="w-full lg:min-h-[319px] p-0 lg:p-8"
             />
           </div>
 

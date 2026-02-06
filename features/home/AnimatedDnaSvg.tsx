@@ -8,7 +8,7 @@ const AnimatedDnaSvg = () => {
   viewBox="0 0 784 778"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
-   className="min-w-[784px] h-[120%] w-full opacity-[5] dna-animatio"
+   className="min-w-[784px] h-[120%] w-full opacity-[5] dna-animation"
       style={{ width: '784px', height: 'auto' }}
 >
   <mask

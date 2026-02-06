@@ -88,9 +88,9 @@ export default function DeepDown({ translations }: DeepDownProps) {
         </div>
 
         {/* Card */}
-        <div className="bg-white rounded-[24px] pl-[15px] pr-[45px] pt-[45px] pb-[40px] flex flex-col-reverse lg:flex-row items-start gap-10 reveal-on-scroll">
+        <div className="bg-white rounded-[24px] lg:pl-[15px] lg:pr-[45px] lg:pt-[45px] lg:pb-[40px] flex flex-col-reverse lg:flex-row items-start gap-10 reveal-on-scroll">
           {/* Left illustration */}
-          <div className="flex-1 w-full flex justify-center reveal-on-scroll">
+          <div className="flex-1 w-full flex justify-center lg:px-[15px] pb-[40px] lg:p-0 reveal-on-scroll">
             <Image
               src="/deep-down-animated-image.svg"
               alt="Warning illustration"
@@ -101,7 +101,7 @@ export default function DeepDown({ translations }: DeepDownProps) {
           </div>
 
           {/* Right text */}
-          <div className="flex-1 flex flex-col gap-5 reveal-on-scroll">
+          <div className="flex-1 flex flex-col gap-5 px-[15px] pt-[45px] lg:pb-[40px] lg:p-0 reveal-on-scroll">
             <h3 className="font-serif text-[32px] font-normal leading-[38px] text-primary">
               {translations.card.title}
             </h3>

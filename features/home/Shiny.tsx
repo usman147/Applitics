@@ -197,7 +197,7 @@ export default function Shiny({ translations }: ShinyProps) {
     <section className="w-full shiny-section mt-[36px]">
       <div className="max-w-7-5xl mx-auto px-4 relative z-2">
         {/* Top Section - Two Columns */}
-        <div className="flex flex-col lg:flex-row lg:items-end gap-12 lg:gap-20 mb-32 reveal-on-scroll">
+        <div className="flex flex-col lg:flex-row lg:items-end md:items-center gap-12 lg:gap-20 mb-32 reveal-on-scroll">
           {/* Left Side */}
           <div className="flex-1">
             {/* Quote/Caption */}

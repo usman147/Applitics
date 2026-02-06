@@ -153,7 +153,7 @@ export default function NowWhat({ translations }: NowWhatProps) {
               alt="Team rowing illustration"
               width={520}
               height={320}
-              className="w-full max-w-[560px] h-auto min-h-[319px]"
+              className="w-full max-w-[560px] h-auto lg:min-h-[319px]"
             />
           </div>
         </div>
