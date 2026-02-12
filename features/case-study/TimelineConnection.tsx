@@ -6,11 +6,37 @@ import Image from 'next/image';
 interface TimelineConnectionProps {
   sectionId?: string;
   isViewed?: boolean;
+  index?: number;
+  showStar?: boolean;
 }
 
-export default function TimelineConnection({}: TimelineConnectionProps) {
+function toRoman(num: number): string {
+  const map: Array<[number, string]> = [
+    [10, 'X'],
+    [9, 'IX'],
+    [5, 'V'],
+    [4, 'IV'],
+    [1, 'I'],
+  ];
+
+  let value = num;
+  let result = '';
+  for (const [n, sym] of map) {
+    while (value >= n) {
+      result += sym;
+      value -= n;
+    }
+  }
+  return result;
+}
+
+export default function TimelineConnection({
+  index,
+  showStar = false,
+}: TimelineConnectionProps) {
   const [isVisible, setIsVisible] = useState(false);
   const connectionRef = useRef<HTMLDivElement>(null);
+  const roman = index ? toRoman(index) : '';
 
   useEffect(() => {
     if (!connectionRef.current) return;
@@ -61,13 +87,19 @@ export default function TimelineConnection({}: TimelineConnectionProps) {
           }`}
           style={{ left: '-10px' }}
         >
-          <Image
-            src="/team/circle-star-icon.svg"
-            alt="Timeline connection"
-            width={35}
-            height={35}
-            className="object-contain"
-          />
+          {showStar ? (
+            <Image
+              src="/team/circle-star-icon.svg"
+              alt="Timeline connection"
+              width={35}
+              height={35}
+              className="object-contain"
+            />
+          ) : (
+            <div className="w-full h-full rounded-full border border-primary-lighter flex items-center justify-center text-primary text-[12px] font-semibold font-serif tracking-[0.04em] bg-primary-lighter text-white">
+              {roman}
+            </div>
+          )}
         </div>
       </div>
 

@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 import { getAllLocalizedPaths } from '@/lib/i18n';
 import { getTranslations } from '@/lib/translations';
 import { type Locale, isValidLocale, DEFAULT_LOCALE } from '@/i18n.config';
+import ScrollToTop from './ScrollToTop';
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -50,6 +51,7 @@ export default async function TestimonialsPage({ params }: Props) {
 
   return (
     <div className="w-full max-w-[1138px] mx-auto px-4">
+      <ScrollToTop />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-y-[30px] gap-x-[24px]">
         {TESTIMONIALS.map((t) => {
           const translated = testimonialTranslations?.testimonials?.[t.id];

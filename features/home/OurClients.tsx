@@ -106,6 +106,7 @@ export default function OurClients({ translations }: OurClientsProps) {
         <div className="flex justify-center mt-10 reveal-on-scroll">
           <Link
             href="/testimonials"
+            scroll
             className="flex items-center gap-2 px-5 py-3 bg-primary-light text-white rounded-[40.06px] text-sm font-semibold font-sans hover:bg-primary transition-all duration-300 w-full lg:w-auto justify-center"
           >
             {translations.seeAllTestimonials}

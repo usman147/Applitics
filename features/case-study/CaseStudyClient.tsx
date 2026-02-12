@@ -377,6 +377,7 @@ export default function CaseStudyClient({
                 <TimelineConnection
                   sectionId="section-1"
                   isViewed={viewedSections.has('section-1')}
+                  showStar
                 />
 
                 {/* Section 2: Improving the UI/UX */}
@@ -392,6 +393,7 @@ export default function CaseStudyClient({
                 <TimelineConnection
                   sectionId="section-2"
                   isViewed={viewedSections.has('section-2')}
+                  index={1}
                 />
 
                 {/* Section 3: The Starting Point of the Application */}
@@ -407,6 +409,7 @@ export default function CaseStudyClient({
                 <TimelineConnection
                   sectionId="section-3"
                   isViewed={viewedSections.has('section-3')}
+                  index={2}
                 />
 
                 {/* Section 4: Challenges Faced */}
@@ -422,6 +425,7 @@ export default function CaseStudyClient({
                 <TimelineConnection
                   sectionId="section-4"
                   isViewed={viewedSections.has('section-4')}
+                  index={3}
                 />
 
                 {/* Section 5: How to Set Up an Authentication System */}
@@ -437,6 +441,7 @@ export default function CaseStudyClient({
                 <TimelineConnection
                   sectionId="section-5"
                   isViewed={viewedSections.has('section-5')}
+                  index={4}
                 />
 
                 {/* Section 6: Preparing a Graphic Mockup */}
@@ -452,6 +457,7 @@ export default function CaseStudyClient({
                 <TimelineConnection
                   sectionId="section-6"
                   isViewed={viewedSections.has('section-6')}
+                  index={5}
                 />
 
                 {/* Section 7: Building the HTML Skeleton of a Shiny Application */}
@@ -467,6 +473,7 @@ export default function CaseStudyClient({
                 <TimelineConnection
                   sectionId="section-7"
                   isViewed={viewedSections.has('section-7')}
+                  index={6}
                 />
 
                 {/* Section 8: Adding Style to an R Shiny App with SASS */}
@@ -482,6 +489,7 @@ export default function CaseStudyClient({
                 <TimelineConnection
                   sectionId="section-8"
                   isViewed={viewedSections.has('section-8')}
+                  index={7}
                 />
 
                 {/* Section 9: How to create appealing visualizations in Shiny */}
@@ -497,6 +505,7 @@ export default function CaseStudyClient({
                 <TimelineConnection
                   sectionId="section-9"
                   isViewed={viewedSections.has('section-9')}
+                  index={8}
                 />
 
                 {/* Section 10: Creating your own widget in Shiny */}
@@ -512,6 +521,7 @@ export default function CaseStudyClient({
                 <TimelineConnection
                   sectionId="section-10"
                   isViewed={viewedSections.has('section-10')}
+                  index={9}
                 />
 
                 {/* Conclusion Section: Goal Achieved */}
