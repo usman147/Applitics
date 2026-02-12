@@ -120,7 +120,7 @@ export default function Section9Visualizations({
       <div className="space-y-4 text-grey-text">
         <p className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em]">
           {translations.paragraph1.text}{' '}
-          <span className="bg-[#F1EFEF] px-1 font-mono">
+          <span className="bg-[#F1EFEF] px-1 font-sans font-mono">
             {translations.paragraph1.ggplot2}
           </span>{' '}
           {translations.paragraph1.text2}
@@ -535,14 +535,14 @@ highchart() %>%
                         </div>
                         <span className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em] text-grey-text">
                           In our example, API calls are simulated using the{' '}
-                          <span className="rounded bg-[#F1EFEF] px-1 py-0.5 font-mono">
+                          <span className="rounded bg-[#F1EFEF] px-1 font-sans py-0.5 font-mono">
                             auto_invalidate
                           </span>
                           variable, which automatically resets every two seconds
                           thanks to the{' '}
                           <a
                             href="https://shiny.posit.co/r/reference/shiny/0.14/reactivetimer"
-                            className="rounded bg-[#F1EFEF] px-1 py-0.5 font-mono font-medium text-primary-light hover:underline"
+                            className="rounded bg-[#F1EFEF] px-1 font-sans py-0.5 font-mono font-medium text-primary-light hover:underline"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -582,11 +582,11 @@ highchart() %>%
                         </div>
             <span className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em] text-grey-text">
               {translations.subsection2.point3.text}{' '}
-              <span className="rounded bg-[#F1EFEF] px-1 py-0.5 font-mono">
+              <span className="rounded bg-[#F1EFEF] px-1 font-sans py-0.5 font-mono">
                 {translations.subsection2.point3.hcpxyAddPoint}
               </span>{' '}
               {translations.subsection2.point3.text2}{' '}
-              <span className="rounded bg-[#F1EFEF] px-1 py-0.5 font-mono">
+              <span className="rounded bg-[#F1EFEF] px-1 font-sans py-0.5 font-mono">
                 {translations.subsection2.point3.hcpxySetData}
               </span>
               , {translations.subsection2.point3.text3}

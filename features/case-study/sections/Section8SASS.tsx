@@ -110,7 +110,7 @@ export default function Section8SASS({ translations }: Section8SASSProps) {
         <div className="mt-2 mb-4">
           <p className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em]">
             {translations.traditionalMethod.text}{' '}
-            <span className="bg-[#F1EFEF] px-1 font-mono">
+            <span className="bg-[#F1EFEF] px-1 font-sans font-mono">
               {translations.traditionalMethod.sass}
             </span>{' '}
             {translations.traditionalMethod.text2}

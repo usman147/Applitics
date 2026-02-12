@@ -67,18 +67,18 @@ export default function Section4ChallengesFaced({
             </h3>
             <ul className="space-y-3 ml-4">
               <li className="flex items-start gap-3">
-                <div className="mt-1 shrink-0">
+                <div className="shrink-0">
                   <Image
                     src="/list-arrow.svg"
                     alt="arrow"
                     width={20}
                     height={20}
-                    className="mt-1 shrink-0"
+                    className="shrink-0"
                   />
                 </div>
                 <span className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em] text-grey-text">
                   {translations.challenge1.point1.text}{' '}
-                  <span className="bg-[#F1EFEF] px-1 font-mono">
+                  <span className="bg-[#F1EFEF] px-1 font-sans font-mono">
                     {translations.challenge1.point1.dataFolder}
                   </span>{' '}
                   {translations.challenge1.point1.text2}{' '}
@@ -89,13 +89,13 @@ export default function Section4ChallengesFaced({
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <div className="mt-1 shrink-0">
+                <div className="shrink-0">
                   <Image
                     src="/list-arrow.svg"
                     alt="arrow"
                     width={20}
                     height={20}
-                    className="mt-1 shrink-0"
+                    className="shrink-0"
                   />
                 </div>
                 <span className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em] text-grey-text">
@@ -107,13 +107,13 @@ export default function Section4ChallengesFaced({
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <div className="mt-1 shrink-0">
+                <div className="shrink-0">
                   <Image
                     src="/list-arrow.svg"
                     alt="arrow"
                     width={20}
                     height={20}
-                    className="mt-1 shrink-0"
+                    className="shrink-0"
                   />
                 </div>
                 <span className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em] text-grey-text">
@@ -134,13 +134,13 @@ export default function Section4ChallengesFaced({
             </h3>
             <ul className="space-y-3 ml-4 mt-4">
               <li className="flex items-start gap-3">
-                <div className="mt-1 shrink-0">
+                <div className="shrink-0">
                   <Image
                     src="/list-arrow.svg"
                     alt="arrow"
                     width={20}
                     height={20}
-                    className="mt-1 shrink-0"
+                    className="shrink-0"
                   />
                 </div>
                 <span className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em] text-grey-text">
@@ -148,13 +148,13 @@ export default function Section4ChallengesFaced({
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <div className="mt-1 shrink-0">
+                <div className="shrink-0">
                   <Image
                     src="/list-arrow.svg"
                     alt="arrow"
                     width={20}
                     height={20}
-                    className="mt-1 shrink-0"
+                    className="shrink-0"
                   />
                 </div>
                 <span className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em] text-grey-text">
@@ -166,13 +166,13 @@ export default function Section4ChallengesFaced({
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <div className="mt-1 shrink-0">
+                <div className="shrink-0">
                   <Image
                     src="/list-arrow.svg"
                     alt="arrow"
                     width={20}
                     height={20}
-                    className="mt-1 shrink-0"
+                    className="shrink-0"
                   />
                 </div>
                 <span className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em] text-grey-text">

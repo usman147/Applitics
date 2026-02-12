@@ -51,11 +51,11 @@ export default function Section7HTMLSkeleton({
         </p>
         <p className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em]">
           {translations.paragraph3.text}{' '}
-          <span className="bg-[#F1EFEF] px-1 font-mono">
+          <span className="bg-[#F1EFEF] px-1 font-sans font-mono">
             {translations.paragraph3.fluidRow}
           </span>{' '}
           {translations.paragraph3.text2}{' '}
-          <span className="bg-[#F1EFEF] px-1 font-mono">
+          <span className="bg-[#F1EFEF] px-1 font-sans font-mono">
             {translations.paragraph3.column}
           </span>{' '}
           {translations.paragraph3.text3}
@@ -97,14 +97,14 @@ export default function Section7HTMLSkeleton({
         </p>
         <p className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em]">
           {translations.paragraph6.text}{' '}
-          <span className="bg-[#F1EFEF] px-1 font-mono">
+          <span className="bg-[#F1EFEF] px-1 font-sans font-mono">
             {translations.paragraph6.id}
           </span>{' '}
           {translations.paragraph6.text2}
         </p>
         <p className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em]">
           {translations.paragraph7.text}{' '}
-          <span className="bg-[#F1EFEF] px-1 font-mono">
+          <span className="bg-[#F1EFEF] px-1 font-sans font-mono">
             {translations.paragraph7.id}
           </span>{' '}
           {translations.paragraph7.text2}

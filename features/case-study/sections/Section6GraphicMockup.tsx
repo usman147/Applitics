@@ -247,7 +247,7 @@ export default function Section6GraphicMockup({
         </p>
         <p className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em]">
           {translations.paragraph13.text}{' '}
-          <span className="bg-[#F1EFEF] px-1">
+          <span className="bg-[#F1EFEF] px-1 font-sans">
             {translations.paragraph13.shinydashboard}
           </span>
           {translations.paragraph13.text2}

@@ -307,9 +307,9 @@ export default function CaseStudyClient({
         />
 
         <div className="relative max-w-8xl mx-auto px-4">
-          <div className="grid lg:grid-cols-[0.85fr_1.15fr] gap-8 lg:gap-[62px] items-start pb-[65px] pt-8">
+          <div className="grid lg:grid-cols-[0.85fr_1.15fr] gap-8 lg:gap-[62px] items-start pb-[65px] lg:pt-8 md:pt-8 pt-0">
             {/* Left Side - Case Study Content */}
-            <div className="text-white space-y-4 pt-8">
+            <div className="text-white space-y-4  lg:pt-8 md:pt-8 pt-4">
               <div className="inline-flex px-4 py-1 bg-white rounded-[100px] justify-center items-center">
                 <span className="text-primary text-[14px] font-normal font-ibm-plex-sans-condensed uppercase leading-[26px] tracking-[0.05em]">
                   {translations.hero.badge}
@@ -352,11 +352,11 @@ export default function CaseStudyClient({
               className="relative order-2 lg:order-1"
             >
               {/* Continuous vertical timeline line - background */}
-              <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-primary-lighter opacity-30" />
+              <div className="absolute left-[10px] top-0 bottom-0 w-[2px] bg-primary-lighter opacity-30" />
 
               {/* Animated progress line */}
               <div
-                className="absolute left-0 top-0 w-[2px] bg-primary-lighter transition-all duration-500 ease-out"
+                className="absolute left-[10px] top-0 w-[2px] bg-primary-lighter transition-all duration-500 ease-out"
                 style={{
                   height: `${timelineProgress * 100}%`,
                   transformOrigin: 'top',

@@ -217,11 +217,11 @@ export default function Section5AuthenticationSystem({
 
         <p className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em]">
           {translations.paragraph4.text}{' '}
-          <span className="bg-[#F1EFEF] px-1 font-mono">
+          <span className="bg-[#F1EFEF] px-1 font-sans font-mono">
             {translations.paragraph4.auth0Package}
           </span>{' '}
           {translations.paragraph4.text2}{' '}
-          <span className="bg-[#F1EFEF] px-1 font-mono">
+          <span className="bg-[#F1EFEF] px-1 font-sans font-mono">
             {translations.paragraph4.sessionVar}
           </span>{' '}
           {translations.paragraph4.text3}
@@ -260,7 +260,7 @@ auth0::shinyAppAuth0(ui, server)`}
 
         <p className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em]">
           {translations.paragraph6.text}{' '}
-          <span className="bg-[#F1EFEF] px-1 font-mono">
+          <span className="bg-[#F1EFEF] px-1 font-sans font-mono">
             {translations.paragraph6.userDataVar}
           </span>{' '}
           {translations.paragraph6.text2}
@@ -272,7 +272,7 @@ auth0::shinyAppAuth0(ui, server)`}
 
         <p className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em]">
           {translations.paragraph8.text}{' '}
-          <span className="bg-[#F1EFEF] px-1 font-mono">
+          <span className="bg-[#F1EFEF] px-1 font-sans font-mono">
             {translations.paragraph8.auth0Package}
           </span>{' '}
           {translations.paragraph8.text2}
@@ -301,7 +301,7 @@ auth0::shinyAppAuth0(ui, server)`}
 
         <p className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em]">
           {translations.paragraph10.text}{' '}
-          <span className="bg-[#F1EFEF] px-1 font-mono">
+          <span className="bg-[#F1EFEF] px-1 font-sans font-mono">
             {translations.paragraph10.auth0Package}
           </span>{' '}
           {translations.paragraph10.text2}{' '}

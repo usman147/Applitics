@@ -115,7 +115,7 @@ export default function Section10CustomWidget({
         </p>
         <ul className="space-y-2 ml-4">
           <li className="flex items-start gap-3">
-            <div className="mt-1 shrink-0">
+            <div className="shrink-0">
               <Image
                 src="/check-icon.svg"
                 alt=""
@@ -136,7 +136,7 @@ export default function Section10CustomWidget({
             </span>
           </li>
           <li className="flex items-start gap-3">
-            <div className="mt-1 shrink-0">
+            <div className="shrink-0">
               <Image
                 src="/check-icon.svg"
                 alt=""
@@ -157,7 +157,7 @@ export default function Section10CustomWidget({
             </span>
           </li>
           <li className="flex items-start gap-3">
-            <div className="mt-1 shrink-0">
+            <div className="shrink-0">
               <Image
                 src="/check-icon.svg"
                 alt=""
@@ -178,7 +178,7 @@ export default function Section10CustomWidget({
             </span>
           </li>
           <li className="flex items-start gap-3">
-            <div className="mt-1 shrink-0">
+            <div className="shrink-0">
               <Image
                 src="/check-icon.svg"
                 alt=""

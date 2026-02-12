@@ -85,7 +85,7 @@ export default function TimelineConnection({
               ? 'opacity-100 scale-100 translate-x-0'
               : 'opacity-0 scale-75 -translate-x-4'
           }`}
-          style={{ left: '-10px' }}
+          style={{ left: '0px' , top: '10px' }}
         >
           {showStar ? (
             <Image

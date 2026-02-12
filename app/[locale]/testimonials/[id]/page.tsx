@@ -2,6 +2,7 @@ import TestimonialsContent from '@/features/testimonials/TestimonialsContent';
 import { getTestimonialById } from '@/features/testimonials/data';
 import type { Metadata } from 'next';
 import { getAllLocalizedPaths } from '@/lib/i18n';
+import ScrollToTop from '../ScrollToTop';
 
 type Props = {
   params: Promise<{ locale: string; id: string }>;
@@ -56,5 +57,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function TestimonialDetailPage({ params }: Props) {
   const { id } = await params;
-  return <TestimonialsContent id={id} />;
+  return (
+    <>
+      <ScrollToTop />
+      <TestimonialsContent id={id} />
+    </>
+  );
 }

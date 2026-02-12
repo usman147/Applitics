@@ -33,13 +33,13 @@ export default function Section2ImprovingUIUX({
           </div>
           <div className="space-y-3 flex-1">
             <div className="flex items-start gap-3">
-              <div className="mt-1 shrink-0">
+              <div className="shrink-0">
                 <Image
                   src="/list-arrow.svg"
                   alt="arrow"
                   width={20}
                   height={20}
-                  className="mt-1 shrink-0"
+                  className="shrink-0"
                 />
               </div>
               <span className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em] text-grey-text">
@@ -47,13 +47,13 @@ export default function Section2ImprovingUIUX({
               </span>
             </div>
             <div className="flex items-start gap-3">
-              <div className="mt-1 shrink-0">
+              <div className="shrink-0">
                 <Image
                   src="/list-arrow.svg"
                   alt="arrow"
                   width={20}
                   height={20}
-                  className="mt-1 shrink-0"
+                  className="shrink-0"
                 />
               </div>
               <span className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em] text-grey-text">
@@ -61,13 +61,13 @@ export default function Section2ImprovingUIUX({
               </span>
             </div>
             <div className="flex items-start gap-3">
-              <div className="mt-1 shrink-0">
+              <div className="shrink-0">
                 <Image
                   src="/list-arrow.svg"
                   alt="arrow"
                   width={20}
                   height={20}
-                  className="mt-1 shrink-0"
+                  className="shrink-0"
                 />
               </div>
               <span className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em] text-grey-text">
