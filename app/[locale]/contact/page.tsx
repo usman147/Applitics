@@ -81,7 +81,7 @@ export default async function Contact({ params }: Props) {
         <div className="relative max-w-8xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-[62px] items-start">
             {/* Left Side - Hero Content */}
-            <div className="text-white pt-8">
+            <div className="text-white pt-8 max-w-full lg:overflow-auto md:overflow-auto overflow-hidden">
               <div className="inline-flex px-6 py-2 bg-white rounded-[100px] justify-center items-center mb-[22px]">
                 <span className="text-primary text-[14px] font-normal font-ibm-plex-sans-condensed uppercase leading-[26px] tracking-[0.05em]">
                   {translations.page.badge}
@@ -170,7 +170,7 @@ export default async function Contact({ params }: Props) {
 
               {/* Partner Logos */}
               <div className='border-y-[0.6px] border-x-0 border-solid border-white/12 w-full h-full max-w-[100vw] '>              
-                <div className="w-full h-full max-w-[100vw] overflow-hidden partners-fade">
+                <div className="w-full h-full max-w-[100vw] overflow-hidden partners-fade py-1">
                   {/* <Marquee
                     speed={50}
                     style={{ maxWidth: 'calc(100vw - 2.5rem)' }}

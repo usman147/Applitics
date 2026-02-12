@@ -175,46 +175,38 @@ body {
 /* Partner Logo Ticker styling */
 .img-ticker {
   display: flex;
+  align-items: center;
+  gap: var(--logo-gap);
   width: max-content;
-  animation: ticker-kf var(--tickerduration, 20s) linear infinite;
+  padding-right: var(--logo-gap); 
+  animation: ticker-kf var(--tickerduration, 40s) linear infinite;
   will-change: transform;
 }
 
-.tickerlogo {
-  /* Dynamic unit calculation: (Width + Gap) */
-  width: calc(var(--logo-w) + var(--logo-gap));
-  flex: none;
+.ticker-item {
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding-right: var(--logo-gap);
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 @keyframes ticker-kf {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    /* Moves exactly by the width of one full set of logos */
-    transform: translateX(
-      calc(-1 * (var(--logo-w) + var(--logo-gap)) * var(--logo-count))
-    );
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-100% / 3)); }
+}
+
+/* --- RESPONSIVE OVERRIDES --- */
+/* Use !important to override the inline styles passed by React */
+@media (max-width: 768px) {
+  .img-ticker {
+    --logo-h: 46px !important;
+    --logo-gap: 2.5rem !important;
   }
 }
 
-/* Responsive: Only apply auto-scaling if 'small' variant is NOT active */
-@media (max-width: 1024px) {
-  .img-ticker:not([style*="175px"]) {
-    --logo-w: 10rem;
-    --logo-gap: 3rem;
-  }
-}
-
-@media (max-width: 640px) {
-  .img-ticker:not([style*="175px"]) {
-    --logo-w: 8rem;
-    --logo-gap: 2rem;
+@media (max-width: 480px) {
+  .img-ticker {
+    --logo-h: 43px !important;
   }
 }
 

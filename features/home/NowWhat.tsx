@@ -61,7 +61,7 @@ export default function NowWhat({ translations }: NowWhatProps) {
 
         {/* Heading */}
         <div className="text-center mb-12 reveal-on-scroll">
-          <h2 className="font-serif text-[34px] md:text-[52px] xs:text-[30px] leading-[36px] md:leading-[60px] font-normal text-primary">
+          <h2 className="font-serif text-[34px] md:text-[52px] xs:text-[29px] leading-[36px] md:leading-[60px] font-normal text-primary">
             {translations.title.parts.length === 3 ? (
               <>
                 <span>{translations.title.parts[0]}</span>
