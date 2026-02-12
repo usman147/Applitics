@@ -15,6 +15,7 @@ interface TestimonialCardProps {
   youtubeUrl?: string;
   youtubeVideoDuration?: string;
   onPlayClick?: (id: string) => void;
+  playOnCardClick?: boolean;
 }
 
 // Convert YouTube URL to embed format
@@ -47,6 +48,7 @@ export default function TestimonialCard({
   youtubeUrl,
   youtubeVideoDuration,
   onPlayClick,
+  playOnCardClick = false,
 }: TestimonialCardProps) {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const embedUrl = youtubeUrl ? getYouTubeEmbedUrl(youtubeUrl) : null;
@@ -62,8 +64,28 @@ export default function TestimonialCard({
     }
   };
 
+  const handleCardClick = () => {
+    if (hasVideo) {
+      setIsVideoPlaying(true);
+    }
+  };
+
+  const handleCardKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      handleCardClick();
+    }
+  };
+
   return (
-    <div className="bg-white rounded-[20px] p-6 flex flex-col gap-[20px] w-full h-full hover:shadow-lg transition-shadow">
+    <div
+      className={`bg-white rounded-[20px] p-6 flex flex-col gap-[20px] w-full h-full hover:shadow-lg group transition-shadow ${playOnCardClick && hasVideo ? 'cursor-pointer' : ''}`}
+      onClick={playOnCardClick ? handleCardClick : undefined}
+      onKeyDown={playOnCardClick ? handleCardKeyDown : undefined}
+      role={playOnCardClick && hasVideo ? 'button' : undefined}
+      tabIndex={playOnCardClick && hasVideo ? 0 : undefined}
+      aria-label={playOnCardClick && hasVideo ? `Play ${title} video` : undefined}
+    >
       {/* Thumbnail */}
       <div className="block w-full aspect-[16/9] md:h-[292px] md:aspect-auto rounded-[10px] relative overflow-hidden">
         {isVideoPlaying && embedUrl ? (

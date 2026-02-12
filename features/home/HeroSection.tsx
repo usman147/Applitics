@@ -99,7 +99,7 @@ export default function HeroSection({ translations }: HeroSectionProps) {
       </div>
       {/* Partners section */}
       <div className="absolute bottom-0 left-0 right-0 w-full partners-container pb-[45px] z-10 pt-100">
-        <div className="max-w-8xl mx-auto flex flex-col md:flex-row items-center gap-6">
+        <div className="max-w-8xl mx-auto flex flex-col md:flex-row items-center gap-6 lg:px-0 md:px-4">
           <p className="text-white font-sans font-semibold text-base shrink-0 flex flex-col uppercase ">
             {translations.partnering.parts.map((part, index) => (
               <span key={index}>

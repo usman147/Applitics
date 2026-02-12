@@ -85,23 +85,19 @@ export default function OurClients({ translations }: OurClientsProps) {
         <div className="reveal-on-scroll">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-[30px] gap-x-[24px] max-w-[1138px] mx-auto justify-items-center md:justify-items-start">
             {selectedTestimonials.map((testimonial) => (
-              <Link
+              <TestimonialCard
                 key={testimonial.id}
-                href={`/testimonials/${testimonial.id}`}
-                className="cursor-pointer"
-              >
-                <TestimonialCard
-                  id={testimonial.id}
-                  image={testimonial.image}
-                  title={testimonial.title}
-                  name={testimonial.name}
-                  role={testimonial.role}
-                  description={testimonial.description}
-                  showPlayButton={true}
-                  youtubeUrl={testimonial.youtubeUrl}
-                  youtubeVideoDuration={testimonial.youtubeVideoDuration}
-                />
-              </Link>
+                id={testimonial.id}
+                image={testimonial.image}
+                title={testimonial.title}
+                name={testimonial.name}
+                role={testimonial.role}
+                description={testimonial.description}
+                showPlayButton
+                youtubeUrl={testimonial.youtubeUrl}
+                youtubeVideoDuration={testimonial.youtubeVideoDuration}
+                playOnCardClick
+              />
             ))}
           </div>
         </div>
