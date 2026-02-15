@@ -32,7 +32,7 @@ export default function Section2ImprovingUIUX({
             <VideoPlayer testimonialId="3" />
           </div>
           <div className="space-y-3 flex-1">
-            <div className="flex items-start gap-3">
+            <div className="flex items-center gap-3">
               <div className="shrink-0">
                 <Image
                   src="/list-arrow.svg"
@@ -46,7 +46,7 @@ export default function Section2ImprovingUIUX({
                 {translations.objective}
               </span>
             </div>
-            <div className="flex items-start gap-3">
+            <div className="flex items-center gap-3">
               <div className="shrink-0">
                 <Image
                   src="/list-arrow.svg"
@@ -60,7 +60,7 @@ export default function Section2ImprovingUIUX({
                 {translations.sector}
               </span>
             </div>
-            <div className="flex items-start gap-3">
+            <div className="flex items-center gap-3">
               <div className="shrink-0">
                 <Image
                   src="/list-arrow.svg"

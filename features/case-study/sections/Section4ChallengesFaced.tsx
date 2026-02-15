@@ -66,7 +66,7 @@ export default function Section4ChallengesFaced({
               {translations.challenge1.title}
             </h3>
             <ul className="space-y-3 ml-4">
-              <li className="flex items-start gap-3">
+              <li className="flex items-center gap-3">
                 <div className="shrink-0">
                   <Image
                     src="/list-arrow.svg"
@@ -88,7 +88,7 @@ export default function Section4ChallengesFaced({
                   {translations.challenge1.point1.text3}
                 </span>
               </li>
-              <li className="flex items-start gap-3">
+              <li className="flex items-center gap-3">
                 <div className="shrink-0">
                   <Image
                     src="/list-arrow.svg"
@@ -106,7 +106,7 @@ export default function Section4ChallengesFaced({
                   .
                 </span>
               </li>
-              <li className="flex items-start gap-3">
+              <li className="flex items-center gap-3">
                 <div className="shrink-0">
                   <Image
                     src="/list-arrow.svg"
@@ -133,7 +133,7 @@ export default function Section4ChallengesFaced({
               {translations.challenge2.title}
             </h3>
             <ul className="space-y-3 ml-4 mt-4">
-              <li className="flex items-start gap-3">
+              <li className="flex items-center gap-3">
                 <div className="shrink-0">
                   <Image
                     src="/list-arrow.svg"
@@ -147,7 +147,7 @@ export default function Section4ChallengesFaced({
                   {translations.challenge2.point1}
                 </span>
               </li>
-              <li className="flex items-start gap-3">
+              <li className="flex items-center gap-3">
                 <div className="shrink-0">
                   <Image
                     src="/list-arrow.svg"
@@ -165,7 +165,7 @@ export default function Section4ChallengesFaced({
                   .
                 </span>
               </li>
-              <li className="flex items-start gap-3">
+              <li className="flex items-center gap-3">
                 <div className="shrink-0">
                   <Image
                     src="/list-arrow.svg"

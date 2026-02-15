@@ -55,7 +55,7 @@ export default function Section1Introduction({
           </span>
         </p>
         <ul className="space-y-2 ml-4">
-          <li className="flex items-start gap-3">
+          <li className="flex items-center gap-3">
             <div className="shrink-0">
               <Image
                 src="/list-arrow.svg"
@@ -69,7 +69,7 @@ export default function Section1Introduction({
               {translations.objective1}
             </span>
           </li>
-          <li className="flex items-start gap-3">
+          <li className="flex items-center gap-3">
             <div className="shrink-0">
               <Image
                 src="/list-arrow.svg"
