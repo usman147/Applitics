@@ -147,7 +147,7 @@ export default function NowWhat({ translations }: NowWhatProps) {
           </div>
 
           {/* Right image */}
-          <div className="flex-1 w-full flex justify-center">
+          <div className="flex-1 w-full flex justify-center lg:pb-0 md:pb-0 pb-[37px]">
             <Image
               src="/now-what-animated-image.svg"
               alt="Team rowing illustration"
