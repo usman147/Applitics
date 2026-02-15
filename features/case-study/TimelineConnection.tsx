@@ -96,7 +96,7 @@ export default function TimelineConnection({
               className="object-contain"
             />
           ) : (
-            <div className="w-full h-full rounded-full border border-primary-lighter flex items-center justify-center text-primary text-[12px] font-semibold font-sans tracking-[0.04em] bg-primary-lighter text-white">
+            <div className="w-full h-full rounded-full border border-primary-lighter flex items-center justify-center text-primary text-[16px] font-normal font-sans tracking-[0.04em] bg-primary-lighter text-white">
               {roman}
             </div>
           )}
