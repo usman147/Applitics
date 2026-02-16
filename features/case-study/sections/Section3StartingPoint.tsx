@@ -50,8 +50,8 @@ export default function Section3StartingPoint({
         </p>
 
         <ul className="space-y-2 ml-4">
-          <li className="flex items-center gap-3">
-            <div className="shrink-0">
+          <li className="flex items-start gap-3">
+            <div className="mt-[4px] shrink-0">
               <Image
                 src="/list-arrow.svg"
                 alt="arrow"
@@ -64,8 +64,8 @@ export default function Section3StartingPoint({
               {translations.feature1}
             </span>
           </li>
-          <li className="flex items-center gap-3">
-            <div className="shrink-0">
+          <li className="flex items-start gap-3">
+            <div className="mt-[4px] shrink-0">
               <Image
                 src="/list-arrow.svg"
                 alt="arrow"
@@ -78,8 +78,8 @@ export default function Section3StartingPoint({
               {translations.feature2}
             </span>
           </li>
-          <li className="flex items-center gap-3">
-            <div className="shrink-0">
+          <li className="flex items-start gap-3">
+            <div className="mt-[4px] shrink-0">
               <Image
                 src="/list-arrow.svg"
                 alt="arrow"
