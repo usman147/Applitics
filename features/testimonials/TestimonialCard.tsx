@@ -136,7 +136,7 @@ export default function TestimonialCard({
 
       {/* Content */}
       <div className="flex flex-col gap-[12px] min-h-[112px]">
-        <h4 className="font-serif text-[28px] leading-[34px] tracking-[-0.01em] text-primary font-normal hover:underline">
+        <h4 className="font-serif text-[28px] leading-[34px] tracking-[-0.01em] text-primary font-normal">
           {title}
         </h4>
         <div className="text-[14px] leading-[20px] text-grey-text">

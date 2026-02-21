@@ -56,7 +56,7 @@ function SwiperSlideImage({ image, imageRight, title }: SwiperSlideImageProps) {
                   src="/real-word-examples/case-study-first-slide.jpg"
                   alt="Before - Original R Shiny Dashboard"
                   fill
-                  className="object-fill"
+                  className="object-fill !h-auto"
                   priority
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
@@ -68,7 +68,7 @@ function SwiperSlideImage({ image, imageRight, title }: SwiperSlideImageProps) {
                   src="/real-word-examples/case-study-second-slide.jpg"
                   alt="After - Transformed R Shiny Dashboard"
                   fill
-                  className="object-fill"
+                  className="object-fill !h-auto"
                   priority
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
@@ -165,7 +165,7 @@ function SwiperSlideButton({
     return (
       <Link
         href={`/testimonials/${testimonialId}`}
-        className="px-8 h-[44px] rounded-full bg-primary-light text-white hover:bg-primary-light/90 transition-all inline-flex items-center gap-2 w-full md:w-auto justify-center text-sm"
+        className="lg:px-8 md:px-8 sm:px-8 xs:px-4 h-[44px] rounded-full bg-primary-light text-white hover:bg-primary-light/90 transition-all inline-flex items-center gap-2 w-full md:w-auto justify-center text-sm"
       >
         {buttonText}
         <Image

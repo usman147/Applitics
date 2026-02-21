@@ -28,7 +28,7 @@ export default function CaseStudySlider({
                 src="/real-word-examples/case-study-first-slide.jpg"
                 alt="Before - Original R Shiny Dashboard"
                 fill
-                className="object-fill"
+                className="object-fill !h-auto"
                 priority
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
@@ -45,7 +45,7 @@ export default function CaseStudySlider({
                 src="/real-word-examples/case-study-second-slide.jpg"
                 alt="After - Transformed R Shiny Dashboard"
                 fill
-                className="object-fill"
+                className="object-fill !h-auto"
                 priority
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
