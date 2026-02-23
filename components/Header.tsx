@@ -124,7 +124,7 @@ export default function Header() {
           ? isHuggingSides
             ? 'top-0 px-0'
             : 'top-0 max-w-8xl mx-auto'
-          : 'top-[40px] max-w-8xl mx-auto px-4 lg:px-0'
+          : 'top-[40px] max-w-8xl mx-auto px-4 lg:px-0 [@media(min-width:1030px)]:px-4 [@media(min-width:1350px)]:px-0'
       }`}
     >
     <header

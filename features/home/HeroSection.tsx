@@ -65,7 +65,7 @@ export default function HeroSection({ translations }: HeroSectionProps) {
         />
       </div>
       {/* middle section */}
-      <div className="relative z-10 max-w-8xl mx-auto px-4 lg:px-0 w-full h-full flex flex-col md:flex-row justify-between md:items-center">
+      <div className="relative z-10 max-w-8xl mx-auto px-4 lg:px-0 w-full h-full flex flex-col md:flex-row justify-between md:items-center [@media(min-width:1030px)]:px-4 [@media(min-width:1350px)]:px-0">
         {/* Text Section */}
         <HeroMainSection translations={translations} />
         {/* Stars Section */}
