@@ -34,37 +34,15 @@ export default function TimelineConnection({
   index,
   showStar = false,
 }: TimelineConnectionProps) {
-  const [isVisible, setIsVisible] = useState(false);
-  const connectionRef = useRef<HTMLDivElement>(null);
+
   const roman = index ? toRoman(index) : '';
 
-  useEffect(() => {
-    if (!connectionRef.current) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-          }
-        });
-      },
-      {
-        threshold: 0.3,
-        rootMargin: '-50px 0px -50px 0px',
-      }
-    );
-
-    observer.observe(connectionRef.current);
-
-    return () => observer.disconnect();
-  }, []);
 
   // Trigger animation when section is viewed
   // No need for this effect; handle isVisible solely via IntersectionObserver or refactor logic.
   return (
     <div
-      ref={connectionRef}
+      // ref={connectionRef}
       className="relative h-16 flex items-center z-10"
       style={{ marginLeft: '-48px', marginTop: '-24px', marginBottom: '-70px' }}
     >
@@ -80,11 +58,7 @@ export default function TimelineConnection({
       {/* Circle-star icon attached to left of timeline line */}
       <div className="relative z-30 flex items-center">
         <div
-          className={`relative w-[35px] h-[35px] transition-all duration-700 ease-out ${
-            isVisible
-              ? 'opacity-100 scale-100 translate-x-0'
-              : 'opacity-0 scale-75 -translate-x-4'
-          }`}
+          className={`relative w-[35px] h-[35px] transition-all duration-700 ease-out`}        
           style={{ left: '0px' , top: '10px' }}
         >
           {showStar ? (
