@@ -20,7 +20,7 @@ export default function CaseStudySlider({
 
   return (
     <div className="relative w-full lg:sticky lg:top-24 self-start">
-      <div className="w-full max-h-[340px] h-[340px] rounded-[8px] overflow-hidden shadow-2xl border-3 border-white">
+      <div className="w-full max-h-[340px] md:h-[340px] lg:h-[340px] h-[240px] rounded-[8px] overflow-hidden shadow-2xl border-3 border-white ">
         <ReactCompareSlider
           itemOne={
             <div className="relative w-full h-full">
