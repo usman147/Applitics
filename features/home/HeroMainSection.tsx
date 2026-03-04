@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 interface HeroMainSectionProps {
@@ -15,6 +16,7 @@ interface HeroMainSectionProps {
     subtitle: {
       parts: string[];
     };
+    trustBadge: string;
     cta: {
       primary: string;
       secondary: string;
@@ -27,6 +29,24 @@ export default function HeroMainSection({
 }: HeroMainSectionProps) {
   return (
     <div className="flex flex-col justify-start items-start gap-5 relative z-10">
+      <div className="hidden md:inline-flex lg:hidden flex-wrap items-center gap-3 px-4 py-2 rounded-full bg-primary-light text-white shadow-sm max-w-full">
+        <div className="flex items-center gap-1">
+          {Array.from({ length: 5 }).map((_, index) => (
+            <Image
+              key={index}
+              src="/star-icon.svg"
+              alt=""
+              width={16}
+              height={16}
+              className="w-3.5 h-3.5"
+              loading="lazy"
+            />
+          ))}
+        </div>
+        <span className="text-xs md:text-sm font-semibold font-ibm-plex-sans-condensed italic tracking-[0.02em]">
+          {translations.trustBadge}
+        </span>
+      </div>
       <div className="flex flex-col gap-6">
         <h1 className="text-white text-6-5xl md:text-7xl font-normal font-serif leading-[54px] md:leading-[72px]">
           {translations.title.parts.map((part, index) => {

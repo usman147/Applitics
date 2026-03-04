@@ -213,3 +213,31 @@ body {
 /* Swiper Slider */
 .swiper { overflow: visible; }      
 .swiper-slide { overflow: visible; }
+
+
+/* iPad Mini Landscape */
+@media (min-width: 1024px) and (max-width: 1024px) and (orientation: landscape) {
+  .hero-testimonial{
+    transform: translateX(-110px);
+  }
+}
+
+
+/* iPad Air Portrait */
+@media (min-width: 820px) and (max-width: 1180px) and (orientation: portrait) {
+  .ipad-air-only {
+    padding-top: 200px !important;
+  }
+}
+
+/* iPad Air Landscape */
+@media (min-width: 820px) and (max-width: 1180px) and (orientation: landscape) {
+  .ipad-air-only {
+    padding-top: 220px !important;
+  }
+}
+
+/* iPad Pro Portrait */
+@media (min-width:1024px) and (max-width:1024px) and (min-height:1366px) {
+  .ipad-pro-only { padding-top:220px !important; }
+}

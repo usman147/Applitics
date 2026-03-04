@@ -40,7 +40,7 @@ interface HeroSectionProps {
 
 export default function HeroSection({ translations }: HeroSectionProps) {
   return (
-    <section className="relative overflow-hidden min-h-[903px] md:min-h-[772px] flex flex-col justify-between pt-[150px] md:pt-[224px]">
+    <section className="relative overflow-hidden min-h-[903px] md:min-h-[772px] flex flex-col justify-between pt-[150px] md:pt-[200px] [@media(min-width:1350px)]:pt-[224px] ipad-air-only ipad-pro-only">
       {/* Hero Background Image - Optimized */}
       <div className="absolute inset-0 z-0 hidden lg:block">
         <Image
@@ -65,20 +65,20 @@ export default function HeroSection({ translations }: HeroSectionProps) {
         />
       </div>
       {/* middle section */}
-      <div className="relative z-10 max-w-8xl mx-auto px-4 lg:px-0 w-full h-full flex flex-col md:flex-row justify-between md:items-center [@media(min-width:1030px)]:px-4 [@media(min-width:1350px)]:px-0">
+      <div className="relative z-10 max-w-8xl mx-auto px-10 w-full h-full flex flex-col md:flex-row justify-between md:items-center [@media(min-width:1030px)]:px-10 [@media(min-width:1350px)]:px-0">
         {/* Text Section */}
         <HeroMainSection translations={translations} />
         {/* Stars Section */}
         <div className="relative flex-1 h-full flex flex-col items-center justify-center gap-4 min-h-[60vw] md:min-h-0">
           {/* DNA Animation SVG - Background Layer Desktop */}
-          <div className="hidden md:flex absolute h-full inset-0 z-1 items-center justify-center lg:translate-x-[7.5%] md:translate-x-[-40%] translate-y-[-3px]">
+          <div className="hidden md:flex absolute h-full inset-0 z-1 items-center justify-center xl:translate-x-[7.5%] lg:translate-x-[-9.5%] md:translate-x-[-85%] translate-y-[-3px]">
             <AnimatedDnaSvg />
           </div>
           {/* DNA Animation SVG - Background Layer Mobile */}
           <div className="flex md:hidden absolute h-full inset-0 right-[-50%] left-[-50%] z-1 items-center justify-center lg:mt-0 mt-11">
             <HAnimatedDnaSvg />
           </div>
-          <div className="relative z-10 flex items-center justify-center gap-2 lg:mt-4 sm:mt-10 lg:translate-x-[68px] mt-16">
+          <div className="relative z-10 md:hidden lg:flex flex items-center justify-center gap-2 lg:mt-4 sm:mt-10 lg:translate-x-[68px] mt-16 hero-testimonial">
             {Array.from({ length: 5 }).map((_, index) => (
               <Image
                 key={index}
@@ -92,14 +92,14 @@ export default function HeroSection({ translations }: HeroSectionProps) {
             ))}
           </div>
           <div className="max-w-[45vw] sm:max-w-[40vw] md:max-w-[300px] text-[18px] sm:text-[18px] md:text-lg relative 
-          z-10 flex flex-col text-center text-white font-ibm-plex-sans-condensed  font-medium italic uppercase leading-[118%] tracking-[-0.01em] lg:translate-x-[68px]">
+          z-10 md:hidden lg:flex flex flex-col text-center text-white font-ibm-plex-sans-condensed  font-medium italic uppercase leading-[118%] tracking-[-0.01em] lg:translate-x-[68px] hero-testimonial">
             {translations.trustBadge}
           </div>
         </div>
       </div>
       {/* Partners section */}
       <div className="absolute bottom-0 left-0 right-0 w-full partners-container pb-[45px] z-10 pt-100">
-        <div className="max-w-8xl mx-auto flex flex-col md:flex-row items-center gap-6 lg:px-0 md:px-4">
+        <div className="max-w-8xl mx-auto flex flex-col md:flex-row items-center gap-6 xl:px-0 px-10 [@media(min-width:1030px)]:px-10 [@media(min-width:1350px)]:px-0">
           <p className="text-white font-sans font-semibold text-base shrink-0 flex flex-col uppercase ">
             {translations.partnering.parts.map((part, index) => (
               <span key={index}>
