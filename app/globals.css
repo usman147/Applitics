@@ -215,6 +215,29 @@ body {
 .swiper-slide { overflow: visible; }
 
 
+/* Small Phone Portrait */
+@media (max-width: 360px) and (orientation: portrait) {
+  .image-wrapper{
+    height: 170px;
+    max-height: 215px;  
+  }
+}
+/* Phone Portrait */
+@media (min-width: 370px) and (max-width: 600px) and (orientation: portrait) {
+  .image-wrapper{
+    height: 180px;
+    max-height: 215px;  
+  }
+}
+
+/* iPad Mini Portrait */
+@media (min-width: 768px) and (max-width: 768px) and (min-height:1024px) and (orientation: portrait) {
+  .image-wrapper{
+    height: 375px;
+    max-height: 375px; 
+  }
+}
+
 /* iPad Mini Landscape */
 @media (min-width: 1024px) and (max-width: 1024px) and (orientation: landscape) {
   .hero-testimonial{
@@ -235,9 +258,18 @@ body {
   .ipad-air-only {
     padding-top: 220px !important;
   }
+  .image-wrapper{
+    height: 310px;
+  }
 }
 
 /* iPad Pro Portrait */
 @media (min-width:1024px) and (max-width:1024px) and (min-height:1366px) {
   .ipad-pro-only { padding-top:220px !important; }
+  .my-flex{flex-direction: column;}
+  .hero-testimonial{transform: translateX(-100px) !important;}
+  .image-wrapper{
+    height: 310px;
+    max-height: 310px;   
+  }
 }

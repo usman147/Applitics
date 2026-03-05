@@ -56,7 +56,7 @@ function SwiperSlideImage({ image, imageRight, title }: SwiperSlideImageProps) {
                   src="/real-word-examples/case-study-first-slide.jpg"
                   alt="Before - Original R Shiny Dashboard"
                   fill
-                  className="object-fill !h-auto"
+                  className="object-fill lg:!h-auto !h-auto"
                   priority
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
@@ -68,7 +68,7 @@ function SwiperSlideImage({ image, imageRight, title }: SwiperSlideImageProps) {
                   src="/real-word-examples/case-study-second-slide.jpg"
                   alt="After - Transformed R Shiny Dashboard"
                   fill
-                  className="object-fill !h-auto"
+                  className="object-fill lg!h-auto !h-auto"
                   priority
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />

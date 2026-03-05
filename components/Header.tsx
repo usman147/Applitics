@@ -278,7 +278,7 @@ export default function Header() {
               ${
                 isHuggingSides
                   ? 'top-0 px-0'
-                  : 'top-0 max-w-7xl mx-auto px-4'
+                  : 'top-0 max-w-7xl mx-auto px-10'
               }
             `}
           >

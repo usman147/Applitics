@@ -34,7 +34,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: '3',
-    image: '/testimonials/sales-pulse-testimonial.png',
+    image: '/testimonials/sales-pulse-testimonial.jpg',
     title: 'Sales Pulse – Digital Fuel Capital',
     name: 'Jeffrey Coughlin',
     role: 'Director of Analytics at Digital Fuel Capital',

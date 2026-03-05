@@ -27,7 +27,7 @@ export default function Section2ImprovingUIUX({
         <p className="font-sans text-md md:text-lg md:leading-[28px] tracking-[-0.004em]">
           {translations.paragraph1}
         </p>
-        <div className="flex flex-col md:flex-row gap-6 my-6">
+        <div className="flex flex-col lg:flex-row gap-6 my-6 my-flex">
           <div className="flex-[1.3]">
             <VideoPlayer testimonialId="3" />
           </div>

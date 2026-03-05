@@ -306,7 +306,7 @@ export default function CaseStudyClient({
           sizes="100vw"
         />
 
-        <div className="relative max-w-8xl mx-auto px-4">
+        <div className="relative max-w-8xl mx-auto px-10 xl:px-4 lg:px-10">
           <div className="grid lg:grid-cols-[0.85fr_1.15fr] gap-8 lg:gap-[62px] items-start pb-[65px] lg:pt-8 md:pt-8 pt-0">
             {/* Left Side - Case Study Content */}
             <div className="text-white space-y-4  lg:pt-8 md:pt-8 pt-4">
@@ -345,7 +345,7 @@ export default function CaseStudyClient({
       {/* Main Content Sections with Summary Sidebar */}
       <section className="py-16">
         <div className="max-w-8xl mx-auto px-4">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_428px] lg:gap-12">
+          <div className="grid grid-cols-1 gap-8 xl:grid-cols-[1fr_428px] lg:grid-cols-[57%_37%] lg:gap-12">
             {/* Left Column - Content Sections with Timeline */}
             <div
               ref={timelineContainerRef}

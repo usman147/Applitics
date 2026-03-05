@@ -78,7 +78,7 @@ export default async function Contact({ params }: Props) {
           priority
         />
 
-        <div className="relative max-w-8xl mx-auto px-4">
+        <div className="relative max-w-8xl mx-auto px-10">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-[62px] items-start">
             {/* Left Side - Hero Content */}
             <div className="text-white pt-8 max-w-full lg:overflow-auto md:overflow-auto overflow-hidden">
